@@ -1,0 +1,28 @@
+/*
+.ABCDEF  = class <- Los que tengan class= " "
+#ABCDEF  = ID <- Los que tengan ID= " "
+
+*/
+body{ /* Cambiara el body completamente*/
+padding: 10%; /*Desplazimiento en todos los sentidos del borde de la pantalla*/
+color: white; /*Texto color*/
+text-align: justify; /*Formato text- justificar*/
+/*Opciones del fondo*/
+background-image: url(Gif_fondo.gif);
+background-position: center;
+background-size: cover;
+font-size: 16px;
+
+}
+
+#BloqueInformacion{ /*Cambia todo el bloque*/
+    background-color: rgba(80, 40, 70, 0.75);
+    padding: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+#TiulosNumeros{ /* Cambia únicamente los titulos con ID TitulosNumeros*/
+
+}
