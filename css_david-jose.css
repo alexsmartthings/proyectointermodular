@@ -5,24 +5,44 @@
 */
 body{ /* Cambiara el body completamente*/
 padding: 10%; /*Desplazimiento en todos los sentidos del borde de la pantalla*/
-color: white; /*Texto color*/
-text-align: justify; /*Formato text- justificar*/
+font-size: 18px; /*Tamaño letras*/
+
 /*Opciones del fondo*/
-background-image: url(Gif_fondo.gif);
+/*background-color: darkslategrey;*/ 
+background: linear-gradient(to bottom right, darkslategrey, #363848);
 background-position: center;
 background-size: cover;
-font-size: 16px;
 
 }
 
-#BloqueInformacion{ /*Cambia todo el bloque*/
-    background-color: rgba(80, 40, 70, 0.75);
-    padding: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    
+#bloqueInformacion { /*Cambia todo el bloque*/
+    background-color: rgba(63, 63, 63, 1); /*Fondo de donde existe el texto*/
+    padding: 1px; /*Desplazamiento de los 4 cantos*/
+    padding-left: 10px; /*Lo que se separa del borde izquierdo*/
+    padding-right: 10px; /*Lo que se separa del borde derecho*/
+    text-align: justify; /*Formato text- justificar*/
+    color: white; /*Texto color*/    
+    box-shadow: 50%;
 }
 
-#TiulosNumeros{ /* Cambia únicamente los titulos con ID TitulosNumeros*/
+h2{ /*Aplicado a todos los elementos H2*/ /*Este SÍ se puede aplicar*/
+color: #d0b0b0;
+}
+h3{
+color: #d0b0b0;    
+}
+#botones{ /*Exterior de los botones*/ 
+background-color: #d0b0b0;
+padding: 1%;
+margin-bottom: 5%;
+border-radius: 5px;
+
+
+}
+#boton{ /*Botones en si mismo*/
+background-color: #363848;    
+color: white;
+padding: 1%;
+border-radius: 10%;
 
 }
