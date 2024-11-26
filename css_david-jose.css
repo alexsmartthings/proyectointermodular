@@ -5,15 +5,16 @@
 */
 body{ /* Cambiara el body completamente*/
 padding: 10%; /*Desplazimiento en todos los sentidos del borde de la pantalla*/
-font-size: 18px; /*Tamaño letras*/
+font-size: 16px; /*Tamaño letras*/
+font-family: sans-serif;
 
-/*Opciones del fondo*/
-/*background-color: darkslategrey;*/ 
+/*Opciones del fondo*/ 
 background: linear-gradient(to bottom right, darkslategrey, #363848);
 background-position: center;
 background-size: cover;
 
 }
+/*Añadir sombra y separar apartados*/
 
 #bloqueInformacion { /*Cambia todo el bloque*/
     background-color: rgba(63, 63, 63, 1); /*Fondo de donde existe el texto*/
@@ -22,27 +23,44 @@ background-size: cover;
     padding-right: 10px; /*Lo que se separa del borde derecho*/
     text-align: justify; /*Formato text- justificar*/
     color: white; /*Texto color*/    
-    box-shadow: 50%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /*Añade !sombras! en las esquinas*/
+    margin-bottom: 40px; /*Margen aumentado en la parte inferior*/
+    border-radius: 15px; /*Redondear esquinas*/
+
+    
 }
 
 h2{ /*Aplicado a todos los elementos H2*/ /*Este SÍ se puede aplicar*/
-color: #d0b0b0;
+color: #d0b0b0; /*Color de todos los elementos h2*/
 }
 h3{
-color: #d0b0b0;    
+color: #d0b0b0;    /*Color de todos los elementos h3*/
 }
 #botones{ /*Exterior de los botones*/ 
-background-color: #d0b0b0;
-padding: 1%;
-margin-bottom: 5%;
-border-radius: 5px;
+background-color: rgba(43, 43, 43, 1); /*Color de fondo*/
+padding: 5px; /*Separación entre botones y borde botones*/
+margin-bottom: 5%; /*Aumenta el margen que hay debajo de el*/
+margin-top: -13%; /*Reduce el margen que hay arriba de el*/
+border-radius: 5px; /*Redondea las esquinas*/
+position: sticky; /*Cuando scrolleas el menú se "pega" a la parte superior*/
+top: 0; /*Necesario para indicarle al sticky DONDE se tiene que pegar*/
 
+/*Disposición de botones*/
+display: flex;
+justify-content:  center;
+align-items: center;
+flex-direction: row;
 
 }
 #boton{ /*Botones en si mismo*/
-background-color: #363848;    
-color: white;
-padding: 1%;
-border-radius: 10%;
-
+background-color: #363848;    /*Color de fondo*/
+color: white; /*Color del texto*/
+padding-top: 10px; /*Borde a su alrededor*/
+padding-bottom: 10px;
+border-radius: 10%; /*Redondear las esquinas*/
+margin: auto;
 }
+#boton:hover{ /*Ratón pasa por encima del botón*/
+background-color: rgba(43, 43, 43, 1);
+}
+
