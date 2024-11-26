@@ -26,16 +26,19 @@ background-size: cover;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /*Añade !sombras! en las esquinas*/
     margin-bottom: 40px; /*Margen aumentado en la parte inferior*/
     border-radius: 15px; /*Redondear esquinas*/
-
-    
+}
+#bloqueInformacion:hover{ /*Cuando el ratón pasa por encima del bloque información*/
+transform: scale(1.01);  /*Lo mucho que se expande (siendo 1 la base)*/
 }
 
 h2{ /*Aplicado a todos los elementos H2*/ /*Este SÍ se puede aplicar*/
 color: #d0b0b0; /*Color de todos los elementos h2*/
 }
+
 h3{
 color: #d0b0b0;    /*Color de todos los elementos h3*/
 }
+
 #botones{ /*Exterior de los botones*/ 
 background-color: rgba(43, 43, 43, 1); /*Color de fondo*/
 padding: 5px; /*Separación entre botones y borde botones*/
@@ -44,12 +47,12 @@ margin-top: -13%; /*Reduce el margen que hay arriba de el*/
 border-radius: 5px; /*Redondea las esquinas*/
 position: sticky; /*Cuando scrolleas el menú se "pega" a la parte superior*/
 top: 0; /*Necesario para indicarle al sticky DONDE se tiene que pegar*/
-
+z-index: 1000; /*Que siempre esten arriba del todo y no sean obstruidos*/
 /*Disposición de botones*/
-display: flex;
-justify-content:  center;
-align-items: center;
-flex-direction: row;
+display: flex; /*Que sea flexible*/
+justify-content:  center; /*Justificar el texto al centro*/
+align-items: center; /*Alineados al centro*/
+flex-direction: row; /*En formato serie*/
 
 }
 #boton{ /*Botones en si mismo*/
@@ -58,9 +61,11 @@ color: white; /*Color del texto*/
 padding-top: 10px; /*Borde a su alrededor*/
 padding-bottom: 10px;
 border-radius: 10%; /*Redondear las esquinas*/
-margin: auto;
+margin: auto; /*Que cambie el margen automáticamente según la ventana*/
 }
+
 #boton:hover{ /*Ratón pasa por encima del botón*/
-background-color: rgba(43, 43, 43, 1);
+background-color: rgba(43, 43, 43, 1); /*Color de fondo al tener el ratón encima*/
+
 }
 
