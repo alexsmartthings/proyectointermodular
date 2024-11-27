@@ -1,0 +1,116 @@
+/* Estilo para el body */
+body {
+    padding: 10%;
+    font-size: 16px;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom right, darkslategrey, #363848);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Barra superior con logo y botones */
+#barraSuperior {
+    display: flex;
+    justify-content: space-between; /* Distribuye el logo a la izquierda y los botones a la derecha */
+    align-items: center; /* Centra verticalmente los elementos dentro del menú */
+    position: fixed; /* La barra estará fija en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(43, 43, 43); /* Fondo oscuro semi-transparente */
+    padding: 10px 20px;
+    z-index: 1000; /* Para asegurarse de que esté sobre el contenido */
+}
+
+/* Imagen del logo */
+#imagenLogo {
+    width: 50px; /* Ajusta el tamaño de la imagen del logo */
+    height: auto;
+    border-radius: 90%;
+}
+
+/* Contenedor de los botones de navegación */
+#navegacion {
+    display: flex;
+    gap: 20px; /* Espacio entre los botones */
+    padding-right: 3%;
+}
+
+/* Estilo de la clase .nombre (para alinear h4 a la izquierda) */
+.nombre {
+    color: #b1dbdb;
+    padding-left: 2%;
+    display: flex;  /* Utiliza flexbox */
+    justify-content: flex-start; /* Alinea el contenido al principio */
+    align-items: center; /* Asegura que el texto esté centrado verticalmente */
+    flex-grow: 1; /* Asegura que .nombre ocupe el espacio restante */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo para el h4 dentro de .nombre */
+
+
+/* Estilo de los botones */
+#boton {
+    background-color: #c4151500; /* Color de fondo inicial */
+    color: white;
+    padding: 8px 16px; /* Padding más pequeño para un botón más compacto */
+    border-radius: 10%; /* Redondeo de los bordes */
+    cursor: pointer;
+    border: none;
+    text-align: center; /* Asegura que el texto esté centrado */
+    font-weight: 600;
+    font-size: 13px; /* Reducir el tamaño de la fuente */
+    transition: all 0.5s ease-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Efecto hover en los botones */
+#boton:hover {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 15px;
+    border:#ffffff; /* Borde */
+    color: #000000; /* Texto */
+    font-family: Arial, sans-serif;
+    padding: 8px 16px; 
+    transform: scale(1.05); /* Aumenta el tamaño del botón */
+}
+
+/* Sombra y margen para los bloques de información */
+#bloqueInformacion {
+    background-color: rgba(63, 63, 63, 1);
+    padding: 1px 40px; /* Añade espacio a los lados y en la altura */
+    text-align: justify;
+    color: rgb(228, 228, 228);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px; /* Para dejar espacio entre la barra superior y el contenido */
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ajuste al pasar el mouse sobre los bloques de información */
+#bloqueInformacion:hover {
+    transform: scale(1.01);
+}
+
+h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #b1dbdb;
+}
+
+/* Opciones de estilo para los botones de la página (si se mantienen más abajo) */
+#botones {
+    background-color: rgba(43, 43, 43, 1);
+    padding: 5px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Asegura que el footer se quede al final */
+}
