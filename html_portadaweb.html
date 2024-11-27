@@ -6,6 +6,36 @@
         <title>PÁGINA DE PORTADA</title>
     <!--  Link hacia la hoja de estilos CSS.     -->
         <link rel="stylesheet" href=".\css_david-jose.css">
+        <style>
+        .container {
+            display: flex;
+            gap: 70px;
+            max-width: 1900px;
+        }
+        .column {
+            flex: 1;
+            text-align: center;
+            border: 1px solid #000000;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #5f5f5f;
+        }
+        .column img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .tituloEntrada {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+        }
+        .description {
+            color: #555;
+            margin-top: 10px;
+        }
+        </style>
     </head>
 
     <body>
@@ -20,20 +50,25 @@
 
         
         <div id="bloqueInformacion">
-            <h2 id="titulo"><!--2.1.2.2--> Conceptos de código fuente, código objeto y código ejecutable</h2>
-            <img scr=".\pruebaPortada.jpg"/>
+            <h2 id="titulo"> HOLA MUNDO </h2>
+
+            <img src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" alt="HTML For Babies" height="230" width="250" />
         </div>
 
-
-
-        <header>
-            <h1>NOMBRE EMPRESA</h1>
-        </header>
-        <h1>
-            EMPRESA DE DESARROLLO DE SOFTWARE
-        </h1>
-        
-
+        <div class="container">
+            
+            <div class="column">
+                <div class="tituloEntrada">Desarrollo de software </div>
+                <hr>
+                <img class="img-responsive img-hover" src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" height="370" width="390" alt="Imagen de prueba">
+                <div class="description">Aquí podrá encontrar toda la información relacionada con el desarrollo del software.</div>
+            </div>
+            <div class="column">
+                <div class="tituloEntrada"> Empresas </div>
+                <img src="https://via.placeholder.com/300x200" alt="Imagen de prueba">
+                <div class="description">Descripción breve de la entrada o imagen 2.</div>
+            </div>
+        </div>
 
     </body>
 
