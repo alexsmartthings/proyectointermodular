@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="formulario_javascript.js"></script>
+    <title>Formulario 5</title>
+</head>
+<body>
+    <h1>Formulario número 5</h1>
+    <h3>Modelos de ciclo de vida en el software</h3>
+    <!--La etiqueta label permite mejorar la experiencia del usuario en el formulario-->
+    <form id="formulario">
+        <div class="question"> <!-- Pregunta numero 1 -->
+            <h3>1. ¿Cuáles son los principales traductores encargados de traducir el código fuente de un lenguaje de programación a un código objeto interpretado por el ordenador?</h3>
+            <label><input type="radio" name="q1" value="1"> Analizadores, Compiladores, Estabilizadores.</label><br>
+            <label><input type="radio" name="q1" value="2"> Intérpretes, Compiladores.</label><br>
+            <label><input type="radio" name="q1" value="3"> Intérpretes, Traductores en línea directa.</label><br>
+            <label><input type="radio" name="q1" value="4"> Analizadores, Estabilizadores.</label>
+        </div>
+
+       
+        <p></p>
+        <div>
+            <button type="button" onclick="comprobarRespuesta()">Enviar</button>
+            <button type="button" onclick="">Siguiente cuestionario</button>
+        </div>
+        
+    </form>
+    <p id="result"></p>
+
+
+</body>
+</html>
