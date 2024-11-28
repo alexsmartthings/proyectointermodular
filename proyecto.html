@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Documentación Técnica</title>
+    <title>Proyecto Intermodular</title> <!-- Titulo de la pagina --> 
 </head>
 <body>
-<!--BOTONES-->
-<div id="botones">
-    <button id="boton">Alejandro</button> <!--Primer botón-->
-    <button id="boton"> DavidJose</button> <!--Segundo botón-->
-    <button id="boton">Inicio</button> <!--Tercer botón-->
-    <button id="boton">Youseff</button> <!--Cuarto botón-->
-    <button id="boton">Cuestionario</button> <!--Quinto botón-->
-</div>
-
+ <!-- Barra superior con logo y botones -->
+ <header id="barraSuperior">
+    <div class="logo">
+        <img src="logo.png" alt="Logo" id="imagenLogo">
+    </div>
+    <div class="nombre">
+    <h2>Lobster S.L</h2>
+    </div>
+    <nav id="navegacion">
+        <button id="boton">Alejandro</button>
+        <button id="boton">DavidJose</button>
+        <button id="boton">Inicio</button>
+        <button id="boton">Youseff</button>
+        <button id="boton">Cuestionario</button>
+    </nav>
+</header>
 <!--TEXTO-->
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.2--> Conceptos de código fuente, código objeto y código ejecutable</h2>
@@ -29,7 +36,6 @@
             <strong>Código Ejecutable:</strong> Es el archivo final, en formato binario, que puede ser ejecutado directamente por el sistema operativo. Se obtiene después de vincular el código objeto con librerías y recursos necesarios, y generalmente tiene extensiones como .exe en Windows.
         </p>
     </div>
-    
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.3.--> Lenguajes de programación</h2>
         <p id="texto">
@@ -52,22 +58,22 @@
             El proceso de convertir el código fuente en un programa ejecutable involucra varias etapas, y se utilizan herramientas específicas en cada una:
         </p>
         <p id="texto">
-            <strong>Escritura del código fuente:</strong> El programador escribe el código en un editor de texto o un entorno de desarrollo integrado (IDE).
+            <li><strong>Escritura del código fuente:</strong> El programador escribe el código en un editor de texto o un entorno de desarrollo integrado (IDE).</li>
         </p>
         <p id="texto">
-            <strong>Compilación:</strong> El código fuente debe ser traducido a un lenguaje que la máquina pueda entender (código máquina). Esta traducción puede ser:
+            <li><strong>Compilación:</strong> El código fuente debe ser traducido a un lenguaje que la máquina pueda entender (código máquina). Esta traducción puede ser:</li>
         </p>
         <p id="texto">
-            <strong>Compilación:</strong> El compilador convierte todo el código fuente en un archivo binario ejecutable (por ejemplo, un archivo .exe). Los lenguajes compilados incluyen C y C++.
+            <li><strong>Compilación:</strong> El compilador convierte todo el código fuente en un archivo binario ejecutable (por ejemplo, un archivo .exe). Los lenguajes compilados incluyen C y C++.</li>
         </p>
         <p id="texto">
-            <strong>Interpretación:</strong> En lugar de generar un archivo binario, el intérprete ejecuta las instrucciones del código directamente. Los lenguajes interpretados incluyen Python y JavaScript.
+            <li><strong>Interpretación:</strong> En lugar de generar un archivo binario, el intérprete ejecuta las instrucciones del código directamente. Los lenguajes interpretados incluyen Python y JavaScript.</li>
         </p>
         <p id="texto">
-            <strong>Lenguajes híbridos:</strong> Algunos lenguajes como Java se compilan a bytecode, que luego es interpretado por la máquina virtual Java (JVM).
+            <li><strong>Lenguajes híbridos:</strong> Algunos lenguajes como Java se compilan a bytecode, que luego es interpretado por la máquina virtual Java (JVM).</li>
         </p>
         <p id="texto">
-            <strong>Enlace:</strong> En el caso de lenguajes compilados, el enlazador combina diferentes módulos o bibliotecas en un solo archivo ejecutable, resolviendo las referencias a funciones y variables externas.
+            <li><strong>Enlace:</strong> En el caso de lenguajes compilados, el enlazador combina diferentes módulos o bibliotecas en un solo archivo ejecutable, resolviendo las referencias a funciones y variables externas.</li>
         </p>
     </div>
 
@@ -322,6 +328,6 @@
             Puede no ser adecuado para proyectos muy grandes o complejos.
         </p>
     </div>
+    <div class="footer">&copy;<span id="year"> </span><span> Lobster S.L. Todos los derechos reservados.</span></div>
 </body>
 </html>
-
