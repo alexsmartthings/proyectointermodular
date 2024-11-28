@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PÁGINA DE PORTADA</title>
     <!--  Link hacia la hoja de estilos CSS.     -->
-        <link rel="stylesheet" href=".\css_david-jose.css">
+        <link rel="stylesheet" href="style.css">
         <style>
         .container {
             display: flex;
@@ -15,10 +15,12 @@
         .column {
             flex: 1;
             text-align: center;
-            border: 1px solid #000000;
+            border: 1px rgba(0, 0, 0, 0);
             padding: 10px;
             border-radius: 8px;
-            background-color: #5f5f5f;
+            background: linear-gradient(to bottom, rgb(39, 39, 39), #3a3a3a);
+            display: inline-block; /* Asegura que el elemento pueda escalar */
+            transition: transform 0.5s ease; /* Duración de la transición: 0.5s, con un efecto de suavizado */
         }
         .column img {
             max-width: 100%;
@@ -26,14 +28,19 @@
             border-radius: 8px;
         }
         .tituloEntrada {
+            font-family: Georgia, serif;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             color: #FFFFFF;
             text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
         }
         .description {
-            color: #555;
+            font-family: Georgia, serif;
+            color: #FFFFFF;
             margin-top: 10px;
+        }
+        .column:hover {
+         transform: scale(1.05);
         }
         </style>
     </head>
@@ -48,7 +55,7 @@
          <button id="boton">Cuestionario</button> <!--Quinto botón-->
         </div>
 
-        
+        <h2 id="titulo"> ¡LE DAMOS LA BIENVENIDA!  </h2>       
         <div id="bloqueInformacion">
             <h2 id="titulo"> HOLA MUNDO </h2>
 
@@ -65,10 +72,33 @@
             </div>
             <div class="column">
                 <div class="tituloEntrada"> Empresas </div>
+                <hr>
                 <img src="https://via.placeholder.com/300x200" alt="Imagen de prueba">
                 <div class="description">Descripción breve de la entrada o imagen 2.</div>
             </div>
         </div>
+
+        <br>
+        <br>
+
+        <div class="container">
+            
+            <div class="column">
+                <div class="tituloEntrada">Instalacion de IDE's </div>
+                <hr>
+                <img class="img-responsive img-hover" src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" height="370" width="390" alt="Imagen de prueba">
+                <div class="description">Aquí podrá encontrar toda la información relacionada con el desarrollo del software.</div>
+            </div>
+            <div class="column">
+                <div class="tituloEntrada"> Test sobre lo enseñado </div>
+                <hr>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3pLSJnkfN56PDZoDe7CbekJ5XizX5t0xkA&s" height="370" width="390" alt="Imagen de prueba">
+                <div class="description">¡Pon a prueba tus conocimientos! En este test podrás saber si dominas los conceptos de la página</div>
+            </div>
+        </div>
+
+
+
 
     </body>
 
