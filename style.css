@@ -1,30 +1,45 @@
-/* Estilo para el body */
+/* Aseguramos que el body ocupe toda la altura y su contenido se disponga correctamente */
+html, body {
+    height: 100%; /* Garantiza que el body ocupe toda la altura de la ventana */
+    margin: 0;
+    padding: 0;
+}
+
+/* Usamos Flexbox para que el contenido ocupe toda la altura y el footer se quede abajo */
 body {
-    padding: 10%;
+    display: flex;
+    flex-direction: column;  /* Coloca los elementos en una columna */
     font-size: 16px;
     font-family: sans-serif;
     background: linear-gradient(to bottom right, darkslategrey, #363848);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed; /* Fija el fondo */
+}
+
+/* Aseguramos que el contenido principal ocupe el espacio disponible */
+.content {
+    flex: 1; /* Hace que el contenido se expanda para ocupar todo el espacio disponible */
+    padding-bottom: 3rem; /* Espacio para que el footer no quede pegado al contenido */
 }
 
 /* Barra superior con logo y botones */
 #barraSuperior {
     display: flex;
-    justify-content: space-between; /* Distribuye el logo a la izquierda y los botones a la derecha */
-    align-items: center; /* Centra verticalmente los elementos dentro del menú */
-    position: fixed; /* La barra estará fija en la parte superior */
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(43, 43, 43); /* Fondo oscuro semi-transparente */
+    background-color: #2b2b2b;
     padding: 10px 20px;
-    z-index: 1000; /* Para asegurarse de que esté sobre el contenido */
+    z-index: 1000;
 }
 
 /* Imagen del logo */
 #imagenLogo {
-    width: 50px; /* Ajusta el tamaño de la imagen del logo */
+    width: 50px;
     height: auto;
     border-radius: 90%;
 }
@@ -32,7 +47,7 @@ body {
 /* Contenedor de los botones de navegación */
 #navegacion {
     display: flex;
-    gap: 20px; /* Espacio entre los botones */
+    gap: 20px;
     padding-right: 3%;
 }
 
@@ -40,50 +55,51 @@ body {
 .nombre {
     color: #b1dbdb;
     padding-left: 2%;
-    display: flex;  /* Utiliza flexbox */
-    justify-content: flex-start; /* Alinea el contenido al principio */
-    align-items: center; /* Asegura que el texto esté centrado verticalmente */
-    flex-grow: 1; /* Asegura que .nombre ocupe el espacio restante */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Estilo para el h4 dentro de .nombre */
-
-
 /* Estilo de los botones */
 #boton {
-    background-color: #c4151500; /* Color de fondo inicial */
+    background-color: #c4151500;
     color: white;
-    padding: 8px 16px; /* Padding más pequeño para un botón más compacto */
-    border-radius: 10%; /* Redondeo de los bordes */
+    padding: 8px 16px;
+    border-radius: 10%;
     cursor: pointer;
     border: none;
-    text-align: center; /* Asegura que el texto esté centrado */
+    text-align: center;
     font-weight: 600;
-    font-size: 13px; /* Reducir el tamaño de la fuente */
+    font-size: 13px;
     transition: all 0.5s ease-out;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Efecto hover en los botones */
 #boton:hover {
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff;
     border-radius: 15px;
-    border:#ffffff; /* Borde */
-    color: #000000; /* Texto */
+    border:#ffffff;
+    color: #000000;
     font-family: Arial, sans-serif;
     padding: 8px 16px; 
-    transform: scale(1.05); /* Aumenta el tamaño del botón */
+    transform: scale(1.05);
+}
+
+#bloqueInformacion:first-of-type { /* Se añade un first of type para poner un margen en la parte superior, ya que la posicion:fixed no admite los tipos de margin, debido al flujo */
+    margin-top: 120px; /* Añade un margen por encima del primer bloque de informacion */
 }
 
 /* Sombra y margen para los bloques de información */
 #bloqueInformacion {
     background-color: rgba(63, 63, 63, 1);
-    padding: 1px 40px; /* Añade espacio a los lados y en la altura */
+    padding: 1px 40px;
     text-align: justify;
     color: rgb(228, 228, 228);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 40px; /* Para dejar espacio entre la barra superior y el contenido */
+    margin: 10px 5%;  /* Esto añade espacio a los lados (margen izquierdo y derecho) */
     border-radius: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -93,12 +109,26 @@ body {
     transform: scale(1.01);
 }
 
+.imagenes {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.imagenes img {
+max-height: 300px;
+margin: 0px 10px;
+object-fit: contain;
+border-radius: 10%;
+margin-bottom: 1%;
+}
+
 h2, h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #b1dbdb;
 }
 
-/* Opciones de estilo para los botones de la página (si se mantienen más abajo) */
+/* Opciones de estilo para los botones de la página */
 #botones {
     background-color: rgba(43, 43, 43, 1);
     padding: 5px;
@@ -107,10 +137,20 @@ h2, h3 {
     display: flex;
     gap: 20px;
 }
+
+/* Estilo del footer */
 .footer {
-    background-color: #333;
+    position: relative;  
+    bottom: 0;           /* Asegura que esté al fondo */
+    width: auto;         /* Asegura que ocupe todo el ancho */
+    padding: 2rem;
+    background: #2b2b2b;
+    margin-top: 30px;
     color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: auto; /* Asegura que el footer se quede al final */
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    z-index: 10;
 }
