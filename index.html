@@ -32,7 +32,7 @@
             font-weight: bold;
             margin-bottom: 5px;
             color: #FFFFFF;
-            text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+            text-shadow: 2px 2px 0 #40a7b5, 2px -2px 0 #409ab5, -2px 2px 0 #409ab5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
         }
         .description {
             font-family: Georgia, serif;
@@ -40,8 +40,25 @@
             margin-top: 10px;
         }
         .column:hover {
-         transform: scale(1.05);
+            transform: scale(1.05);
         }
+
+        main {
+	        float: left;
+	        width: 60%;
+        }
+        aside {
+	        float: right;
+	        width: 30%;
+        }
+        #subtitulo {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #b1dbdb;
+            text-align: center;
+
+        }
+        
+
         </style>
     </head>
 
@@ -55,13 +72,50 @@
          <button id="boton">Cuestionario</button> <!--Quinto botón-->
         </div>
 
-        <h2 id="titulo"> ¡LE DAMOS LA BIENVENIDA!  </h2>       
+        <h2 id="subtitulo"> ¡LE DAMOS LA BIENVENIDA!  </h2>  
+
         <div id="bloqueInformacion">
-            <h2 id="titulo"> HOLA MUNDO </h2>
+        <section id="pageContent">
+            <main role="main">
+                <article>
+                    <h2>Sobre nosotros y nuestra página</h2>
+                    <p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum vix ut. Dolores consequuntur in ius, sale electram dissentiunt quo te. Cu duo omnes invidunt, eos eu mucius fabellas. Stet facilis ius te, quando voluptatibus eos in. Ad vix mundi alterum, integre urbanitas intellegam vix in.</p>
+                </article>
+    
+    
+            </main>
+            <aside>
+                <br>
+                <br>
+                <img src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" alt="HTML For Babies" height="230" width="250" />               
+            </aside>
+        </section>
+
+
+
 
             <img src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" alt="HTML For Babies" height="230" width="250" />
         </div>
 
+
+        <h2 id="subtitulo"> Accede a nuestras entradas con los contenidos necesarios para su ayuda.</h2>
+        <hr>
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <div class="container">
             
             <div class="column">
