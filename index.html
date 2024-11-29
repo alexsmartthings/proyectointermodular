@@ -9,10 +9,13 @@
         <style>
         .container {
             display: flex;
-            gap: 100px;
-            max-width: 1200px;
+            gap: 70px;
+            max-width: 1900px;
+            margin: auto;
         }
         .column {
+            align-items: center;
+            align-content: center;
             flex: 1;
             text-align: center;
             border: 1px rgba(0, 0, 0, 0);
@@ -55,7 +58,39 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #b1dbdb;
             text-align: center;
+            padding-top: 5%;
 
+        }
+
+        #bloqueInformacion .text {
+            flex: 1;
+        }
+
+        #bloqueInformacion .text h2 {
+            font-size: 2rem;
+            color: #b1dbdb;
+            margin-bottom: 10px;
+        }
+
+        #bloqueInformacion .text p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: rgb(228, 228, 228);
+            text-align: justify;
+        }
+
+        #bloqueInformacion .image {
+            flex: 1;
+            display: flex;
+            justify-content: right;
+            align-items: right;
+        }
+
+        #bloqueInformacion .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
         }
         
 
@@ -80,30 +115,66 @@
             </nav>
         </header>
 
-        <h2 id="subtitulo"> ¡LE DAMOS LA BIENVENIDA!  </h2>  
+        <h2 id="subtitulo"> 
+            ¡LE DAMOS LA BIENVENIDA! 
+             
+        </h2> 
 
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <div id="bloqueInformacion">
-        <section id="pageContent">
-            <main role="main">
-                <article>
-                    <h2>Sobre nosotros y nuestra página</h2>
-                    <p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum vix ut. Dolores consequuntur in ius, sale electram dissentiunt quo te. Cu duo omnes invidunt, eos eu mucius fabellas. Stet facilis ius te, quando voluptatibus eos in. Ad vix mundi alterum, integre urbanitas intellegam vix in.</p>
-                </article>
-    
-    
-            </main>
-            <aside>
-                <br>
-                <br>
-                <img src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" alt="HTML For Babies" height="230" width="250" />               
-            </aside>
-        </section>
-
-
-
-
-            <img src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" alt="HTML For Babies" height="230" width="250" />
+                <div class="text">
+                    <h2>Sobre Nosotros</h2>
+                    <p>
+                        En nuestra empresa, nos dedicamos a brindar soluciones innovadoras y personalizadas
+                        para cumplir con las expectativas de nuestros clientes. Con un equipo de expertos en diversas áreas,
+                        trabajamos juntos para garantizar el éxito y la satisfacción en cada proyecto que emprendemos.
+                    </p>
+                    <p>
+                        Nos enorgullecemos de nuestro compromiso con la excelencia, la creatividad y el desarrollo continuo,
+                        valores que nos han permitido construir relaciones sólidas y duraderas con nuestros clientes.
+                    </p>
+                </div>
+                <div class="imagenes">
+                    <img src="https://gesclick.net/wp-content/uploads/2023/02/Imagen_asesoria_fiscal_optimizada-1080x675.jpeg" alt="Equipo trabajando" height="250px">
         </div>
+            </div>
+
+
 
 
         <h2 id="subtitulo"> Accede a nuestras entradas con los contenidos necesarios para su ayuda.</h2>
@@ -118,10 +189,14 @@
                 <img class="img-responsive img-hover" src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" height="370" width="390" alt="Imagen de prueba">
                 <div class="description">Aquí podrá encontrar toda la información relacionada con el desarrollo del software.</div>
             </div>
+
+
+
+            
             <div class="column">
                 <div class="tituloEntrada"> Empresas </div>
                 <hr>
-                <img src="https://via.placeholder.com/300x200" alt="Imagen de prueba">
+                <img src="https://www.navascusi.com/wp-content/uploads/2024/06/business.jpg" height="370" width="390"  alt="Imagen de prueba">
                 <div class="description">Descripción breve de la entrada o imagen 2.</div>
             </div>
         </div>
@@ -131,16 +206,16 @@
 
         <div class="container">
             
-            <div class="column">
+            <div class="column"  onclick="location.href='formulario1.html'">
                 <div class="tituloEntrada">Instalacion de IDE's </div>
                 <hr>
-                <img class="img-responsive img-hover" src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" height="270" width="290" alt="Imagen de prueba">
+                <img class="img-responsive img-hover" src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" height="370" width="390" alt="Imagen de prueba">
                 <div class="description">Aquí podrá encontrar toda la información relacionada con el desarrollo del software.</div>
             </div>
             <div class="column">
                 <div class="tituloEntrada"> Test sobre lo enseñado </div>
                 <hr>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3pLSJnkfN56PDZoDe7CbekJ5XizX5t0xkA&s" height="270" width="290" alt="Imagen de prueba">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3pLSJnkfN56PDZoDe7CbekJ5XizX5t0xkA&s" height="370" width="390" alt="Imagen de prueba">
                 <div class="description">¡Pon a prueba tus conocimientos! En este test podrás saber si dominas los conceptos de la página</div>
             </div>
         </div>
