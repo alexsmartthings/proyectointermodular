@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PÁGINA DE PORTADA</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobster S.L</title>
     <!--  Link hacia la hoja de estilos CSS.     -->
-        <link rel="stylesheet" href="style.css">
-        <style>
+    <link rel="stylesheet" href="style.css">
+    <style>
         .container {
             display: flex;
             gap: 70px;
             max-width: 1900px;
             margin: auto;
         }
+
         .column {
             align-items: center;
             align-content: center;
@@ -22,44 +24,60 @@
             padding: 10px;
             border-radius: 8px;
             background: linear-gradient(to bottom, rgb(39, 39, 39), #3a3a3a);
-            display: inline-block; /* Asegura que el elemento pueda escalar */
-            transition: transform 0.5s ease; /* Duración de la transición: 0.5s, con un efecto de suavizado */
+            display: inline-block;
+            /* Asegura que el elemento pueda escalar */
+            transition: transform 0.5s ease;
+            /* Duración de la transición: 0.5s, con un efecto de suavizado */
         }
+
         .column img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
         }
+
         .tituloEntrada {
             font-family: Georgia, serif;
             font-weight: bold;
             margin-bottom: 5px;
             color: #FFFFFF;
-            text-shadow: 2px 2px 0 #40a7b5, 2px -2px 0 #409ab5, -2px 2px 0 #409ab5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+            text-shadow: 4px 3px 0 #7A7A7A;
         }
+
         .description {
             font-family: Georgia, serif;
             color: #FFFFFF;
             margin-top: 10px;
         }
+
         .column:hover {
             transform: scale(1.05);
         }
 
         main {
-	        float: left;
-	        width: 60%;
+            float: left;
+            width: 60%;
         }
+
         aside {
-	        float: right;
-	        width: 30%;
+            float: right;
+            width: 30%;
         }
+
         #subtitulo {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #b1dbdb;
             text-align: center;
             padding-top: 5%;
 
+        }
+
+        #titulop {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #b1dbdb;
+            text-align: center;
+            padding-top: 5%;
+            height: 1000px;
         }
 
         #bloqueInformacion .text {
@@ -92,140 +110,136 @@
             border-radius: 10px;
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
         }
-        
 
-        </style>
-    </head>
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #b1dbdb;
+            text-align: center;
+            padding-top: 10%;
+            height: 1000px;
 
-    <body>
-        <!--BOTONES-->
-        <header id="barraSuperior">
-            <div class="logo">
-                <img src="imagenes-html-jose-david/logo.png" alt="Logo" id="imagenLogo">
-            </div>
-            <div class="nombre">
+        }
+    </style>
+</head>
+
+<body>
+    <!--BOTONES-->
+    <header id="barraSuperior">
+        <div class="logo">
+            <img src="imagenes-html-jose-david/logo.png" alt="Logo" id="imagenLogo">
+        </div>
+        <div class="nombre">
             <h2>Lobster S.L</h2>
-            </div>
-            <nav id="navegacion">
-                <button id="boton">Alejandro</button>
-                <button id="boton">DavidJose</button>
+        </div>
+        <nav id="navegacion">
+            <a href="index.html">
                 <button id="boton">Inicio</button>
-                <button id="boton">Youseff</button>
-                <button id="boton">Cuestionario</button>
-            </nav>
-        </header>
+            </a>
+            <a href="proyecto.html">
+                <button id="boton">Desarrollo de software</button>
+            </a>
+            <a href="html_alejandro.html">
+                <button id="boton">Empresas en el sector de DAM</button>
+            </a>
+            <a href="html-youssef.html">
+                <button id="boton">Instalacion y uso de los IDE's</button>
+            </a>
+            <a href="contacto.html">
+                <button id="boton">Contactanos</button>
+            </a>
+        </nav>
+    </header>
+    <h1>
+        La enseñanza es nuestra más grande prioridad
+    </h1>
 
-        <h2 id="subtitulo"> 
-            ¡LE DAMOS LA BIENVENIDA! 
-             
-        </h2> 
+    <h2 id="titulop">
+        ¡LE DAMOS LA BIENVENIDA!
 
-
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+    </h2>
 
 
-
-
-
-
-
-
-
-
-
-
-
-        
-        <div id="bloqueInformacion">
-                <div class="text">
-                    <h2>Sobre Nosotros</h2>
-                    <p>
-                        En nuestra empresa, nos dedicamos a brindar soluciones innovadoras y personalizadas
-                        para cumplir con las expectativas de nuestros clientes. Con un equipo de expertos en diversas áreas,
-                        trabajamos juntos para garantizar el éxito y la satisfacción en cada proyecto que emprendemos.
-                    </p>
-                    <p>
-                        Nos enorgullecemos de nuestro compromiso con la excelencia, la creatividad y el desarrollo continuo,
-                        valores que nos han permitido construir relaciones sólidas y duraderas con nuestros clientes.
-                    </p>
-                </div>
-                <div class="imagenes">
-                    <img src="https://gesclick.net/wp-content/uploads/2023/02/Imagen_asesoria_fiscal_optimizada-1080x675.jpeg" alt="Equipo trabajando" height="250px">
+    <div id="bloqueInformacion">
+        <div class="text">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                En nuestra empresa, nos dedicamos a brindar soluciones innovadoras y personalizadas
+                para cumplir con las expectativas de nuestros clientes. Con un equipo de expertos en diversas áreas,
+                trabajamos juntos para garantizar el éxito y la satisfacción en cada proyecto que emprendemos.
+            </p>
+            <p>
+                Nos enorgullecemos de nuestro compromiso con la excelencia, la creatividad y el desarrollo continuo,
+                valores que nos han permitido construir relaciones sólidas y duraderas con nuestros clientes.
+            </p>
         </div>
-            </div>
-
-
-
-
-        <h2 id="subtitulo"> Accede a nuestras entradas con los contenidos necesarios para su ayuda.</h2>
-        <br>
-
-        
-        <div class="container">
-            
-            <div class="column">
-                <div class="tituloEntrada">Desarrollo de software </div>
-                <hr>
-                <img class="img-responsive img-hover" src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" height="370" width="390" alt="Imagen de prueba">
-                <div class="description">Aquí podrá encontrar toda la información relacionada con el desarrollo del software.</div>
-            </div>
-
-
-
-            
-            <div class="column">
-                <div class="tituloEntrada"> Empresas </div>
-                <hr>
-                <img src="https://www.navascusi.com/wp-content/uploads/2024/06/business.jpg" height="370" width="390"  alt="Imagen de prueba">
-                <div class="description">Descripción breve de la entrada o imagen 2.</div>
-            </div>
+        <div class="imagenes">
+            <img src="https://gesclick.net/wp-content/uploads/2023/02/Imagen_asesoria_fiscal_optimizada-1080x675.jpeg"
+                alt="Equipo trabajando" height="250px">
         </div>
+    </div>
 
-        <br>
-        <br>
 
-        <div class="container">
-            
-            <div class="column"  onclick="location.href='formulario1.html'">
-                <div class="tituloEntrada">Instalacion de IDE's </div>
-                <hr>
-                <img class="img-responsive img-hover" src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" height="370" width="390" alt="Imagen de prueba">
-                <div class="description">Aquí podrá encontrar toda la información relacionada con el desarrollo del software.</div>
-            </div>
-            <div class="column">
-                <div class="tituloEntrada"> Test sobre lo enseñado </div>
-                <hr>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3pLSJnkfN56PDZoDe7CbekJ5XizX5t0xkA&s" height="370" width="390" alt="Imagen de prueba">
-                <div class="description">¡Pon a prueba tus conocimientos! En este test podrás saber si dominas los conceptos de la página</div>
-            </div>
+
+
+    <h2 id="subtitulo"> Accede a nuestras entradas con los contenidos necesarios para su ayuda.</h2>
+    <br>
+
+
+    <div class="container">
+
+        <div class="column">
+            <div class="tituloEntrada">Desarrollo de software </div>
+            <hr>
+            <img class="img-responsive img-hover"
+                src="https://images.pexels.com/photos/6424585/pexels-photo-6424585.jpeg" height="370" width="390"
+                alt="Imagen de prueba">
+            <div class="description">Aquí podrá encontrar toda la información relacionada con el desarrollo del
+                software.</div>
         </div>
 
 
 
-        <div class="footer">&copy;<span> </span><span> Lobster S.L. Todos los derechos reservados.</span></div>
-    </body>
+
+        <div class="column">
+            <div class="tituloEntrada"> Empresas </div>
+            <hr>
+            <img src="https://www.navascusi.com/wp-content/uploads/2024/06/business.jpg" height="400" width="420"
+                alt="Imagen de prueba">
+            <div class="description">Descripción breve de la entrada o imagen 2.</div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+
+        <div class="column">
+            <div class="tituloEntrada"> Instalación de IDE's </div>
+            <hr>
+            <img class="img-responsive img-hover"
+                src="https://assets.codegrip.tech/wp-content/uploads/2022/03/11154314/Blog-Feature-image-1200x628-1.png"
+                height="470" width="490" alt="Imagen de prueba">
+            <div class="description">Aquí podrá encontrar toda la información relacionada con el desarrollo del
+                software.</div>
+        </div>
+
+
+
+
+        <div class="column">
+            <div class="tituloEntrada"> ¡Prueba tu conocimiento! </div>
+            <hr>
+            <img src="https://www.navascusi.com/wp-content/uploads/2024/06/business.jpg" height="370" width="390"
+                alt="Imagen de prueba">
+            <div class="description">Descripción breve de la entrada o imagen 2.</div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">&copy;<span> </span><span> Lobster S.L. Todos los derechos reservados.</span></div>
+</body>
 
 
 </html>
-
-
