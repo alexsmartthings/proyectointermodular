@@ -1,155 +1,253 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Proyecto Intermodular</title> <!-- Titulo de la pagina --> 
+    <script src="javascript.js"></script>
+    <title>Proyecto Intermodular</title> <!-- Titulo de la pagina -->
 </head>
+
 <body>
- <!-- Barra superior con logo y botones -->
- <header id="barraSuperior">
-    <div class="logo">
-        <img src="imagenes-html-jose-david/logo.png" alt="Logo" id="imagenLogo">
-    </div>
-    <div class="nombre">
-    <h2>Lobster S.L</h2>
-    </div>
-    <nav id="navegacion">
-        <button id="boton">Alejandro</button>
-        <button id="boton">DavidJose</button>
-        <button id="boton">Inicio</button>
-        <button id="boton">Youseff</button>
-        <button id="boton">Cuestionario</button>
-    </nav>
-</header>
-<!--TEXTO-->
+    <!-- Barra superior con logo y botones -->
+    <header id="barraSuperior">
+        <div class="logo">
+            <img src="imagenes-html-jose-david/logo.png" alt="Logo" id="imagenLogo">
+        </div>
+        <div class="nombre">
+            <h2>Lobster S.L</h2>
+        </div>
+        <nav id="navegacion">
+            <button id="boton">Inicio</button>
+            <button id="boton">Sector Productivo de DAM</button>
+            <button id="boton">Desarrollo de software</button>
+            <button id="boton">Instalacion IDE´s</button>
+            <button id="boton">Custionario</button>
+        </nav>
+    </header>
+    <!--TEXTO-->
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.2--> Conceptos de código fuente, código objeto y código ejecutable</h2>
         <p id="texto">
-            <strong>Código Fuente:</strong> Son las instrucciones escritas por el programador en un lenguaje de programación comprensible para los humanos, como C, Java o Python. Este código debe ser procesado por un compilador o un intérprete para convertirse en un programa ejecutable.
+            <strong>Código Fuente:</strong> Son las instrucciones escritas por el programador en un lenguaje de
+            programación comprensible para los humanos, como C, Java o Python. Este código debe ser procesado por un
+            compilador o un intérprete para convertirse en un programa ejecutable.
         </p>
         <p id="texto">
-            <strong>Código Objeto:</strong> Es el resultado intermedio de la compilación del código fuente. Está en formato binario y es específico para la máquina, pero no es directamente ejecutable hasta que se vincule con otras librerías o módulos.
+            <strong>Código Objeto:</strong> Es el resultado intermedio de la compilación del código fuente. Está en
+            formato binario y es específico para la máquina, pero no es directamente ejecutable hasta que se vincule con
+            otras librerías o módulos.
         </p>
         <p id="texto">
-            <strong>Código Ejecutable:</strong> Es el archivo final, en formato binario, que puede ser ejecutado directamente por el sistema operativo. Se obtiene después de vincular el código objeto con librerías y recursos necesarios, y generalmente tiene extensiones como .exe en Windows.
+            <strong>Código Ejecutable:</strong> Es el archivo final, en formato binario, que puede ser ejecutado
+            directamente por el sistema operativo. Se obtiene después de vincular el código objeto con librerías y
+            recursos necesarios, y generalmente tiene extensiones como .exe en Windows.
         </p>
-    
-    <div class="imagenes">
-        <img src="imagenes-html-jose-david/codigo_fuente.png" alt="Imagen Fuemte">   
-        <img src="imagenes-html-jose-david/codigo_ejecutable.png" alt="Imagen Ejecutable">   
+
+        <div class="imagenes">
+            <img src="imagenes-html-jose-david/codigo_fuente.png" alt="Imagen Fuemte">
+            <img src="imagenes-html-jose-david/codigo_ejecutable.png" alt="Imagen Ejecutable">
+        </div>
     </div>
-</div>
+
+    <div id="bloqueInformacion">
+        <h2 id="titulo"><!--2.1.2.4.--> Proceso de obtención de código ejecutable a partir de código fuente y las
+            herramientas implicadas</h2>
+        <p id="texto">
+            El proceso de convertir el código fuente en un programa ejecutable involucra varias etapas, y se utilizan
+            herramientas específicas en cada una:
+        </p>
+        <p id="texto">
+            <strong>Escritura del código fuente:</strong> El programador escribe el código en un editor de texto o un
+            entorno de desarrollo integrado (IDE).
+        </p>
+        <p id="texto">
+            <strong>Compilación:</strong> El código fuente debe ser traducido a un lenguaje que la máquina pueda
+            entender (código máquina). Esta traducción puede ser:
+        </p>
+        <ul id="texto">
+            <li><strong>Compilación:</strong> El compilador convierte todo el código fuente en un archivo binario
+                ejecutable (por ejemplo, un archivo .exe). Los lenguajes compilados incluyen C y C++.</li>
+            <li><strong>Interpretación:</strong> En lugar de generar un archivo binario, el intérprete ejecuta las
+                instrucciones del código directamente. Los lenguajes interpretados incluyen Python y JavaScript.</li>
+            <li><strong>Lenguajes híbridos:</strong> Algunos lenguajes como Java se compilan a bytecode, que luego es
+                interpretado por la máquina virtual Java (JVM).</li>
+        </ul>
+        <p id="texto">
+            <strong>Enlace:</strong> En el caso de lenguajes compilados, el enlazador combina diferentes módulos o
+            bibliotecas en un solo archivo ejecutable, resolviendo las referencias a funciones y variables externas.
+        </p>
+        <div class="imagenes">
+            <img src="imagenes-html-jose-david/obtencion_codigo.jpg" alt="Imagen Obtencion de Codigo" width="500px">
+        </div>
+    </div>
 
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.3.--> Lenguajes de programación</h2>
         <p id="texto">
-            Los lenguajes de programación son sistemas formales utilizados para escribir software. Estos lenguajes permiten que los programadores definan las instrucciones y el comportamiento que deben seguir las computadoras. Existen varios tipos de lenguajes de programación, y se dividen generalmente en:
+            Los lenguajes de programación son sistemas formales utilizados para escribir software. Estos lenguajes
+            permiten que los programadores definan las instrucciones y el comportamiento que deben seguir las
+            computadoras. Existen varios tipos de lenguajes de programación, y se dividen generalmente en:
         </p>
         <p id="texto">
-            <strong>Lenguajes de bajo nivel:</strong> Están muy cerca del lenguaje de máquina, como el ensamblador, que se utiliza para interactuar directamente con el hardware de la computadora.
+            <strong>Lenguajes de bajo nivel:</strong> Están muy cerca del lenguaje de máquina, como el ensamblador, que
+            se utiliza para interactuar directamente con el hardware de la computadora.
         </p>
         <p id="texto">
-            <strong>Lenguajes de alto nivel:</strong> Son más fáciles de entender para los humanos, ya que abstraen los detalles del hardware. Ejemplos incluyen Python, Java.
+            <strong>Lenguajes de alto nivel:</strong> Son más fáciles de entender para los humanos, ya que abstraen los
+            detalles del hardware. Ejemplos incluyen Python, Java.
         </p>
         <p id="texto">
             <strong>Lenguajes intermedios:</strong> Combina elementos de bajo y alto nivel, como Java.
         </p>
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/lenguaje_java.png" alt="Imagen Fuente">   
-            <img src="imagenes-html-jose-david/lenguaje_js.png" alt="Imagen Ejecutable">   
+            <img src="imagenes-html-jose-david/lenguaje_java.png" alt="Imagen Fuente">
+            <img src="imagenes-html-jose-david/lenguaje_js.png" alt="Imagen Ejecutable">
         </div>
     </div>
 
     <div id="bloqueInformacion">
-        <h2 id="titulo"><!--2.1.2.4.--> Proceso de obtención de código ejecutable a partir de código fuente y las herramientas implicadas</h2>
-        <p id="texto">
-            El proceso de convertir el código fuente en un programa ejecutable involucra varias etapas, y se utilizan herramientas específicas en cada una:
-        </p>
-        <p id="texto">
-            <strong>Escritura del código fuente:</strong> El programador escribe el código en un editor de texto o un entorno de desarrollo integrado (IDE).
-        </p>
-        <p id="texto">
-            <strong>Compilación:</strong> El código fuente debe ser traducido a un lenguaje que la máquina pueda entender (código máquina). Esta traducción puede ser:
-        </p>
-        <ul id="texto">
-            <li><strong>Compilación:</strong> El compilador convierte todo el código fuente en un archivo binario ejecutable (por ejemplo, un archivo .exe). Los lenguajes compilados incluyen C y C++.</li>
-            <li><strong>Interpretación:</strong> En lugar de generar un archivo binario, el intérprete ejecuta las instrucciones del código directamente. Los lenguajes interpretados incluyen Python y JavaScript.</li>
-            <li><strong>Lenguajes híbridos:</strong> Algunos lenguajes como Java se compilan a bytecode, que luego es interpretado por la máquina virtual Java (JVM).</li>
-        </ul>
-        <p id="texto">
-            <strong>Enlace:</strong> En el caso de lenguajes compilados, el enlazador combina diferentes módulos o bibliotecas en un solo archivo ejecutable, resolviendo las referencias a funciones y variables externas.
-        </p>
-        <div class="imagenes">
-            <img src="imagenes-html-jose-david/obtencion_codigo.jpg" alt="Imagen Obtencion de Codigo" width="500px">   
-        </div>
-    </div>
-    
-    <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.5.--> Concepto de máquina virtual y su utilidad</h2>
         <p id="texto">
-            Una máquina virtual (MV) es un software que emula una computadora real. Permite ejecutar programas como si se estuvieran ejecutando en una máquina física, pero en realidad están siendo gestionados por un sistema virtual. Las máquinas virtuales son útiles en varios contextos:
+            Una máquina virtual (MV) es un software que emula una computadora real. Permite ejecutar programas como si
+            se estuvieran ejecutando en una máquina física, pero en realidad están siendo gestionados por un sistema
+            virtual. Las máquinas virtuales son útiles en varios contextos:
         </p>
         <ul>
-            <li><strong>Portabilidad:</strong> El código ejecutable puede correr en diferentes sistemas operativos sin necesidad de modificaciones, ya que la máquina virtual actúa como una capa intermedia que abstrae las diferencias entre sistemas.</li>
-            <li><strong>Seguridad:</strong> Las máquinas virtuales aíslan el programa de la máquina real, lo que mejora la seguridad y previene que el código malicioso afecte al sistema host.</li>
-            <li><strong>Eficiencia en el uso de recursos:</strong> Se pueden ejecutar múltiples máquinas virtuales en una sola máquina física, optimizando el uso de los recursos.</li>
+            <li><strong>Portabilidad:</strong> El código ejecutable puede correr en diferentes sistemas operativos sin
+                necesidad de modificaciones, ya que la máquina virtual actúa como una capa intermedia que abstrae las
+                diferencias entre sistemas.</li>
+            <li><strong>Seguridad:</strong> Las máquinas virtuales aíslan el programa de la máquina real, lo que mejora
+                la seguridad y previene que el código malicioso afecte al sistema host.</li>
+            <li><strong>Eficiencia en el uso de recursos:</strong> Se pueden ejecutar múltiples máquinas virtuales en
+                una sola máquina física, optimizando el uso de los recursos.</li>
         </ul>
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/maquina_virtual.png" alt="Imagen Maquina Virtual" width="450px">   
+            <img src="imagenes-html-jose-david/maquina_virtual.png" alt="Imagen Maquina Virtual" width="450px">
         </div>
     </div>
 
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.6.--> Razón de ser de la ingeniería del software</h2>
         <p id="texto">
-            Encontraremos varios objetivos que cumplirán con la razón de ser de la ingeniería de software, entre ellos uno de los objetivos más importantes es mejorar el diseño de aplicaciones o software de tal modo que estas se adapten de la mejor manera a las necesidades de las organizaciones relacionadas o finalidades para las cuales fueron creadas.
+            Encontraremos varios objetivos que cumplirán con la razón de ser de la ingeniería de software, entre ellos
+            uno de los objetivos más importantes es mejorar el diseño de aplicaciones o software de tal modo que estas
+            se adapten de la mejor manera a las necesidades de las organizaciones relacionadas o finalidades para las
+            cuales fueron creadas.
         </p>
         <p id="texto">
-            También encontraremos otros objetivos como promover una mayor calidad en el desarrollo de aplicaciones complejas junto con una mayor exactitud en los costos relacionados con el proyecto y los tiempos de desarrollo.
+            También encontraremos otros objetivos como promover una mayor calidad en el desarrollo de aplicaciones
+            complejas junto con una mayor exactitud en los costos relacionados con el proyecto y los tiempos de
+            desarrollo.
         </p>
         <p id="texto">
-            Así mismo, el aumento de la eficiencia de los sistemas en la introducción de procesos es un objetivo igual de importante que los anteriores, donde nos permitan medir mediante normas específicas el aumento de la calidad del software desarrollado en la búsqueda de mejorar la calidad según las necesidades y resultados.
+            Así mismo, el aumento de la eficiencia de los sistemas en la introducción de procesos es un objetivo igual
+            de importante que los anteriores, donde nos permitan medir mediante normas específicas el aumento de la
+            calidad del software desarrollado en la búsqueda de mejorar la calidad según las necesidades y resultados.
         </p>
         <p id="texto">
-            Por último, una organización optimizada de equipos de trabajo nos proporciona un área de desarrollo y mantenimiento de software donde se pueden detectar problemas y mejoras mediante el uso de diversas pruebas.
+            Por último, una organización optimizada de equipos de trabajo nos proporciona un área de desarrollo y
+            mantenimiento de software donde se pueden detectar problemas y mejoras mediante el uso de diversas pruebas.
         </p>
     </div>
 
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.7.--> Fases del desarrollo de una aplicación informática y el cometido de estas</h2>
         <p id="texto">
-            En este caso, encontraremos cinco fases de desarrollo en el momento de crear una aplicación informática y son las siguientes:
+            En este caso, encontraremos cinco fases de desarrollo en el momento de crear una aplicación informática y
+            son las siguientes:
         </p>
         <ul>
-            <li><strong>Análisis de Requisitos:</strong> Identificamos las necesidades y expectativas del usuario para proporcionar una definición a las funcionalidades del programa, asegurando así que se adapte a las necesidades del usuario.</li>
+            <li><strong>Análisis de Requisitos:</strong> Identificamos las necesidades y expectativas del usuario para
+                proporcionar una definición a las funcionalidades del programa, asegurando así que se adapte a las
+                necesidades del usuario.</li>
             <p></p>
-            <li><strong>Diseño del sistema:</strong> Estructuramos la arquitectura de la aplicación, definiendo la base de datos, la interfaz y la programación con la finalidad de tramitar una guía de desarrollo.</li>
+            <li><strong>Diseño del sistema:</strong> Estructuramos la arquitectura de la aplicación, definiendo la base
+                de datos, la interfaz y la programación con la finalidad de tramitar una guía de desarrollo.</li>
             <p></p>
-            <li><strong>Desarrollo o Programación:</strong> Se programará el código fuente según el diseño junto con la implementación de funcionalidades necesarias para el correcto funcionamiento de la aplicación operativa.</li>
+            <li><strong>Desarrollo o Programación:</strong> Se programará el código fuente según el diseño junto con la
+                implementación de funcionalidades necesarias para el correcto funcionamiento de la aplicación operativa.
+            </li>
             <p></p>
-            <li><strong>Pruebas:</strong> Verificamos las funcionalidades de la aplicación en busca de errores mediante pruebas para asegurar que cumple con los requerimientos establecidos.</li>
+            <li><strong>Pruebas:</strong> Verificamos las funcionalidades de la aplicación en busca de errores mediante
+                pruebas para asegurar que cumple con los requerimientos establecidos.</li>
             <p></p>
-            <li><strong>Implantación y Mantenimiento:</strong> Instalamos la aplicación en el entorno de producción donde se le proporcionará un soporte continuo para corregir errores, realizar mejoras y la adaptación a futuros cambios o nuevos requisitos.</li>
+            <li><strong>Implantación y Mantenimiento:</strong> Instalamos la aplicación en el entorno de producción
+                donde se le proporcionará un soporte continuo para corregir errores, realizar mejoras y la adaptación a
+                futuros cambios o nuevos requisitos.</li>
         </ul>
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/procesos_desarrollo.jpg" alt="Imagen Proceso Desarrollo" width="450px">   
+            <img src="imagenes-html-jose-david/procesos_desarrollo.jpg" alt="Imagen Proceso Desarrollo" width="450px">
         </div>
     </div>
-
+    <details id="clicFormulario">
+        <summary>Haz clic en la flecha para poner aprueba tus conocimientos.</summary>
+        <!-- Formulario desplegable (en cada criterio correspondiente) -->
+         
+        <div class="contenidoDesplegable">
+            <form id="formulario">
+                <div class="question">
+                    <h3>1. ¿Cuáles son los principales traductores encargados de traducir el código fuente de un
+                        lenguaje de
+                        programación a un código objeto interpretado por el ordenador?</h3>
+                    <label><input type="radio" name="q1" value="1"> Analizadores, Compiladores,
+                        Estabilizadores.</label><br>
+                    <label><input type="radio" name="q1" value="2"> Intérpretes, Compiladores.</label><br>
+                    <label><input type="radio" name="q1" value="3"> Intérpretes, Traductores en línea
+                        directa.</label><br>
+                    <label><input type="radio" name="q1" value="4"> Analizadores, Estabilizadores.</label>
+                </div>
+                <div class="question">
+                    <h3>2. ¿Qué es un "Entorno de desarrollo integrado"?</h3>
+                    <label><input type="radio" name="q2" value="1"> Una aplicación formada por varias herramientas de
+                        transformación de código que facilitan la programación y la creación de programas.</label><br>
+                    <label><input type="radio" name="q2" value="2"> Un entorno encargado de transformar el código fuente
+                        para
+                        facilitar la programación y la creación de programas, creado a partir de 3 programas
+                        independientes.</label><br>
+                    <label><input type="radio" name="q2" value="3"> Una aplicación formada por 3 compiladores de Java
+                        encargados
+                        en traducir código objeto dentro de un entorno de programación integrado.</label><br>
+                    <label><input type="radio" name="q2" value="4"> Un entorno de programación integrado en una
+                        aplicación de
+                        código objeto y fuente combinados.</label>
+                </div>
+                <div class="question">
+                    <h3>3. ¿Qué usamos para comprobar, detectar y solucionar un error en el código de Java?</h3>
+                    <label><input type="radio" name="q3" value="1"> El depurador.</label><br>
+                    <label><input type="radio" name="q3" value="2"> Cambiar formato.</label><br>
+                    <label><input type="radio" name="q3" value="3"> Un método.</label><br>
+                    <label><input type="radio" name="q3" value="4"> Un comentario.</label>
+                </div>
+                <div class="question">
+                    <h3>4. ¿Qué necesitamos si el código abierto no es ejecutable?</h3>
+                    <label><input type="radio" name="q4" value="1"> Un Enlazador.</label><br>
+                    <label><input type="radio" name="q4" value="2"> El depurador.</label><br>
+                    <label><input type="radio" name="q4" value="3"> Reiniciar formato.</label><br>
+                    <label><input type="radio" name="q4" value="4"> Compilarlo nuevamente.</label>
+                </div>
+                <div class="contenedorBoton">
+                </div>
+            </form>
+        </div>
+    </details>
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.8.--> Modelos de ciclo de vida del software</h2>
         <p id="texto">
-            Los modelos de ciclo de vida en el software son aquellos enfoques estructurados y sistemáticos por las que pasa el desarrollo de software desde la parte más inicial (concepción de la idea) hasta la retirada o la desactivación, donde el software dejará de funcionar.
+            Los modelos de ciclo de vida en el software son aquellos enfoques estructurados y sistemáticos por las que
+            pasa el desarrollo de software desde la parte más inicial (concepción de la idea) hasta la retirada o la
+            desactivación, donde el software dejará de funcionar.
         </p>
         <p id="texto">
-            Proporcionan un marco de referencia para la planificación, desarrollo y mantenimiento del software, a continuación veremos algunos ejemplos de modelos.
+            Proporcionan un marco de referencia para la planificación, desarrollo y mantenimiento del software, a
+            continuación veremos algunos ejemplos de modelos.
         </p>
 
         <h3 id="titulo">1. Modelo en cascada (Waterfall)</h3>
         <p id="texto">
-            Uno de los más antiguos y lineales, el desarrollo se realiza en etapas secuenciales y bien definidas, cada fase debe completarse antes de iniciar la siguiente.
+            Uno de los más antiguos y lineales, el desarrollo se realiza en etapas secuenciales y bien definidas, cada
+            fase debe completarse antes de iniciar la siguiente.
         </p>
         <ul>
             <li><strong>Requisitos:</strong> Identificación y definición de los requisitos del sistema.</li>
@@ -159,38 +257,43 @@
             <li><strong>Despliegue:</strong> Mantenimiento: Resolución de errores y actualización del sistema.</li>
         </ul>
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/modelo_cascada.png" alt="Imagen Modelo Cascada" width="450px">   
+            <img src="imagenes-html-jose-david/modelo_cascada.png" alt="Imagen Modelo Cascada" width="450px">
         </div>
         <p id="texto">
             <strong>Ventajas:</strong> Claro y fácil de entender; adecuado para proyectos con requisitos bien definidos.
         </p>
         <p id="texto">
-            <strong>Desventajas:</strong> Rigidez; no es flexible ante cambios y se enfoca solo en el progreso lineal sin retrocesos.
+            <strong>Desventajas:</strong> Rigidez; no es flexible ante cambios y se enfoca solo en el progreso lineal
+            sin retrocesos.
         </p>
 
         <h3 id="titulo">2. Modelo en V (V-Model)</h3>
         <p id="texto">
-            Está más enfocado en las pruebas y validación, las fases de desarrollo se emparejan con la fase de pruebas correspondientes.
+            Está más enfocado en las pruebas y validación, las fases de desarrollo se emparejan con la fase de pruebas
+            correspondientes.
         </p>
         <ul>
             <li><strong>Definición de Requisitos:</strong> Recolección de requisitos y validación.</li>
             <li><strong>Diseño del Sistema y Detalle:</strong> Creación de la arquitectura y diseño detallado.</li>
             <li><strong>Codificación:</strong> Programación del software.</li>
-            <li><strong>Pruebas Unitarias, de Integración y Validación:</strong> Proceso de verificación que asegura que el software cumpla con los requisitos especificados.</li>
+            <li><strong>Pruebas Unitarias, de Integración y Validación:</strong> Proceso de verificación que asegura que
+                el software cumpla con los requisitos especificados.</li>
         </ul>
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/modelo_env.jpg" alt="Imagen Modelo En V (V-MODEL)" width="400px">   
+            <img src="imagenes-html-jose-david/modelo_env.jpg" alt="Imagen Modelo En V (V-MODEL)" width="400px">
         </div>
         <p id="texto">
             <strong>Ventajas:</strong> Enfoque estructurado, con un fuerte énfasis en la validación y verificación.
         </p>
         <p id="texto">
-            <strong>Desventajas:</strong> No permite cambios fáciles en las fases iniciales y puede ser costoso si se detectan errores en etapas avanzadas.
+            <strong>Desventajas:</strong> No permite cambios fáciles en las fases iniciales y puede ser costoso si se
+            detectan errores en etapas avanzadas.
         </p>
 
         <h3 id="titulo">3. Modelo incremental</h3>
         <p id="texto">
-            Divide el desarrollo en incrementos o pequeñas partes, al incrementar se agrega una funcionalidad la cual realizará pruebas de forma independiente, estos son desarrollados y entregados progresivamente.
+            Divide el desarrollo en incrementos o pequeñas partes, al incrementar se agrega una funcionalidad la cual
+            realizará pruebas de forma independiente, estos son desarrollados y entregados progresivamente.
         </p>
         <ul>
             <li><strong>Planificación:</strong> Planificación general del proyecto.</li>
@@ -199,15 +302,19 @@
             <li><strong>Despliegue:</strong> Los incrementos se integran y despliegan progresivamente.</li>
         </ul>
         <p id="texto">
-            <strong>Ventajas:</strong> Flexibilidad ante cambios, permite entregas rápidas y mejora la calidad del software mediante el feedback continuo.
+            <strong>Ventajas:</strong> Flexibilidad ante cambios, permite entregas rápidas y mejora la calidad del
+            software mediante el feedback continuo.
         </p>
         <p id="texto">
-            <strong>Desventajas:</strong> Puede resultar en una integración compleja de incrementos si no se gestionan adecuadamente.
+            <strong>Desventajas:</strong> Puede resultar en una integración compleja de incrementos si no se gestionan
+            adecuadamente.
         </p>
 
         <h3 id="titulo">4. Modelo iterativo</h3>
         <p id="texto">
-            El desarrollo es realizado mediante ciclos o iteraciones, en cada ciclo el progreso es revisado y se van añadiendo nuevas funcionalidades, posteriormente se ajustan los requisitos según el feedback recibido por parte del cliente.
+            El desarrollo es realizado mediante ciclos o iteraciones, en cada ciclo el progreso es revisado y se van
+            añadiendo nuevas funcionalidades, posteriormente se ajustan los requisitos según el feedback recibido por
+            parte del cliente.
         </p>
         <ul>
             <li><strong>Planificación y Diseño Inicial.</strong></li>
@@ -216,18 +323,21 @@
             <li><strong>Repetir el ciclo hasta completar el sistema.</strong></li>
         </ul>
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/iterativo.png" alt="Imagen Modelo Iterativo" width="500px">   
+            <img src="imagenes-html-jose-david/iterativo.png" alt="Imagen Modelo Iterativo" width="500px">
         </div>
         <p id="texto">
-            <strong>Ventajas:</strong> Flexibilidad para adaptarse a cambios, permite una entrega más rápida de versiones de prueba y feedback.
+            <strong>Ventajas:</strong> Flexibilidad para adaptarse a cambios, permite una entrega más rápida de
+            versiones de prueba y feedback.
         </p>
         <p id="texto">
-            <strong>Desventajas:</strong> Puede haber una falta de claridad en las fases de diseño inicial, lo que puede resultar en desorganización si no se controla bien.
+            <strong>Desventajas:</strong> Puede haber una falta de claridad en las fases de diseño inicial, lo que puede
+            resultar en desorganización si no se controla bien.
         </p>
 
         <h3 id="titulo">5. Modelo en Espiral</h3>
         <p id="texto">
-            Descripción: Combinamos ciertos elementos del modelo incremental y el modelo de prototipos, mediante ciclos o espirales se ven involucrados los siguientes apartados.
+            Descripción: Combinamos ciertos elementos del modelo incremental y el modelo de prototipos, mediante ciclos
+            o espirales se ven involucrados los siguientes apartados.
         </p>
         <ul>
             <li><strong>Planificación y Requisitos.</strong></li>
@@ -237,21 +347,26 @@
             <li><strong>Revisión y Planificación para el siguiente ciclo.</strong></li>
         </ul>
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/modelo_espiral.png" alt="Imagen Modelo En Espiral" width="400px">   
+            <img src="imagenes-html-jose-david/modelo_espiral.png" alt="Imagen Modelo En Espiral" width="400px">
         </div>
         <p id="texto">
-            <strong>Ventajas:</strong> Identificación y gestión de riesgos de manera temprana; flexible y adaptable a cambios.
+            <strong>Ventajas:</strong> Identificación y gestión de riesgos de manera temprana; flexible y adaptable a
+            cambios.
         </p>
         <p id="texto">
-            <strong>Desventajas:</strong> Requiere una fuerte gestión de proyectos debido a su complejidad y los costos asociados.
+            <strong>Desventajas:</strong> Requiere una fuerte gestión de proyectos debido a su complejidad y los costos
+            asociados.
         </p>
 
         <h3 id="titulo">6. Modelo Ágil (Agile)</h3>
         <p id="texto">
-            Descripción: Al enfocarse en ser flexible y colaborativo nos proporciona una continua y rápida entrega en el software funcional, el proceso es realizado en ciclos cortos donde se produce una versión funcional del software a desarrollar.
+            Descripción: Al enfocarse en ser flexible y colaborativo nos proporciona una continua y rápida entrega en el
+            software funcional, el proceso es realizado en ciclos cortos donde se produce una versión funcional del
+            software a desarrollar.
         </p>
         <p id="texto">
-            Los principios clave son la colaboración, flexibilidad y la respuesta al cambio, Scrum se basa en dividir el proyecto en sprints con el objetivo de realizar entregas regulares y parciales del producto final.
+            Los principios clave son la colaboración, flexibilidad y la respuesta al cambio, Scrum se basa en dividir el
+            proyecto en sprints con el objetivo de realizar entregas regulares y parciales del producto final.
         </p>
         <ul>
             <li><strong>Planificación del Sprint.</strong></li>
@@ -260,18 +375,21 @@
             <li><strong>Retrospectiva y planificación del siguiente Sprint.</strong></li>
         </ul>
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/modelo_agile.png" alt="Imagen Modelo Agile">   
+            <img src="imagenes-html-jose-david/modelo_agile.png" alt="Imagen Modelo Agile">
         </div>
         <p id="texto">
-            <strong>Ventajas:</strong> Alta flexibilidad, rápida adaptación a cambios, enfoque en la satisfacción del cliente.
+            <strong>Ventajas:</strong> Alta flexibilidad, rápida adaptación a cambios, enfoque en la satisfacción del
+            cliente.
         </p>
         <p id="texto">
-            <strong>Desventajas:</strong> Requiere equipos altamente capacitados, puede resultar en falta de documentación adecuada y desorden si no se gestiona bien.
+            <strong>Desventajas:</strong> Requiere equipos altamente capacitados, puede resultar en falta de
+            documentación adecuada y desorden si no se gestiona bien.
         </p>
 
         <h3 id="titulo">7. Modelo del prototipo</h3>
         <p id="texto">
-            Descripción: Un prototipo funcional es el enfoque directo, este será refinado y ajustado en relación al feedback con el usuario.
+            Descripción: Un prototipo funcional es el enfoque directo, este será refinado y ajustado en relación al
+            feedback con el usuario.
         </p>
         <p id="texto">
             Su utilidad radica cuando los requisitos son incompletos o inciertos.
@@ -283,20 +401,22 @@
             <li><strong>Refinamiento y Repetición del Ciclo.</strong></li>
         </ul>
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/modelo_prototipos.jpg" alt="Imagen Modelo Prototipo">   
+            <img src="imagenes-html-jose-david/modelo_prototipos.jpg" alt="Imagen Modelo Prototipo">
         </div>
         <p id="texto">
             <strong>Ventajas:</strong> Permite al cliente ver el progreso y proporcionar retroalimentación temprana.
         </p>
         <p id="texto">
-            <strong>Desventajas:</strong> Los prototipos pueden no ser representaciones completas del sistema, lo que puede generar expectativas no realistas.
+            <strong>Desventajas:</strong> Los prototipos pueden no ser representaciones completas del sistema, lo que
+            puede generar expectativas no realistas.
         </p>
     </div>
 
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.9.--> Metodologías de desarrollo de software actuales</h2>
         <p id="texto">
-            Con el paso del tiempo, las metodologías utilizadas han ido evolucionando para una adaptación más rápida a los requisitos del cliente, avances tecnológicos y equipos de desarrollo.
+            Con el paso del tiempo, las metodologías utilizadas han ido evolucionando para una adaptación más rápida a
+            los requisitos del cliente, avances tecnológicos y equipos de desarrollo.
         </p>
 
         <h3 id="titulo">1. Metodología Ágil</h3>
@@ -304,25 +424,30 @@
             Anteriormente ya hemos mencionado esta metodología por lo que mencionaremos únicamente los ejemplos de esta.
         </p>
         <ul>
-            <li><strong>Scrum:</strong> Es el marco más popular dentro de Agile. Se organiza en sprints y tiene roles específicos (Product Owner, Scrum Master, Equipo de Desarrollo).</li>
-            <li><strong>Kanban:</strong> Focaliza la visualización del flujo de trabajo y la gestión de tareas, usando un sistema de tarjetas y columnas para representar el progreso del trabajo.</li>
-            <li><strong>Extreme Programming (XP):</strong> Un enfoque que pone mucho énfasis en la calidad del código, la programación en parejas y la integración continua.</li>
+            <li><strong>Scrum:</strong> Es el marco más popular dentro de Agile. Se organiza en sprints y tiene roles
+                específicos (Product Owner, Scrum Master, Equipo de Desarrollo).</li>
+            <li><strong>Kanban:</strong> Focaliza la visualización del flujo de trabajo y la gestión de tareas, usando
+                un sistema de tarjetas y columnas para representar el progreso del trabajo.</li>
+            <li><strong>Extreme Programming (XP):</strong> Un enfoque que pone mucho énfasis en la calidad del código,
+                la programación en parejas y la integración continua.</li>
         </ul>
 
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/kanban_ejemplo.jpeg" alt="Imagen Kanban">   
-        
+            <img src="imagenes-html-jose-david/kanban_ejemplo.jpeg" alt="Imagen Kanban">
 
-         
-            <img src="imagenes-html-jose-david/scrum_ejemplo.png" alt="Imagen Scrum Ejemplo" width="500px">   
+
+
+            <img src="imagenes-html-jose-david/scrum_ejemplo.png" alt="Imagen Scrum Ejemplo" width="500px">
         </div>
 
         <h3 id="titulo">2. DevOps</h3>
         <p id="texto">
-            Esta metodología promueve la colaboración e integración en los equipos de desarrollo (Devs) y el de operaciones (Ops).
+            Esta metodología promueve la colaboración e integración en los equipos de desarrollo (Devs) y el de
+            operaciones (Ops).
         </p>
         <p id="texto">
-            Desarrollando una entrega continua junto con un enfoque en la automatización del ciclo de vida y una creación del entorno de trabajo fluida, rápida y eficiente.
+            Desarrollando una entrega continua junto con un enfoque en la automatización del ciclo de vida y una
+            creación del entorno de trabajo fluida, rápida y eficiente.
         </p>
         <h4 id="titulo">Principales Características:</h4>
         <ul>
@@ -332,7 +457,7 @@
             <li><strong>Monitoreo constante y retroalimentación continua.</strong></li>
         </ul>
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/devops_foto.png" alt="Imagen DevOps" width="450px">   
+            <img src="imagenes-html-jose-david/devops_foto.png" alt="Imagen DevOps" width="450px">
         </div>
         <p id="texto">
             <strong>Ventajas:</strong> Reducción del tiempo de ciclo entre el desarrollo y la entrega.
@@ -355,16 +480,18 @@
             Basada en Lean Manufacturing, se enfoca en maximizar el valor junto minimizar el desperdicio.
         </p>
         <p id="texto">
-            Se promueve una entrega rápida de valor al cliente, la eficiencia en el desarrollo y la eliminación de actividades que no agreguen valor.
+            Se promueve una entrega rápida de valor al cliente, la eficiencia en el desarrollo y la eliminación de
+            actividades que no agreguen valor.
         </p>
         <h4 id="titulo">Principales Características:</h4>
         <ul>
             <li><strong>Optimización de los recursos y los tiempos de desarrollo.</strong></li>
-            <li><strong>Eliminar desperdicios como tareas innecesarias, defectos o características que no añaden valor.</strong></li>
+            <li><strong>Eliminar desperdicios como tareas innecesarias, defectos o características que no añaden
+                    valor.</strong></li>
             <li><strong>Iteración y entrega continua.</strong></li>
         </ul>
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/metodologia_lean.jpg" alt="Imagen Metodología Lean" width="450px">   
+            <img src="imagenes-html-jose-david/metodologia_lean.jpg" alt="Imagen Metodología Lean" width="450px">
         </div>
         <p id="texto">
             <strong>Ventajas:</strong> Mejora la eficiencia y reduce los costos.
@@ -373,7 +500,8 @@
             Fomenta la entrega rápida de valor al cliente.
         </p>
         <p id="texto">
-            <strong>Desventajas:</strong> Requiere un equipo comprometido y experimentado para identificar y eliminar desperdicios.
+            <strong>Desventajas:</strong> Requiere un equipo comprometido y experimentado para identificar y eliminar
+            desperdicios.
         </p>
         <p id="texto">
             Puede no ser adecuado para proyectos muy grandes o complejos.
@@ -381,4 +509,5 @@
     </div>
     <div class="footer">&copy;<span> </span><span> Lobster S.L. Todos los derechos reservados.</span></div>
 </body>
+
 </html>
