@@ -82,6 +82,7 @@ body {
     background-color: #ffffff;
     border-radius: 15px;
     border:#ffffff;
+    font-weight: 600;
     color: #000000;
     font-family: Arial, sans-serif;
     padding: 8px 16px; 
@@ -153,4 +154,56 @@ h2, h3 {
     align-items: center;
     gap: 0.2rem;
     z-index: 10;
+}
+
+#formulario{
+margin-top: 85px;
+}
+
+.question{
+    background-color: #3f3f3f;
+    color: rgb(228, 228, 228);
+    text-align: justify;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 35px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 1px 15px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedorBoton{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.botonFormulario {
+    width: 70px;
+    height: 40px;
+    content: flex;
+    color: white;
+    background-color: #3f3f3f;;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px ;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.5s ease-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Efecto hover en los botones */
+.botonFormulario:hover {
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-weight: 600;
+    border:#ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    transform: scale(1.05);
 }
