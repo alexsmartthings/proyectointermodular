@@ -13,14 +13,33 @@
     <!--La etiqueta label permite mejorar la experiencia del usuario en el formulario-->
     <form id="formulario">
         <div class="question"> <!-- Pregunta numero 1 -->
-            <h3>1. ¿Cuáles son los principales traductores encargados de traducir el código fuente de un lenguaje de programación a un código objeto interpretado por el ordenador?</h3>
-            <label><input type="radio" name="q1" value="1"> Analizadores, Compiladores, Estabilizadores.</label><br>
-            <label><input type="radio" name="q1" value="2"> Intérpretes, Compiladores.</label><br>
-            <label><input type="radio" name="q1" value="3"> Intérpretes, Traductores en línea directa.</label><br>
-            <label><input type="radio" name="q1" value="4"> Analizadores, Estabilizadores.</label>
+            <h3>Indica cuales són los problemas del modelo en cascada. (Selección multiple)</h3> <!-- Correcta: 1-3-5 --> <!-- Selección multiple-->
+            <label><input type="radio" name="q1" value="1"> Pueden ocurrir equivocaciones durante fases de desarrollo y si se produce uno, se tiene que repetir todo el proceso entero.</label><br>
+            <label><input type="radio" name="q1" value="2"> El modelo es obsoleto y se demuestra que es ineficiente, por lo tanto, se tienen que tienen ciertos factores preventivos en cuenta.</label><br>
+            <label><input type="radio" name="q1" value="3"> Nuestros clientes tienen que tener paciencia con el desarrollo para evitar fallos.</label><br>
+            <label><input type="radio" name="q1" value="4"> El orden de las fases de pueden ir alternando conforme avance el proceso, lo que puede resultar confuso.</label><br>
+            <label><input type="radio" name="q1" value="5"> Es difícil que se siga el proyecto en orden, ya que se hacen repeticiones de forma indirecta. </label><br>
+            <label><input type="radio" name="q1" value="6"> Si se llega a repetir todo el proceso entero varias veces, el resultado puede no ser el esperado y se podría quedar en un bucle infinito de diseño. </label>
+        </div>
+        <div class="question"> <!-- Pregunta numero 2 -->
+            <h3>Indica cuales són las ventajas del modelo incremental. (Selección multiple)</h3> <!-- Correcta: 1-3-5 --> <!-- Selección multiple-->
+            <label><input type="radio" name="q2" value="1"> Reduce los riesgos de retrasos, cambios de requisitos y problemas de aceptación. </label><br>
+            <label><input type="radio" name="q2" value="2"> Es un modelo que sigue una linea fija sin errores, por lo que es imposible que fallen</label><br>
+            <label><input type="radio" name="q2" value="3"> Permiten al usuario validar el sistema a medida que se construye.</label><br>
+            <label><input type="radio" name="q2" value="4"> Ayudan a los usuarios a tener una reducción de riesgos considerable, haciendo que su código y objetivos estén claros y no cambien bruscamente.</label><br>
+            <label><input type="radio" name="q2" value="5"> Los entregables intermedios ayudan a la retroalimentación del cliente y evitan problemas mayores en otros. </label><br>
+            <label><input type="radio" name="q2" value="6"> Hace que el trabajo de los usuarios disminuya bastante.</label>
+        </div>
+        <div class="question"> <!-- Pregunta numero 3 -->
+            <h3>Indica las características de la construcciíon de prototipos. (Selección multiple)</h3> <!-- Correcta: 1-3 --> <!-- Selección multiple-->
+            <label><input type="radio" name="q3" value="1"> Es un sistema auxiliar para probar experimentalmente soluciones a los requisitos del sistema. </label><br>
+            <label><input type="radio" name="q3" value="2"> Es un modelo que sigue una linea fija sin errores, por lo que es imposible que fallen</label><br>
+            <label><input type="radio" name="q3" value="3"> Permiten al usuario validar el sistema a medida que se construye.</label><br>
+            <label><input type="radio" name="q3" value="4"> Ayudan a los usuarios a tener una reducción de riesgos considerable, haciendo que su código y objetivos estén claros y no cambien bruscamente.</label><br>
+            <label><input type="radio" name="q3" value="5"> Los entregables intermedios ayudan a la retroalimentación del cliente y evitan problemas mayores en otros. </label><br>
+            <label><input type="radio" name="q3" value="6"> Hace que el trabajo de los usuarios disminuya bastante.</label>
         </div>
 
-       
         <p></p>
         <div>
             <button type="button" onclick="comprobarRespuesta()">Enviar</button>
