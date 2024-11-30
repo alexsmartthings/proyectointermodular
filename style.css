@@ -103,7 +103,7 @@ body {
 
 /* Sombra y margen para los bloques de información */
 #bloqueInformacion {
-    background-color: rgba(63, 63, 63, 1);
+    background-color: #3f3f3f;
     padding: 1px 40px;
     text-align: justify;
     color: rgb(228, 228, 228);
@@ -133,8 +133,7 @@ body {
     margin-bottom: 1%;
 }
 
-h2,
-h3 {
+h2,h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #b1dbdb;
 }
@@ -206,7 +205,7 @@ h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Efecto hover en los botones */
+/* Efecto hover sobre el boton del formulario final de cada apartado */
 .botonFormulario:hover {
     background-color: #ffffff;
     border-radius: 15px;
@@ -217,22 +216,9 @@ h3 {
     transform: scale(1.05);
 }
 
-details summary {
-    cursor: pointer;
-    /* Hace que el cursor indique clic. */
-    font-size: 16px;
-    /* Define el tamaño del texto. */
-}
-
-.contenidoDesplegable {
-    margin-top: 10px;
-    /* Separa visualmente el contenido desplegable. */
-}
-
 #clicFormulario summary {
     cursor: pointer;
     padding: 7px 20px;
-    text-align: justify;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     font-weight: bold;
     color: rgb(214, 214, 214);
@@ -242,11 +228,6 @@ details summary {
     /* Fondo solo para el summary */
     border-radius: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#clicFormulario form {
-    background-color: transparent;
-    /* Fondo transparente para el formulario */
 }
 
 /* Barra superior con logo y botones */
@@ -305,54 +286,83 @@ details summary {
 
 /* Media, para buen vistazo de la barra superior*/
 @media (max-width: 768px) {
-
-    #imagenLogo {
-        width: 40px;
-        /* Ajusta el tamaño del logo en pantallas pequeñas */
-    }
-
     #barraSuperior {
-        flex-direction: column;
         /* Hace que los elementos de la barra se muevan dependiendo donde le pongas */
-        padding: 15px;
+        flex-direction: column;
         /* Espacio adicional para la barra superior */
+        padding: 15px;
     }
 
     #navegacion {
+        /* Centra los botones */
         width: 100%;
         justify-content: center;
-        /* Centra los botones */
+        /* Da espacio entre el logo y los botones */
         gap: 10px;
         margin-top: 10px;
-        /* Da espacio entre el logo y los botones */
     }
 
     #boton {
+        /* Mayor tamaño para los botones */
         font-size: 14px;
         padding: 10px 20px;
-        /* Mayor tamaño para los botones */
     }
 }
 
 /* Media, para el limite de imagenes en contenedores  */
 @media (max-width: 1160px) {
     #bloqueInformacion {
-        margin: 10px 2%;
         /* Reduce los márgenes laterales */
+        margin: 10px 2%;
     }
 
     .imagenes {
         flex-direction: column;
-        align-items: center;
         /* Cambia las imágenes a disposición vertical */
+        align-items: center;
     }
 
     .imagenes img {
-        max-width: 100%;
         /* Restringe las imágenes al ancho del contenedor */
-        height: auto;
+        max-width: 100%;
         /* Mantiene la proporción de las imágenes */
-        margin-bottom: 10px;
+        height: auto;
         /* Espaciado entre imágenes */
+        margin-bottom: 10px;
     }
 }
+
+.botonSubir {
+    /* Tipo de posicion */
+    position: fixed;
+    /* Posicion del boton */
+    bottom: 20px;
+    right: 20px;
+    background-color: #3f3f3f;
+    color: white;
+    border-radius: 25%;
+    /* Se elimina el subrayado */
+    text-decoration: none;
+    /* Altura y anchura del boton */
+    width: 50px; 
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    /* Altura de la flecha */
+    line-height: 50px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Animacion de tamaño */
+    transition: all 0.3s ease;
+    /* Superponer el boton encima del footer */
+    z-index: 1000;
+  }
+  
+  .botonSubir:hover {
+    background-color: #2b2b2b;
+    transform: scale(1.1);
+  }
+
+  html {
+     /* Animacion de suave para el movimiento */
+    scroll-behavior: smooth;
+  }
