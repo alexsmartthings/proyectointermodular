@@ -15,7 +15,23 @@
             justify-content: space-evenly;
             align-items: left;
         }
-        
+
+        @media (max-width: 1160px) {
+            .imagenesizquierda {
+                flex-direction: column;
+                align-items: center;
+                /* Cambia las imágenes a disposición vertical */
+            }
+
+            .imagenesizquierda img {
+                max-width: 100%;
+                /* Restringe las imágenes al ancho del contenedor */
+                height: auto;
+                /* Mantiene la proporción de las imágenes */
+                margin-bottom: 10px;
+                /* Espaciado entre imágenes */
+            }
+        }
     </style>
 </head>
 
@@ -92,32 +108,32 @@
                     <li>Nacionales: Cobertura a nivel país.</li>
                     <li>Internacionales: Adaptación a múltiples idiomas y culturas.</li>
                 </ul>
-            </ul>
-            </li>
-            <h2 id="titulo">2. Por tipo de producto o servicio</h2>
+        </ul>
+        </li>
+        <h2 id="titulo">2. Por tipo de producto o servicio</h2>
+        <ul>
+            <li><strong>Tipo de aplicaciones:</strong>
                 <ul>
-                    <li><strong>Tipo de aplicaciones:</strong>
-                        <ul>
-                            <li>Corporativas: Soluciones personalizadas para empresas, como ERP o CRM.</li>
-                            <li>Para consumidores finales: Juegos, redes sociales.</li>
-                            <li>De nicho: Software especializado en sectores como turismo, logística o manufactura.</li>
-                        </ul>
-                    </li>
-                    <br>
-                    <li><strong>Enfoque tecnológico:</strong>
-                        Aplicaciones multiplataforma (Android, iOS, web) e incorporación de tecnologías como
-                        inteligencia artificial, blockchain, IoT o realidad aumentada.
-                    </li>
-                    <br>
-                    <li><strong>Servicios complementarios:</strong>
-                        Consultoría, diseño UI/UX, soporte/mantenimiento, marketing.
-                    </li>
-                    <br>
-                    <li><strong>Modelo de entrega:</strong>
-                        Desarrollo personalizado, productos propios (SaaS), o soluciones white-label.
-                    </li>
+                    <li>Corporativas: Soluciones personalizadas para empresas, como ERP o CRM.</li>
+                    <li>Para consumidores finales: Juegos, redes sociales.</li>
+                    <li>De nicho: Software especializado en sectores como turismo, logística o manufactura.</li>
                 </ul>
             </li>
+            <br>
+            <li><strong>Enfoque tecnológico:</strong>
+                Aplicaciones multiplataforma (Android, iOS, web) e incorporación de tecnologías como
+                inteligencia artificial, blockchain, IoT o realidad aumentada.
+            </li>
+            <br>
+            <li><strong>Servicios complementarios:</strong>
+                Consultoría, diseño UI/UX, soporte/mantenimiento, marketing.
+            </li>
+            <br>
+            <li><strong>Modelo de entrega:</strong>
+                Desarrollo personalizado, productos propios (SaaS), o soluciones white-label.
+            </li>
+        </ul>
+        </li>
 
     </div>
 
