@@ -1,77 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-    <title>
-        Sector productivo asociado al desarrollo de aplicaciones multiplataforma
-    </title>
-    <!--  Link hacia la hoja de estilos CSS.     -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    </head>
+    <title>Empresas de D.A.M</title> <!-- Titulo de la pagina -->
+    <style>
+        hr {
+            width: 200px;
+        }
 
-    <body>
-        <header>
-            <h1>Resumen sobre Empresas de Desarrollo de Aplicaciones Multiplataforma</h1>
-        </header>
-        <main>
-            <section>
-                <h2>Clasificación de las empresas</h2>
-                <article>
-                    <h3>Por características organizativas</h3>
-                    <h4>Tamaño</h4>
-                    <ul>
-                        <li>Pequeñas: 10-50 empleados; proyectos personalizados y flexibles.</li>
-                        <li>Medianas: 50-250 empleados; capacidad para gestionar varios proyectos.</li>
-                        <li>Grandes: &gt;250 empleados; soluciones completas y soporte continuo.</li>
-                    </ul>
-                    <h4>Estructura organizativa</h4>
-                    <ul>
-                        <li>Centralizadas: Decisiones rápidas desde un único nivel.</li>
-                        <li>Descentralizadas: Especialización en tecnologías o mercados.</li>
-                        <li>Startups: Ágiles y orientadas a la innovación.</li>
-                    </ul>
-                    <h4>Modelo de negocio</h4>
-                    <ul>
-                        <li>B2B: Soluciones empresariales personalizadas.</li>
-                        <li>B2C: Productos finales para consumidores.</li>
-                        <li>Híbridas: Combinan servicios B2B y B2C.</li>
-                    </ul>
-                    <h4>Alcance geográfico</h4>
-                    <ul>
-                        <li>Locales: Foco en mercados específicos.</li>
-                        <li>Nacionales: Cobertura a nivel país.</li>
-                        <li>Internacionales: Adaptación a múltiples idiomas y culturas.</li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Por tipo de producto o servicio</h3>
-                    <h4>Tipo de aplicaciones</h4>
-                    <ul>
-                        <li>Corporativas: Soluciones personalizadas para empresas (ERP, CRM).</li>
-                        <li>Para consumidores finales: Juegos, redes sociales.</li>
-                        <li>De nicho: Software especializado en sectores como turismo, logística o manufactura.</li>
-                    </ul>
-                    <h4>Enfoque tecnológico</h4>
-                    <ul>
-                        <li>Herramientas para desarrollar apps que funcionen en Android, iOS y web.</li>
-                        <li>Aplicaciones que incorporan inteligencia artificial, blockchain, IoT o realidad aumentada.</li>
-                    </ul>
-                    <h4>Servicios complementarios</h4>
-                    <ul>
-                        <li>Consultoría.</li>
-                        <li>Diseño UI/UX.</li>
-                        <li>Soporte/mantenimiento.</li>
-                        <li>Marketing.</li>
-                    </ul>
-                    <h4>Modelo de entrega</h4>
-                    <ul>
-                        <li>Desarrollo personalizado.</li>
-                        <li>Productos propios (SaaS).</li>
-                        <li>Soluciones white-label.</li>
-                    </ul>
-                </article>
-            </section>
-        </main>
+        .imagenesizquierda {
+            justify-content: space-evenly;
+            align-items: left;
+        }
+
+        @media (max-width: 1160px) {
+            .imagenesizquierda {
+                flex-direction: column;
+                align-items: center;
+                /* Cambia las imágenes a disposición vertical */
+            }
+
+            .imagenesizquierda img {
+                max-width: 100%;
+                /* Restringe las imágenes al ancho del contenedor */
+                height: auto;
+                /* Mantiene la proporción de las imágenes */
+                margin-bottom: 10px;
+                /* Espaciado entre imágenes */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra superior con logo y botones -->
+    <header id="barraSuperior">
+        <div class="logo">
+            <img src="imagenes-html-jose-david/logo.png" alt="Logo" id="imagenLogo">
+        </div>
+        <div class="nombre">
+            <h2>Lobster S.L</h2>
+        </div>
+        <nav id="navegacion">
+            <a href="index.html">
+                <button id="boton">Inicio</button>
+            </a>
+            <a href="proyecto.html">
+                <button id="boton">Desarrollo de software</button>
+            </a>
+            <a href="html_alejandro.html">
+                <button id="boton">Empresas en el sector de DAM</button>
+            </a>
+            <a href="html-youssef.html">
+                <button id="boton">Instalacion y uso de los IDE's</button>
+            </a>
+            <a href="contacto.html">
+                <button id="boton">Contactanos</button>
+            </a>
+        </nav>
+    </header>
+    <!--TEXTO-->
+    <div id="bloqueInformacion">
+        <h2 id="titulo">CARACTERÍSTICAS DE LAS EMPRESAS DE DESAROLLO DE APLICACIONES MULTIPLATAFORMA</h2>
+        <p id="texto">
+            <strong>¿Qué veremos en este apartado? </strong>
+        </p>
+        <p id="texto">
+            Vamos a ver como funcionan las empresas dentro del sector de DAM, veremos su organización, como trabajan y
+            las necesidades que estas buscan actualmente.
+        </p>
+    </div>
+    <hr>
+
+    <div id="bloqueInformacion">
+        <h2 id="titulo">1. Por características organizativas</h2>
+        <p id="texto">
+            Las empresas pueden clasificarse en función de diversos criterios clave:
+        </p>
+        <ul>
+            <strong>Por tamaño:</strong>
+            <ul>
+                <li>Pequeñas: 10-50 empleados; proyectos personalizados y flexibles.</li>
+                <li>Medianas: 50-250 empleados; capacidad para gestionar varios proyectos.</li>
+                <li>Grandes: Menos de 250 empleados; soluciones completas y soporte continuo.</li>
+            </ul>
+
+            <strong>Por estructura organizativa:</strong>
+            <ul>
+                <li>Centralizadas: Decisiones rápidas desde un único nivel.</li>
+                <li>Descentralizadas: Especialización en tecnologías o mercados.</li>
+                <li>Startups: Ágiles y orientadas a la innovación.</li>
+            </ul>
+
+            <strong>Por su modelo de negocio:</strong>
+            <ul>
+                <li>B2B: Soluciones empresariales personalizadas.</li>
+                <li>B2C: Productos finales para consumidores.</li>
+                <li>Híbridas: Combinan servicios B2B y B2C.</li>
+            </ul>
+
+            <strong>Por su alcance geográfico:</strong>
+            <ul>
+                <li>Locales: Foco en mercados específicos.</li>
+                <li>Nacionales: Cobertura a nivel país.</li>
+                <li>Internacionales: Adaptación a múltiples idiomas y culturas.</li>
+            </ul>
+        </ul>
+
+        <h2 id="titulo">2. Por tipo de producto o servicio</h2>
+        <ul>
+            <strong>Tipo de aplicaciones:</strong>
+            <ul>
+                <li>Corporativas: Soluciones personalizadas para empresas, como ERP o CRM.</li>
+                <li>Para consumidores finales: Juegos, redes sociales.</li>
+                <li>De nicho: Software especializado en sectores como turismo, logística o manufactura.</li>
+            </ul>
+            <p id="texto">
+                <strong>Enfoque tecnológico:</strong>
+                Aplicaciones multiplataforma (Android, iOS, web) e incorporación de tecnologías como
+                inteligencia artificial, blockchain, IoT o realidad aumentada.
+            </p>
+            <p id="texto">
+                <strong>Servicios complementarios:</strong>
+                Consultoría, diseño UI/UX, soporte/mantenimiento, marketing.
+            </p>
+            <p id="texto">
+                <strong>Modelo de entrega:</strong>
+                Desarrollo personalizado, productos propios (SaaS), o soluciones white-label.
+            </p>
+        </ul>
+    </div>
 
 
 
@@ -79,11 +140,180 @@
 
 
 
-    </body>
+
+
+
+    <div id="bloqueInformacion">
+        <h2 id="titulo">Departamentos y funciones</h2>
+        <p id="texto">
+            <strong>En este apartado, veremos los departamentos que existen en este tipo de empresas y las funciones de
+                las que se encargan cada uno, explicando un poco en que consiste cada uno:</strong>
+        </p>
+        <br>
+        <h3>1-Gestión y Administración</h3>
+        <p id="texto">
+            Planificación estratégica, gestión financiera y negociaciones con clientes, etc.
+        </p>
+        <div class="imagenesizquierda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgfogZEhUgCG3ldiDt_Rud6i6ZGjfrnsYdGg&s"
+                alt="Imagen Fuente">
+        </div>
+
+
+
+
+
+        <h3>2-Desarrollo (Tech/Engineering)</h3>
+        <p id="texto">
+            Programación, pruebas, optimización de aplicaciones y uso de frameworks como Flutter y React Native.
+            Integración con APIs y tecnologías emergentes como IA, IoT o Blockchain.
+        </p>
+        <div class="imagenesizquierda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT22vTMf3OcKg4nEDvwdNucmJX-Yezu0RLgGw&s"
+                alt="Imagen Fuente">
+        </div>
 
 
 
 
 
 
-    </html>
+        <h3>3-Marketing y Ventas</h3>
+        <p id="texto">
+            Promoción de los productos de la empresa, análisis del mercado y campañas digitales
+            en tiendas de aplicaciones como App Store y Google Play.
+        </p>
+
+        <div class="imagenesizquierda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMGRnhNVCT9kdBruhAS9keer0b_o24wcQgPA&s"
+                alt="Imagen Fuente">
+        </div>
+
+        <h3>4-Gestión de Proyectos</h3>
+        <p id="texto">
+            Coordinación ágil mediante metodologías como Scrum y Kanban. Planificación y seguimiento de proyectos
+            para asegurar el cumplimiento de plazos y presupuestos.
+        </p>
+
+        <p id="texto">
+            Gestión de riesgos y resolución de problemas durante el desarrollo.
+        </p>
+        <div class="imagenesizquierda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGatIuTEg5XR34a6Z-J4edgLzMbXYX6pGxnQ&s"
+                alt="Imagen Fuente">
+        </div>
+
+        <h3>5-Calidad y Soporte Técnico</h3>
+        <p id="texto">
+            Pruebas de funcionalidad, rendimiento y seguridad. Implementación de atención al cliente con soporte
+            técnico.
+        </p>
+        <div class="imagenesizquierda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW814mlX1jSLgNIyLPlBK6k_fc7GuDw6GSzQ&s"
+                alt="Imagen Fuente">
+        </div>
+
+        <h3>6-Innovación y Consultoría</h3>
+        <p id="texto">
+            Investigación de nuevas tecnologías para el desarrollo de soluciones.
+            Identificación de nuevas tendencias dentro del mercado de aplicaciones multiplataforma.
+        </p>
+        <div class="imagenesizquierda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADgBy3V1GaiF5KOHEMM5wZrrgfFf1B8O6XQ&s"
+                alt="Imagen Fuente">
+        </div>
+    </div>
+
+    <div id="bloqueInformacion">
+        <h2 id="titulo">Flujo de Trabajo y Colaboración</h2>
+        <p id="texto">
+            Las empresas del sector adoptan una metodología ágil que fomenta la colaboración entre los departamentos
+            mediante:
+        </p>
+        <ul>
+            <li>Reuniones regulares (dailies, retrospectives).</li>
+            <li>Herramientas de gestión como Jira, Trello o Asana.</li>
+            <li>Integración continua entre desarrollo, pruebas y despliegue para garantizar calidad y rapidez.</li>
+        </ul>
+        <div class="imagenes">
+            <img src="https://images.pexels.com/photos/1367276/pexels-photo-1367276.jpeg" alt="Imagen Fuemte">
+            <img src="https://1000logos.net/wp-content/uploads/2021/05/Trello-Logo-2011.png" alt="Imagen Fuemte">
+        </div>
+    </div>
+
+    <div id="bloqueInformacion">
+        <h2 id="titulo">Necesidades más demandadas en las empresas</h2>
+        <h3>En este apartado, vamos a ver cuales son las necesidades que más se piden en las empresas:</h3>
+        <br>
+        <h3>1. Un Desarrollo Rápido y Eficiente</h3>
+        <p id="texto">
+            Reducción del tiempo de desarrollo con lanzamientos rápidos al mercado utilizando frameworks como Flutter,
+            React Native o Xamarin.
+            Optimización de costos mediante soluciones multiplataforma para evitar desarrollos separados para iOS y
+            Android.
+        </p>
+
+        <h3>2. Experiencia de Usuario (UX/UI) de Alta Calidad</h3>
+        <p id="texto">
+            Diseños atractivos e intuitivos para mejorar la experiencia del usuario final.
+            Adaptabilidad a diferentes dispositivos como teléfonos, tablets o páginas web.
+            Funcionalidades accesibles para usuarios con discapacidades (ciegos, sordos, etc.).
+        </p>
+
+        <h3>3. Integración con Tecnologías Avanzadas</h3>
+        <p id="texto">
+            Incorporación de IA, chatbots y recomendaciones personalizadas.
+            Uso del IoT para aplicaciones que interactúan con dispositivos conectados.
+            Aplicación de Blockchain para transacciones seguras y gestión de datos.
+            Implementación de AR y VR para experiencias inmersivas en sectores como salud y educación.
+        </p>
+
+        <h3>4. Funcionalidades Demandadas</h3>
+        <ul>
+            <li>Notificaciones push para fomentar la interacción con los usuarios.</li>
+            <li>Soporte para pagos digitales seguros y flexibles.</li>
+            <li>Servicios basados en ubicación mediante GPS.</li>
+            <li>Sincronización en la nube para acceso a datos desde cualquier dispositivo.</li>
+        </ul>
+
+        <h3>5. Soporte Continuo y Mantenimiento</h3>
+        <p id="texto">
+            Actualizaciones regulares con nuevas funciones y corrección de errores.
+            Preparación para gestionar un crecimiento en usuarios o funcionalidades.
+        </p>
+
+        <h3>6. Estrategias de Publicación y Marketing</h3>
+        <p id="texto">
+            Uso de Google Play y App Store para maximizar la visibilidad.
+            Herramientas para medir el rendimiento y uso de las aplicaciones, integración con redes sociales y campañas
+            promocionales.
+        </p>
+
+        <h3>7. Compatibilidad Multiplataforma</h3>
+        <p id="texto">
+            Desarrollo de aplicaciones híbridas que funcionen en plataformas móviles y web con una sola base de código.
+            Compatibilidad con sistemas más antiguos y menos recientes.
+        </p>
+
+        <h3>8. Cumplimiento Normativo y Regional</h3>
+        <p id="texto">
+            Aseguramiento del cumplimiento de normativas locales e internacionales sobre privacidad, comercio
+            electrónico y datos personales.
+            Implementación de múltiples idiomas en las aplicaciones para adaptarse a diversas regiones.
+        </p>
+
+        <div class="imagenesizquierda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsWVNcFTdGlKuP2q8Ul1UN8aP2NqIG4r4e-Q&s"
+                alt="Imagen Fuente">
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="footer">&copy;<span> </span><span> Lobster S.L. Todos los derechos reservados.</span></div>
+</body>
+
+</html>
