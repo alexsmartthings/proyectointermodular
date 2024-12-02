@@ -129,7 +129,8 @@ function mostarOpciones() {
   }
 }
 
-//Función sonido
-function sonido(){
-document.getElementById('audio').play();
+// Función para reproducir el audio
+function sonido() {
+  var audio = document.getElementById('audio');
+  audio.play();  // Reproducir el audio
 }
