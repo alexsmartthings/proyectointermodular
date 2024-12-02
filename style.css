@@ -7,6 +7,16 @@ body {
     padding: 0;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: yellow;
+    text-decoration: none;
+}
+
 /* Usamos Flexbox para que el contenido ocupe toda la altura y el footer se quede abajo */
 body {
     display: flex;
@@ -107,12 +117,14 @@ body {
     padding: 1px 40px;
     text-align: justify;
     color: rgb(228, 228, 228);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px #00000033;
     margin: 10px 5%;
     /* Esto añade espacio a los lados (margen izquierdo y derecho) */
     border-radius: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 
 /* Ajuste al pasar el mouse sobre los bloques de información */
 #bloqueInformacion:hover {
@@ -126,10 +138,10 @@ body {
 }
 
 .imagenes img {
-    max-height: 300px;
+    max-height: 450px;
     margin: 0px 10px;
     object-fit: contain;
-    border-radius: 10%;
+    border-radius: 2%;
     margin-bottom: 1%;
 }
 
@@ -192,7 +204,6 @@ h2,h3 {
     content: flex;
     color: white;
     background-color: #3f3f3f;
-    ;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     cursor: pointer;
@@ -203,6 +214,10 @@ h2,h3 {
     font-size: 13px;
     transition: all 0.5s ease-out;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedorContacto {
+    margin-left: 48%;   
 }
 
 /* Efecto hover sobre el boton del formulario final de cada apartado */
@@ -284,54 +299,6 @@ h2,h3 {
     transform: scale(1.05);
 }
 
-/* Media, para buen vistazo de la barra superior*/
-@media (max-width: 768px) {
-    #barraSuperior {
-        /* Hace que los elementos de la barra se muevan dependiendo donde le pongas */
-        flex-direction: column;
-        /* Espacio adicional para la barra superior */
-        padding: 15px;
-    }
-
-    #navegacion {
-        /* Centra los botones */
-        width: 100%;
-        justify-content: center;
-        /* Da espacio entre el logo y los botones */
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    #boton {
-        /* Mayor tamaño para los botones */
-        font-size: 14px;
-        padding: 10px 20px;
-    }
-}
-
-/* Media, para el limite de imagenes en contenedores  */
-@media (max-width: 1160px) {
-    #bloqueInformacion {
-        /* Reduce los márgenes laterales */
-        margin: 10px 2%;
-    }
-
-    .imagenes {
-        flex-direction: column;
-        /* Cambia las imágenes a disposición vertical */
-        align-items: center;
-    }
-
-    .imagenes img {
-        /* Restringe las imágenes al ancho del contenedor */
-        max-width: 100%;
-        /* Mantiene la proporción de las imágenes */
-        height: auto;
-        /* Espaciado entre imágenes */
-        margin-bottom: 10px;
-    }
-}
-
 .botonSubir {
     /* Tipo de posicion */
     position: fixed;
@@ -366,3 +333,224 @@ h2,h3 {
      /* Animacion de suave para el movimiento */
     scroll-behavior: smooth;
   }
+
+  #bienvenidaWeb {
+    position: absolute; /* Posiciona el bloque sobre la imagen */
+    top: 20%; /* Distancia desde la parte superior */
+    margin-left: 30%; /* Margen para centrar */
+    background-color: rgba(63, 63, 63, 0.8); /* Fondo semi-transparente */
+    padding: 15px; /* Espaciado interno */
+    color: #e4e4e4; /* Color del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    font-family: sans-serif; /* Tipografía sencilla */
+}
+
+#bienvenidaWeb:first-of-type {
+    /* Se añade un first of type para poner un margen en la parte superior, ya que la posicion:fixed no admite los tipos de margin, debido al flujo */
+    margin-top: 120px; /* Añade un margen por encima del primer bloque de información */
+}
+
+.container {
+    display: flex;
+    gap: 70px;
+    max-width: 1900px;
+    margin: auto;
+}
+
+.column {
+    align-items: center;
+    align-content: center;
+    flex: 1;
+    text-align: center;
+    border: 1px rgba(0, 0, 0, 0);
+    padding: 10px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, rgb(39, 39, 39), #3a3a3a);
+    display: inline-block;
+    /* Asegura que el elemento pueda escalar */
+    transition: transform 0.5s ease;
+    /* Duración de la transición: 0.5s, con un efecto de suavizado */
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tituloEntrada {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    text-shadow: 4px 3px 0 #7A7A7A;
+}
+
+.description {
+    font-family: Georgia, serif;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.column:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+main {
+    float: left;
+    width: 60%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+}
+
+#subtitulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #b1dbdb;
+    text-align: center;
+    padding-top: 2%;
+
+}
+
+#titulop {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #b1dbdb;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#bloqueInformacion .text {
+    flex: 1;
+}
+
+#bloqueInformacion .text h2 {
+    font-size: 2rem;
+    color: #b1dbdb;
+    margin-bottom: 10px;
+}
+
+#bloqueInformacion .text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgb(228, 228, 228);
+    text-align: justify;
+}
+
+#bloqueInformacion .image {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+#bloqueInformacion .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #b1dbdb;
+    text-align: center;
+    margin-top: 3%;
+}
+
+hr {
+    width: 200px;
+}
+
+.imagenesizquierda {
+    justify-content: space-evenly;
+    align-items: left;
+}
+
+
+@media (max-width: 768px) {
+    /* Media, para buen vistazo de la barra superior*/
+    #barraSuperior {
+        /* Hace que los elementos de la barra se muevan dependiendo donde le pongas */
+        flex-direction: column;
+        /* Espacio adicional para la barra superior */
+        padding: 15px;
+        
+    }
+
+    #navegacion {
+        /* Centra los botones */
+        width: 100%;
+        justify-content: center;
+        /* Da espacio entre el logo y los botones */
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    #boton {
+        /* Mayor tamaño para los botones */
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .botonSubir {
+       background-color: #2b2b2b;
+      }
+
+}
+
+/* Media, para el limite de imagenes en contenedores  */
+@media (max-width: 1160px) {
+
+    .imagenesizquierda {
+        flex-direction: column;
+        align-items: center;
+        /* Cambia las imágenes a disposición vertical */
+    }
+
+    .imagenesizquierda img {
+        max-width: 100%;
+        /* Restringe las imágenes al ancho del contenedor */
+        height: auto;
+        /* Mantiene la proporción de las imágenes */
+        margin-bottom: 10px;
+        /* Espaciado entre imágenes */
+    }
+
+    /* Oculta la parte de bienvenida */
+    #bienvenidaWeb {
+        display: none;
+    }
+
+    /* Oculta la imagen principal */
+    body > img {
+        display: none;
+    }
+
+    #bloqueInformacion {
+        /* Reduce los márgenes laterales */
+        margin: 10px 2%;
+    }
+
+    #bienvenidaWeb {
+        /* Reduce los márgenes laterales */
+        margin: 10px 2%;
+    }
+
+    .imagenes {
+        flex-direction: column;
+        /* Cambia las imágenes a disposición vertical */
+        align-items: center;
+    }
+
+    .imagenes img {
+        /* Restringe las imágenes al ancho del contenedor */
+        max-width: 100%;
+        /* Mantiene la proporción de las imágenes */
+        height: auto;
+        /* Espaciado entre imágenes */
+        margin-bottom: 10px;
+    }
+}
