@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="imagenes-html-jose-david/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Empresas de D.A.M</title> <!-- Titulo de la pagina -->
@@ -39,7 +40,9 @@
     <!-- Barra superior con logo y botones -->
     <header id="barraSuperior">
         <div class="logo">
-            <img src="imagenes-html-jose-david/logo.png" alt="Logo" id="imagenLogo">
+            <a href="#audio" onclick="document.getElementById('audio').play();">
+                <img src="imagenes-html-jose-david/logo.png" alt="Logo" id="imagenLogo">
+            </a>
         </div>
         <div class="nombre">
             <h2>Lobster S.L</h2>
@@ -48,7 +51,7 @@
             <a href="index.html">
                 <button id="boton">Inicio</button>
             </a>
-            <a href="desarrolloSoftware.html">
+            <a href="proyecto.html">
                 <button id="boton">Desarrollo de software</button>
             </a>
             <a href="html_alejandro.html">
@@ -62,6 +65,12 @@
             </a>
         </nav>
     </header>
+    
+    <!-- Audio que se reproducirá -->
+    <audio id="audio" preload="auto">
+        <source src="imagenes-html-jose-david/Langosta.mp3" type="audio/mp3">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
     <!--TEXTO-->
     <div id="bloqueInformacion">
         <h2 id="titulo">CARACTERÍSTICAS DE LAS EMPRESAS DE DESAROLLO DE APLICACIONES MULTIPLATAFORMA</h2>
