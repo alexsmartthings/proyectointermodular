@@ -44,8 +44,8 @@ function comprobarRespuesta() {
       q41: '1',
       q42: '3',
       q43: '3',
-      q44: ['1','3'],
-      q45: ['1','3'],
+      q44: '1', //multirespuesta
+      q45: '3', //multirespuesta
       q46: '3',
       q47: '1',
       q48: '2',
