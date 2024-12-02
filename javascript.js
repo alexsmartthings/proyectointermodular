@@ -109,3 +109,12 @@ function comprobarRespuesta() {
     }
 
   }
+  //Añadir que al equivocarse el color del fondo cambie a rojo
+  if (seleccionada === respuestasCorrectas[pregunta]) {
+    respuestasCorrectasContadas++;
+    // Si la respuesta es correcta, no cambiamos el fondo
+    preguntaContenedor.style.backgroundColor = ""; // Restaurar color de fondo
+  } else {
+    // Si la respuesta es incorrecta, cambiar el fondo a rojo
+    preguntaContenedor.style.backgroundColor = "red";
+  }
