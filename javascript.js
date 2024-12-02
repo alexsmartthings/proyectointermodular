@@ -1,5 +1,5 @@
 function comprobarRespuesta() {
-  // Respuestas correctas (se asignan según tus criterios)
+  // Respuestas correctas a las preguntas
   const respuestasCorrectas = {
     q1: '2',  // Pregunta 1, opción 2 correcta
     q2: '3',  // Pregunta 2, opción 3 correcta
@@ -44,8 +44,8 @@ function comprobarRespuesta() {
     q41: '1',
     q42: '3',
     q43: '3',
-    q44: '1',
-    q45: '3',
+    q44: ['1', '3'], // Respuesta múltiple (1 y 3 son correctas)
+    q45: ['1', '3'], // Respuesta múltiple (1 y 3 son correctas)
     q46: '3',
     q47: '1',
     q48: '2',
@@ -63,28 +63,60 @@ function comprobarRespuesta() {
     q60: '2',  // Pregunta 60, opción 2 correcta
   };
 
+// LET es usado para los bloques, una forma moderna de var
+  //No se puede volver a declarar pero sí actualizada
+
   // Iterar sobre cada pregunta (q1, q2, q3, ...)
   for (let pregunta in respuestasCorrectas) {
-    // Obtener todas las opciones (radio buttons) de la pregunta
-    let opciones = document.getElementsByName(pregunta);
+    let opciones = document.getElementsByName(pregunta); //Opciones pilla el objeto bajo el nombre "PREGUNTA"
 
-    // Iterar sobre las opciones para encontrar cuál está seleccionada
-    for (let i = 0; i < opciones.length; i++) {
-      let label = opciones[i].parentNode; // Obtiene el <label> que contiene el texto
-
-      // Verificar si la opción está seleccionada
-      if (opciones[i].checked) {
-        // Comprobar si la respuesta seleccionada es correcta
-        if (opciones[i].value === respuestasCorrectas[pregunta]) {
-          // Cambiar el color del texto de la respuesta correcta a verde
-          label.style.color = "green";
-        } else {
-          // Cambiar el color del texto de la respuesta incorrecta a rojo
-          label.style.color = "red";
+    // Comprobar si es una pregunta de respuesta múltiple
+    if (Array.isArray(respuestasCorrectas[pregunta])) {
+      let respuestasUsuario = []; // respuestas introducidas por el usuario
+      
+      // Recorrer las opciones y guardar las seleccionadas
+      for (let i = 0; i < opciones.length; i++) { //opciones.length debido a let opciones que se encuentra arriba que pilla todas las preguntas
+        let label = opciones[i].parentNode;
+        
+        if (opciones[i].checked) { //Si opción esta check
+          respuestasUsuario.push(opciones[i].value); // Las respuestas se añaden a opciones
         }
-      } else {
-        // Restaurar el color por defecto (negro) de las opciones no seleccionadas
+        
+        // Restablece el color de las label a negro
         label.style.color = "white";
+      }
+
+      
+      //Comprueba si las respuestas seleccionadas por el usuario coinciden con las respuestas correctas indicadas arriba
+      if (respuestasUsuario.sort().toString() === respuestasCorrectas[pregunta].sort().toString()) { //el apartado sort ordena las respuestas del usuario
+        // Si es correcto cambia a color verde
+        for (let i = 0; i < opciones.length; i++) {
+          if (opciones[i].checked) {
+            opciones[i].parentNode.style.color = "green";
+          }
+        }                 //Ambas opciones arriba y abajo es solo aplicable al texto en cuestión
+      } else {
+        // Incorrecto cambia a color  en rojo
+        for (let i = 0; i < opciones.length; i++) {
+          if (opciones[i].checked) {
+            opciones[i].parentNode.style.color = "red";
+          }
+        }
+      }
+    } else {
+      // Comportamiento normal para preguntas de única respuesta
+      for (let i = 0; i < opciones.length; i++) {
+        let label = opciones[i].parentNode;
+
+        if (opciones[i].checked) {
+          if (opciones[i].value === respuestasCorrectas[pregunta]) {
+            label.style.color = "green";  // Correcta
+          } else {
+            label.style.color = "red";    // Incorrecta
+          }
+        } else {
+          label.style.color = "white";    // No seleccionada
+        }
       }
     }
   }
