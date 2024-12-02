@@ -82,7 +82,7 @@ function comprobarRespuesta() {
           respuestasUsuario.push(opciones[i].value); // Las respuestas se añaden a opciones
         }
         
-        // Restablece el color de las label a negro
+        // Restablece el color de las label a blanco
         label.style.color = "white";
       }
 
@@ -104,7 +104,7 @@ function comprobarRespuesta() {
         }
       }
     } else {
-      // Comportamiento normal para preguntas de única respuesta
+      // A partir de aqui es solo para respuestas normales
       for (let i = 0; i < opciones.length; i++) {
         let label = opciones[i].parentNode;
 
