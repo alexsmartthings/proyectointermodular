@@ -131,5 +131,5 @@ function mostarOpciones() {
 
 //Función sonido
 function sonido(){
-document.getElementById('audio').onplay();
+document.getElementById('audio').play();
 }
