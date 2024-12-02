@@ -30,7 +30,162 @@
 
     <a id="superior"></a> <!--Es una etiqueta de anclaje, permite la navegacion fluida -->
 
+
     <!--TEXTO-->
+
+    <div id="bloqueInformacion">
+        <h2 id="titulo"> Relación en detalle entre software y hardware</h2>
+        <p id="texto">
+            En un sistema informático, el hardware y el software trabajan conjuntamente para que el sistema funcione
+            correctamente.
+            El hardware son los componentes físicos de la computadora, como la placa base, el procesador y la memoria
+            RAM, mientras que el software se refiere al conjunto de programas y aplicaciones que se ejecutan en el
+            sistema.
+            El sistema operativo juega un papel crucial al actuar como intermediario entre el hardware y el software,
+            gestionando los recursos del sistema y permitiendo que ambos interactúen eficazmente.
+            Además, los controladores (drivers) son esenciales para que el hardware se comunique correctamente con el
+            software, traduciendo las instrucciones del software en comandos que el hardware puede ejecutar.
+            Sin un software adecuado, el hardware no podrá realizar ninguna operación, ya que no tiene las instrucciones
+            necesarias para funcionar.
+        </p>
+        <div class="imagenes">
+            <img src="imagenes-html-jose-david/software.jpg" alt="Imagen Software">
+            <img src="imagenes-html-jose-david/hardware.jpg" alt="Imagen Hardware">
+        </div>
+    </div>
+
+    <details id="clicFormulario">
+        <summary>Haz clic en mi para poner aprueba tus conocimientos.</summary>
+        <!-- Formulario desplegable (en cada criterio correspondiente) -->
+
+        <div>
+            <form id="formulario">
+                <div class="question">
+                    <h3>1. ¿Qué es el hardware en un sistema informático? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q1" value="1"> El conjunto de programas y aplicaciones que
+                        interactúan con el procesador.</label><br>
+                    <label><input type="radio" name="q1" value="2"> Los componentes físicos de una computadora, como la
+                        placa base, el procesador y la memoria RAM.</label><br>
+                    <label><input type="radio" name="q1" value="3"> Un programa que gestiona los recursos del sistema
+                        operativo.</label><br>
+                    <label><input type="radio" name="q1" value="4"> El sistema que permite que los programas se ejecuten
+                        sin procesador.</label>
+                </div>
+
+                <div class="question">
+                    <h3>2. ¿Qué es el software en un sistema informático? <!-- Correcta: 3 --></h3>
+                    <label><input type="radio" name="q2" value="1"> Los circuitos eléctricos que forman parte del
+                        procesador.</label><br>
+                    <label><input type="radio" name="q2" value="2"> Los dispositivos de entrada como el teclado o el
+                        ratón.</label><br>
+                    <label><input type="radio" name="q2" value="3"> El conjunto de programas y aplicaciones que se
+                        ejecutan en la computadora.</label><br>
+                    <label><input type="radio" name="q2" value="4"> Los componentes que permiten que la computadora se
+                        conecte a la red.</label>
+                </div>
+
+                <div class="question">
+                    <h3>3. ¿Qué función realiza el sistema operativo en la interacción entre software y hardware?
+                        <!-- Correcta: 3 -->
+                    </h3>
+                    <label><input type="radio" name="q3" value="1"> Almacenar los programas ejecutados por el
+                        procesador.</label><br>
+                    <label><input type="radio" name="q3" value="2"> Ejecutar tareas matemáticas complejas con el
+                        procesador.</label><br>
+                    <label><input type="radio" name="q3" value="3"> Actuar como intermediario entre el hardware y el
+                        software.</label><br>
+                    <label><input type="radio" name="q3" value="4"> Controlar la energía eléctrica que consume el
+                        hardware.</label>
+                </div>
+
+                <div class="question">
+                    <h3>4. ¿Qué ocurre si el hardware no tiene controladores (drivers) adecuados? <!-- Correcta: 2 -->
+                    </h3>
+                    <label><input type="radio" name="q4" value="1"> El hardware funcionará más rápido.</label><br>
+                    <label><input type="radio" name="q4" value="2"> El hardware no podrá interactuar correctamente con
+                        el software.</label><br>
+                    <label><input type="radio" name="q4" value="3"> El hardware consumirá más energía.</label><br>
+                    <label><input type="radio" name="q4" value="4"> El software no podrá acceder a la memoria del
+                        sistema.</label>
+                </div>
+
+                <div class="question">
+                    <h3>5. ¿Cuál es el rol principal de los controladores en el sistema? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q5" value="1"> Asegurarse de que los programas sean más
+                        rápidos.</label><br>
+                    <label><input type="radio" name="q5" value="2"> Traducir las instrucciones del software en comandos
+                        que el hardware pueda ejecutar.</label><br>
+                    <label><input type="radio" name="q5" value="3"> Eliminar la necesidad de un procesador para ejecutar
+                        aplicaciones.</label><br>
+                    <label><input type="radio" name="q5" value="4"> Regular el flujo de energía en el hardware.</label>
+                </div>
+
+                <div class="question">
+                    <h3>6. ¿Qué sucede si no hay software en un sistema informático? <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q6" value="1"> El hardware no podrá realizar ninguna
+                        operación.</label><br>
+                    <label><input type="radio" name="q6" value="2"> El hardware funcionará automáticamente sin ningún
+                        tipo de control.</label><br>
+                    <label><input type="radio" name="q6" value="3"> Solo los componentes de almacenamiento funcionarán
+                        sin problemas.</label><br>
+                    <label><input type="radio" name="q6" value="4"> El procesador será el único componente
+                        operativo.</label>
+                </div>
+
+                <div class="question">
+                    <h3>7. ¿Qué tipo de software gestiona el uso de los recursos físicos del sistema?
+                        <!-- Correcta: 3 -->
+                    </h3>
+                    <label><input type="radio" name="q7" value="1"> Software de aplicación.</label><br>
+                    <label><input type="radio" name="q7" value="2"> Software de programación.</label><br>
+                    <label><input type="radio" name="q7" value="3"> Sistema operativo.</label><br>
+                    <label><input type="radio" name="q7" value="4"> Antivirus.</label>
+                </div>
+
+                <div class="question">
+                    <h3>8. ¿Por qué el hardware necesita el software para funcionar correctamente? <!-- Correcta: 2 -->
+                    </h3>
+                    <label><input type="radio" name="q8" value="1"> Porque el software controla la energía eléctrica del
+                        hardware.</label><br>
+                    <label><input type="radio" name="q8" value="2"> Porque el software dirige el procesamiento de datos
+                        y controla los componentes del hardware.</label><br>
+                    <label><input type="radio" name="q8" value="3"> Porque el hardware no puede almacenar información
+                        sin software.</label><br>
+                    <label><input type="radio" name="q8" value="4"> Porque el hardware se reinicia automáticamente al no
+                        tener software.</label>
+                </div>
+
+                <div class="question">
+                    <h3>9. ¿Qué relación existe entre el software de bajo nivel (como el firmware) y el hardware?
+                        <!-- Correcta: 2 -->
+                    </h3>
+                    <label><input type="radio" name="q9" value="1"> El software de bajo nivel no necesita interactuar
+                        con el hardware.</label><br>
+                    <label><input type="radio" name="q9" value="2"> El software de bajo nivel proporciona instrucciones
+                        específicas que permiten al hardware operar.</label><br>
+                    <label><input type="radio" name="q9" value="3"> El software de bajo nivel es independiente del
+                        hardware.</label><br>
+                    <label><input type="radio" name="q9" value="4"> El hardware reemplaza al software de bajo
+                        nivel.</label>
+                </div>
+
+                <div class="question">
+                    <h3>10. ¿Cuál de las siguientes afirmaciones describe mejor la relación entre hardware y software?
+                        <!-- Correcta: 4 -->
+                    </h3>
+                    <label><input type="radio" name="q10" value="1"> El software solo puede existir si el hardware es de
+                        última generación.</label><br>
+                    <label><input type="radio" name="q10" value="2"> El software y el hardware son independientes y no
+                        dependen uno del otro.</label><br>
+                    <label><input type="radio" name="q10" value="3"> El hardware es necesario para que el software se
+                        ejecute, pero el software no necesita hardware para funcionar.</label><br>
+                    <label><input type="radio" name="q10" value="4"> El hardware proporciona los recursos físicos,
+                        mientras que el software ofrece las instrucciones para utilizarlos.</label>
+                </div>
+            </form>
+    </details>
+    </div>
+
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.2--> Conceptos de código fuente, código objeto y código ejecutable</h2>
         <p id="texto">
@@ -50,10 +205,77 @@
         </p>
 
         <div class="imagenes">
-            <img src="imagenes-html-jose-david/codigo_fuente.png" alt="Imagen Fuemte">
+            <img src="imagenes-html-jose-david/codigo_fuente.png" alt="Imagen Fuente">
             <img src="imagenes-html-jose-david/codigo_ejecutable.png" alt="Imagen Ejecutable">
         </div>
     </div>
+
+    <details id="clicFormulario">
+        <summary>Haz clic en mi para poner aprueba tus conocimientos.</summary>
+        <!-- Formulario desplegable (en cada criterio correspondiente) -->
+
+        <div>
+            <form id="formulario">
+                <div class="question">
+                    <h3>1. ¿Qué son los lenguajes de programación? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q21" value="1"> Sistemas operativos que gestionan el hardware de la
+                        computadora.</label><br>
+                    <label><input type="radio" name="q21" value="2"> Sistemas formales utilizados para escribir software
+                        y definir instrucciones para las computadoras.</label><br>
+                    <label><input type="radio" name="q21" value="3"> Aplicaciones que permiten ejecutar programas en una
+                        computadora.</label><br>
+                    <label><input type="radio" name="q21" value="4"> Lenguajes utilizados solo para interactuar con
+                        redes de computadoras.</label>
+                </div>
+
+                <div class="question">
+                    <h3>2. ¿Qué caracteriza a los lenguajes de bajo nivel? <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q22" value="1"> Están muy cerca del lenguaje de máquina y permiten
+                        interactuar directamente con el hardware de la computadora.</label><br>
+                    <label><input type="radio" name="q22" value="2"> Son fáciles de entender para los humanos y están
+                        diseñados para aplicaciones web.</label><br>
+                    <label><input type="radio" name="q22" value="3"> Son lenguajes híbridos que combinan bajo y alto
+                        nivel.</label><br>
+                    <label><input type="radio" name="q22" value="4"> Son lenguajes específicos para interactuar con
+                        bases de datos.</label>
+                </div>
+
+                <div class="question">
+                    <h3>3. ¿Cuál es un ejemplo de un lenguaje de programación de alto nivel? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q23" value="1"> Ensamblador.</label><br>
+                    <label><input type="radio" name="q23" value="2"> Python.</label><br>
+                    <label><input type="radio" name="q23" value="3"> C.</label><br>
+                    <label><input type="radio" name="q23" value="4"> Lenguaje máquina.</label>
+                </div>
+
+                <div class="question">
+                    <h3>4. ¿Qué es un lenguaje intermedio? <!-- Correcta: 3 --></h3>
+                    <label><input type="radio" name="q24" value="1"> Un lenguaje exclusivo para trabajar con
+                        hardware.</label><br>
+                    <label><input type="radio" name="q24" value="2"> Un lenguaje que es completamente comprensible para
+                        las máquinas.</label><br>
+                    <label><input type="radio" name="q24" value="3"> Un lenguaje que combina elementos de bajo y alto
+                        nivel, como Java.</label><br>
+                    <label><input type="radio" name="q24" value="4"> Un lenguaje utilizado exclusivamente para escribir
+                        código ejecutable.</label>
+                </div>
+
+                <div class="question">
+                    <h3>5. ¿Qué ventaja ofrecen los lenguajes de alto nivel sobre los lenguajes de bajo nivel?
+                        <!-- Correcta: 2 -->
+                    </h3>
+                    <label><input type="radio" name="q25" value="1"> Son más cercanos al lenguaje de máquina y permiten
+                        una mayor velocidad de ejecución.</label><br>
+                    <label><input type="radio" name="q25" value="2"> Son más fáciles de entender para los humanos, ya
+                        que abstraen los detalles del hardware.</label><br>
+                    <label><input type="radio" name="q25" value="3"> Son más rápidos de compilar y generan archivos
+                        ejecutables más pequeños.</label><br>
+                    <label><input type="radio" name="q25" value="4"> Permiten interactuar directamente con el hardware
+                        de la computadora.</label>
+                </div>
+            </form>
+        </div>
+    </details>
 
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.4.--> Proceso de obtención de código ejecutable a partir de código fuente y las
@@ -87,6 +309,128 @@
         </div>
     </div>
 
+    <details id="clicFormulario">
+        <summary>Haz clic en mi para poner aprueba tus conocimientos.</summary>
+        <!-- Formulario desplegable (en cada criterio correspondiente) -->
+
+        <div>
+            <form id="formulario">
+                <div class="question">
+                    <h3>1. ¿Qué es el código fuente? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q11" value="1"> El archivo ejecutable que el sistema operativo
+                        puede ejecutar.</label><br>
+                    <label><input type="radio" name="q11" value="2"> Las instrucciones escritas por el programador en un
+                        lenguaje de programación comprensible para los humanos.</label><br>
+                    <label><input type="radio" name="q11" value="3"> El archivo binario generado después de la
+                        compilación.</label><br>
+                    <label><input type="radio" name="q11" value="4"> El código máquina que la computadora puede ejecutar
+                        directamente.</label>
+                </div>
+
+                <div class="question">
+                    <h3>2. ¿Qué es el código objeto? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q12" value="1"> Un archivo binario ejecutable listo para ser
+                        ejecutado por el sistema operativo.</label><br>
+                    <label><input type="radio" name="q12" value="2"> El resultado intermedio de la compilación del
+                        código fuente, en formato binario, pero no ejecutable hasta que se vincule con otras librerías o
+                        módulos.</label><br>
+                    <label><input type="radio" name="q12" value="3"> Un conjunto de instrucciones en lenguaje de alto
+                        nivel.</label><br>
+                    <label><input type="radio" name="q12" value="4"> Un archivo de texto que contiene el código fuente
+                        del programa.</label>
+                </div>
+
+                <div class="question">
+                    <h3>3. ¿Qué es el código ejecutable? <!-- Correcta: 4 --></h3>
+                    <label><input type="radio" name="q13" value="1"> Un archivo binario intermedio generado por la
+                        compilación.</label><br>
+                    <label><input type="radio" name="q13" value="2"> El código fuente que el programador escribe en un
+                        lenguaje comprensible para los humanos.</label><br>
+                    <label><input type="radio" name="q13" value="3"> El código objeto que no está listo para ser
+                        ejecutado por el sistema operativo.</label><br>
+                    <label><input type="radio" name="q13" value="4"> El archivo final en formato binario que puede ser
+                        ejecutado directamente por el sistema operativo, como un archivo .exe en Windows.</label>
+                </div>
+
+                <div class="question">
+                    <h3>4. ¿Cuál es el propósito de la compilación? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q14" value="1"> Ejecutar el código fuente directamente sin
+                        necesidad de un proceso intermedio.</label><br>
+                    <label><input type="radio" name="q14" value="2"> Convertir el código fuente en un formato que la
+                        máquina pueda entender (código objeto).</label><br>
+                    <label><input type="radio" name="q14" value="3"> Traducir el código fuente a instrucciones
+                        comprensibles para los humanos.</label><br>
+                    <label><input type="radio" name="q14" value="4"> Modificar el código objeto para hacerlo más
+                        eficiente antes de la ejecución.</label>
+                </div>
+
+                <div class="question">
+                    <h3>5. ¿Qué herramienta se utiliza para convertir el código fuente en código ejecutable en lenguajes
+                        compilados como C o C++? <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q15" value="1"> El compilador.</label><br>
+                    <label><input type="radio" name="q15" value="2"> El intérprete.</label><br>
+                    <label><input type="radio" name="q15" value="3"> La máquina virtual.</label><br>
+                    <label><input type="radio" name="q15" value="4"> El enlazador.</label>
+                </div>
+
+                <div class="question">
+                    <h3>6. ¿Cuál de los siguientes es un lenguaje interpretado? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q16" value="1"> C.</label><br>
+                    <label><input type="radio" name="q16" value="2"> Python.</label><br>
+                    <label><input type="radio" name="q16" value="3"> C++.</label><br>
+                    <label><input type="radio" name="q16" value="4"> Java.</label>
+                </div>
+
+                <div class="question">
+                    <h3>7. ¿Qué hace el enlazador durante el proceso de creación de un código ejecutable?
+                        <!-- Correcta: 3 -->
+                    </h3>
+                    <label><input type="radio" name="q17" value="1"> Convierte el código fuente a lenguaje de
+                        máquina.</label><br>
+                    <label><input type="radio" name="q17" value="2"> Ejecuta las instrucciones del código fuente
+                        directamente.</label><br>
+                    <label><input type="radio" name="q17" value="3"> Combina el código objeto con librerías o módulos
+                        externos para crear un archivo ejecutable final.</label><br>
+                    <label><input type="radio" name="q17" value="4"> Depura el código fuente y elimina errores.</label>
+                </div>
+
+                <div class="question">
+                    <h3>8. ¿Qué es el bytecode? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q18" value="1"> Un archivo binario ejecutable generado después de
+                        la compilación.</label><br>
+                    <label><input type="radio" name="q18" value="2"> Un formato intermedio entre código fuente y código
+                        ejecutable, utilizado por lenguajes como Java.</label><br>
+                    <label><input type="radio" name="q18" value="3"> El código objeto resultante de la
+                        compilación.</label><br>
+                    <label><input type="radio" name="q18" value="4"> Un archivo de texto con instrucciones comprensibles
+                        para los humanos.</label>
+                </div>
+
+                <div class="question">
+                    <h3>9. ¿Qué sucede cuando un lenguaje de programación es compilado? <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q19" value="1"> El código fuente es convertido a código objeto, y
+                        luego se genera un archivo ejecutable.</label><br>
+                    <label><input type="radio" name="q19" value="2"> El código fuente es interpretado línea por línea
+                        por el sistema operativo.</label><br>
+                    <label><input type="radio" name="q19" value="3"> El código objeto se ejecuta directamente sin
+                        necesidad de ningún archivo intermedio.</label><br>
+                    <label><input type="radio" name="q19" value="4"> El código fuente es convertido a un formato que
+                        solo puede ser ejecutado en una máquina virtual.</label>
+                </div>
+
+                <div class="question">
+                    <h3>10. ¿Cuál es la extensión más común para un archivo ejecutable en Windows? <!-- Correcta: 4 -->
+                    </h3>
+                    <label><input type="radio" name="q20" value="1"> .java</label><br>
+                    <label><input type="radio" name="q20" value="2"> .class</label><br>
+                    <label><input type="radio" name="q20" value="3"> .py</label><br>
+                    <label><input type="radio" name="q20" value="4"> .exe</label>
+                </div>
+            </form>
+        </div>
+    </details>
+
+
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.3.--> Lenguajes de programación</h2>
         <p id="texto">
@@ -111,6 +455,73 @@
         </div>
     </div>
 
+    <details id="clicFormulario">
+        <summary>Haz clic en mi para poner aprueba tus conocimientos.</summary>
+        <!-- Formulario desplegable (en cada criterio correspondiente) -->
+
+        <div>
+            <form id="formulario">
+                <div class="question">
+                    <h3>1. ¿Qué son los lenguajes de programación? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q21" value="1"> Sistemas operativos que gestionan el hardware de la
+                        computadora.</label><br>
+                    <label><input type="radio" name="q21" value="2"> Sistemas formales utilizados para escribir software
+                        y definir instrucciones para las computadoras.</label><br>
+                    <label><input type="radio" name="q21" value="3"> Aplicaciones que permiten ejecutar programas en una
+                        computadora.</label><br>
+                    <label><input type="radio" name="q21" value="4"> Lenguajes utilizados solo para interactuar con
+                        redes de computadoras.</label>
+                </div>
+
+                <div class="question">
+                    <h3>2. ¿Qué caracteriza a los lenguajes de bajo nivel? <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q22" value="1"> Están muy cerca del lenguaje de máquina y permiten
+                        interactuar directamente con el hardware de la computadora.</label><br>
+                    <label><input type="radio" name="q22" value="2"> Son fáciles de entender para los humanos y están
+                        diseñados para aplicaciones web.</label><br>
+                    <label><input type="radio" name="q22" value="3"> Son lenguajes híbridos que combinan bajo y alto
+                        nivel.</label><br>
+                    <label><input type="radio" name="q22" value="4"> Son lenguajes específicos para interactuar con
+                        bases de datos.</label>
+                </div>
+
+                <div class="question">
+                    <h3>3. ¿Cuál es un ejemplo de un lenguaje de programación de alto nivel? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q23" value="1"> Ensamblador.</label><br>
+                    <label><input type="radio" name="q23" value="2"> Python.</label><br>
+                    <label><input type="radio" name="q23" value="3"> C.</label><br>
+                    <label><input type="radio" name="q23" value="4"> Lenguaje máquina.</label>
+                </div>
+
+                <div class="question">
+                    <h3>4. ¿Qué es un lenguaje intermedio? <!-- Correcta: 3 --></h3>
+                    <label><input type="radio" name="q24" value="1"> Un lenguaje exclusivo para trabajar con
+                        hardware.</label><br>
+                    <label><input type="radio" name="q24" value="2"> Un lenguaje que es completamente comprensible para
+                        las máquinas.</label><br>
+                    <label><input type="radio" name="q24" value="3"> Un lenguaje que combina elementos de bajo y alto
+                        nivel, como Java.</label><br>
+                    <label><input type="radio" name="q24" value="4"> Un lenguaje utilizado exclusivamente para escribir
+                        código ejecutable.</label>
+                </div>
+
+                <div class="question">
+                    <h3>5. ¿Qué ventaja ofrecen los lenguajes de alto nivel sobre los lenguajes de bajo nivel?
+                        <!-- Correcta: 2 -->
+                    </h3>
+                    <label><input type="radio" name="q25" value="1"> Son más cercanos al lenguaje de máquina y permiten
+                        una mayor velocidad de ejecución.</label><br>
+                    <label><input type="radio" name="q25" value="2"> Son más fáciles de entender para los humanos, ya
+                        que abstraen los detalles del hardware.</label><br>
+                    <label><input type="radio" name="q25" value="3"> Son más rápidos de compilar y generan archivos
+                        ejecutables más pequeños.</label><br>
+                    <label><input type="radio" name="q25" value="4"> Permiten interactuar directamente con el hardware
+                        de la computadora.</label>
+                </div>
+            </form>
+        </div>
+    </details>
+
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.5.--> Concepto de máquina virtual y su utilidad</h2>
         <p id="texto">
@@ -131,6 +542,78 @@
             <img src="imagenes-html-jose-david/maquina_virtual.png" alt="Imagen Maquina Virtual" width="450px">
         </div>
     </div>
+
+    <details id="clicFormulario">
+        <summary>Haz clic en mi para poner aprueba tus conocimientos.</summary>
+        <!-- Formulario desplegable (en cada criterio correspondiente) -->
+
+        <div>
+            <form id="formulario">
+                <div class="question">
+                    <h3>1. ¿Qué es una máquina virtual? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q26" value="1"> Un hardware físico que mejora la velocidad de la
+                        computadora.</label><br>
+                    <label><input type="radio" name="q26" value="2"> Un software que emula una computadora real y
+                        permite ejecutar programas como si estuvieran en una máquina física.</label><br>
+                    <label><input type="radio" name="q26" value="3"> Un sistema operativo que gestiona el hardware
+                        directamente.</label><br>
+                    <label><input type="radio" name="q26" value="4"> Un tipo de lenguaje de programación utilizado para
+                        ejecutar aplicaciones en múltiples plataformas.</label>
+                </div>
+
+                <div class="question">
+                    <h3>2. ¿Cuál es una de las principales utilidades de las máquinas virtuales? <!-- Correcta: 1 -->
+                    </h3>
+                    <label><input type="radio" name="q27" value="1"> Permiten ejecutar código en diferentes sistemas
+                        operativos sin modificaciones, actuando como capa intermedia.</label><br>
+                    <label><input type="radio" name="q27" value="2"> Mejoran la velocidad de ejecución de los programas
+                        al reducir la carga del sistema operativo.</label><br>
+                    <label><input type="radio" name="q27" value="3"> Eliminan la necesidad de utilizar sistemas
+                        operativos virtualizados.</label><br>
+                    <label><input type="radio" name="q27" value="4"> Aíslan las máquinas físicas para evitar que se
+                        ejecuten otros programas en ellas.</label>
+                </div>
+
+                <div class="question">
+                    <h3>3. ¿Cómo mejora la seguridad una máquina virtual? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q28" value="1"> Permite ejecutar programas más rápido sin afectar
+                        el sistema operativo host.</label><br>
+                    <label><input type="radio" name="q28" value="2"> Aísla el programa de la máquina real, evitando que
+                        el código malicioso afecte al sistema host.</label><br>
+                    <label><input type="radio" name="q28" value="3"> Encripta todos los datos que se ejecutan en la
+                        máquina real.</label><br>
+                    <label><input type="radio" name="q28" value="4"> Mejora la conectividad de red entre máquinas
+                        virtuales y físicas.</label>
+                </div>
+
+                <div class="question">
+                    <h3>4. ¿Cuál es la ventaja de las máquinas virtuales en cuanto a la eficiencia en el uso de
+                        recursos? <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q29" value="1"> Permiten ejecutar múltiples máquinas virtuales en
+                        una sola máquina física, optimizando el uso de recursos.</label><br>
+                    <label><input type="radio" name="q29" value="2"> Aumentan la velocidad de la máquina física al
+                        reducir el uso de memoria.</label><br>
+                    <label><input type="radio" name="q29" value="3"> Requieren menos espacio en disco, ya que no
+                        necesitan un sistema operativo completo.</label><br>
+                    <label><input type="radio" name="q29" value="4"> Eliminan la necesidad de tener hardware adicional
+                        para ejecutar diferentes aplicaciones.</label>
+                </div>
+
+                <div class="question">
+                    <h3>5. ¿Qué tipo de programas se ejecutan en una máquina virtual? <!-- Correcta: 3 --></h3>
+                    <label><input type="radio" name="q30" value="1"> Solo programas diseñados específicamente para
+                        máquinas virtuales.</label><br>
+                    <label><input type="radio" name="q30" value="2"> Programas que requieren acceso directo al hardware
+                        de la máquina física.</label><br>
+                    <label><input type="radio" name="q30" value="3"> Programas que pueden ejecutarse en diferentes
+                        sistemas operativos gracias a la emulación de la máquina virtual.</label><br>
+                    <label><input type="radio" name="q30" value="4"> Solo aplicaciones de red que requieren máquinas
+                        virtuales como plataforma.</label>
+                </div>
+            </form>
+        </div>
+    </details>
+
 
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.6.--> Razón de ser de la ingeniería del software</h2>
@@ -188,50 +671,69 @@
     <details id="clicFormulario">
         <summary>Haz clic en mi para poner aprueba tus conocimientos.</summary>
         <!-- Formulario desplegable (en cada criterio correspondiente) -->
-         
+
         <div>
             <form id="formulario">
                 <div class="question">
-                    <h3>1. ¿Cuáles son los principales traductores encargados de traducir el código fuente de un
-                        lenguaje de
-                        programación a un código objeto interpretado por el ordenador?</h3>
-                    <label><input type="radio" name="q1" value="1"> Analizadores, Compiladores,
-                        Estabilizadores.</label><br>
-                    <label><input type="radio" name="q1" value="2"> Intérpretes, Compiladores.</label><br>
-                    <label><input type="radio" name="q1" value="3"> Intérpretes, Traductores en línea
-                        directa.</label><br>
-                    <label><input type="radio" name="q1" value="4"> Analizadores, Estabilizadores.</label>
+                    <h3>1. ¿Qué se realiza en la fase de análisis de requisitos en el desarrollo de una aplicación
+                        informática? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q31" value="1"> Se programan las funcionalidades necesarias para el
+                        funcionamiento de la aplicación.</label><br>
+                    <label><input type="radio" name="q31" value="2"> Se identifican las necesidades y expectativas del
+                        usuario para definir las funcionalidades del programa.</label><br>
+                    <label><input type="radio" name="q31" value="3"> Se prueban las funcionalidades de la aplicación en
+                        busca de errores.</label><br>
+                    <label><input type="radio" name="q31" value="4"> Se instala la aplicación en el entorno de
+                        producción.</label>
                 </div>
+
                 <div class="question">
-                    <h3>2. ¿Qué es un "Entorno de desarrollo integrado"?</h3>
-                    <label><input type="radio" name="q2" value="1"> Una aplicación formada por varias herramientas de
-                        transformación de código que facilitan la programación y la creación de programas.</label><br>
-                    <label><input type="radio" name="q2" value="2"> Un entorno encargado de transformar el código fuente
-                        para
-                        facilitar la programación y la creación de programas, creado a partir de 3 programas
-                        independientes.</label><br>
-                    <label><input type="radio" name="q2" value="3"> Una aplicación formada por 3 compiladores de Java
-                        encargados
-                        en traducir código objeto dentro de un entorno de programación integrado.</label><br>
-                    <label><input type="radio" name="q2" value="4"> Un entorno de programación integrado en una
-                        aplicación de
-                        código objeto y fuente combinados.</label>
+                    <h3>2. ¿Cuál es el objetivo principal de la fase de diseño del sistema? <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q32" value="1"> Estructurar la arquitectura de la aplicación,
+                        definiendo la base de datos, la interfaz y la programación.</label><br>
+                    <label><input type="radio" name="q32" value="2"> Implementar el código fuente según el diseño
+                        previamente definido.</label><br>
+                    <label><input type="radio" name="q32" value="3"> Verificar la funcionalidad del sistema mediante
+                        pruebas de usabilidad.</label><br>
+                    <label><input type="radio" name="q32" value="4"> Instalar la aplicación en el entorno de producción
+                        para su uso final.</label>
                 </div>
+
                 <div class="question">
-                    <h3>3. ¿Qué usamos para comprobar, detectar y solucionar un error en el código de Java?</h3>
-                    <label><input type="radio" name="q3" value="1"> El depurador.</label><br>
-                    <label><input type="radio" name="q3" value="2"> Cambiar formato.</label><br>
-                    <label><input type="radio" name="q3" value="3"> Un método.</label><br>
-                    <label><input type="radio" name="q3" value="4"> Un comentario.</label>
+                    <h3>3. ¿Qué ocurre en la fase de desarrollo o programación? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q33" value="1"> Se realizan las pruebas para verificar si la
+                        aplicación funciona correctamente.</label><br>
+                    <label><input type="radio" name="q33" value="2"> Se programa el código fuente según el diseño
+                        definido, implementando las funcionalidades necesarias.</label><br>
+                    <label><input type="radio" name="q33" value="3"> Se identifican los errores y se corrigen para
+                        asegurar que el sistema cumpla con los requerimientos.</label><br>
+                    <label><input type="radio" name="q33" value="4"> Se realiza el mantenimiento de la aplicación para
+                        futuros cambios.</label>
                 </div>
+
                 <div class="question">
-                    <h3>4. ¿Qué necesitamos si el código abierto no es ejecutable?</h3>
-                    <label><input type="radio" name="q4" value="1"> Un Enlazador.</label><br>
-                    <label><input type="radio" name="q4" value="2"> El depurador.</label><br>
-                    <label><input type="radio" name="q4" value="3"> Reiniciar formato.</label><br>
-                    <label><input type="radio" name="q4" value="4"> Compilarlo nuevamente.</label>
+                    <h3>4. ¿Cuál es el objetivo principal de la fase de pruebas? <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q34" value="1"> Verificar las funcionalidades de la aplicación para
+                        asegurar que cumple con los requisitos establecidos.</label><br>
+                    <label><input type="radio" name="q34" value="2"> Definir la arquitectura del sistema y los
+                        componentes de la base de datos.</label><br>
+                    <label><input type="radio" name="q34" value="3"> Desarrollar el código fuente y programar las
+                        funcionalidades necesarias.</label><br>
+                    <label><input type="radio" name="q34" value="4"> Instalar la aplicación en el entorno de producción
+                        para su uso final.</label>
                 </div>
-                <div class="contenedorBoton">
+
+                <div class="question">
+                    <h3>5. ¿Qué se realiza en la fase de implantación y mantenimiento? <!-- Correcta: 3 --></h3>
+                    <label><input type="radio" name="q35" value="1"> Se identifican los requisitos del usuario para
+                        planificar el diseño del sistema.</label><br>
+                    <label><input type="radio" name="q35" value="2"> Se prueba la aplicación para verificar su
+                        funcionamiento correcto y su ajuste a los requisitos.</label><br>
+                    <label><input type="radio" name="q35" value="3"> Se instala la aplicación en el entorno de
+                        producción, proporcionando soporte continuo y mantenimiento para adaptarse a cambios
+                        futuros.</label><br>
+                    <label><input type="radio" name="q35" value="4"> Se estructuran las interfaces y bases de datos
+                        necesarias para la implementación del código fuente.</label>
                 </div>
             </form>
         </div>
@@ -416,6 +918,123 @@
         </p>
     </div>
 
+    <details id="clicFormulario">
+        <summary>Haz clic en mi para poner aprueba tus conocimientos.</summary>
+        <!-- Formulario desplegable (en cada criterio correspondiente) -->
+
+        <div>
+            <form id="formulario">
+                <div class="question">
+                    <h3>1. ¿En qué fase del modelo en cascada se definen los requisitos del sistema?
+                        <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q36" value="1"> Requisitos</label><br>
+                    <label><input type="radio" name="q36" value="2"> Diseño</label><br>
+                    <label><input type="radio" name="q36" value="3"> Implementación</label><br>
+                    <label><input type="radio" name="q36" value="4"> Pruebas</label>
+                </div>
+
+                <div class="question">
+                    <h3>2. ¿Cuál es una de las principales desventajas del modelo en cascada? <!-- Correcta: 3 --></h3>
+                    <label><input type="radio" name="q37" value="1"> Flexibilidad ante cambios</label><br>
+                    <label><input type="radio" name="q37" value="2"> Permite entregas rápidas</label><br>
+                    <label><input type="radio" name="q37" value="3"> Rigidez y dificultad para adaptarse a
+                        cambios</label><br>
+                    <label><input type="radio" name="q37" value="4"> Es adecuado para proyectos pequeños</label>
+                </div>
+
+                <div class="question">
+                    <h3>3. En el modelo en V, ¿cuál de las siguientes fases se empareja con la fase de codificación?
+                        <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q38" value="1"> Pruebas unitarias</label><br>
+                    <label><input type="radio" name="q38" value="2"> Pruebas de integración</label><br>
+                    <label><input type="radio" name="q38" value="3"> Diseño detallado</label><br>
+                    <label><input type="radio" name="q38" value="4"> Recolección de requisitos</label>
+                </div>
+
+                <div class="question">
+                    <h3>4. ¿Qué ventaja tiene el modelo incremental en comparación con otros modelos?
+                        <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q39" value="1"> Flexibilidad ante cambios y entrega rápida de
+                        incrementos</label><br>
+                    <label><input type="radio" name="q39" value="2"> Proceso lineal sin retrocesos</label><br>
+                    <label><input type="radio" name="q39" value="3"> Enfoque fuerte en la validación y
+                        pruebas</label><br>
+                    <label><input type="radio" name="q39" value="4"> Permite una planificación detallada al inicio del
+                        proyecto</label>
+                </div>
+
+                <div class="question">
+                    <h3>5. En el modelo iterativo, ¿qué ocurre después de la revisión del prototipo?
+                        <!-- Correcta: 3 --></h3>
+                    <label><input type="radio" name="q40" value="1"> Se realizan las pruebas de integración del
+                        sistema.</label><br>
+                    <label><input type="radio" name="q40" value="2"> Se ajustan los requisitos según el feedback
+                        recibido.</label><br>
+                    <label><input type="radio" name="q40" value="3"> Se repite el ciclo para ajustar el desarrollo y
+                        continuar con las nuevas funcionalidades.</label><br>
+                    <label><input type="radio" name="q40" value="4"> Se realiza la instalación en el entorno de
+                        producción.</label>
+                </div>
+
+                <div class="question">
+                    <h3>6. ¿Qué es una ventaja clave del modelo en espiral? <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q41" value="1"> Identificación y gestión temprana de
+                        riesgos</label><br>
+                    <label><input type="radio" name="q41" value="2"> Proceso de desarrollo completamente
+                        lineal</label><br>
+                    <label><input type="radio" name="q41" value="3"> Flexibilidad ante cambios sin planificación
+                        inicial</label><br>
+                    <label><input type="radio" name="q41" value="4"> Menor coste de gestión debido a ciclos más
+                        cortos</label>
+                </div>
+
+                <div class="question">
+                    <h3>7. ¿Qué desventaja principal presenta el modelo ágil? <!-- Correcta: 3 --></h3>
+                    <label><input type="radio" name="q42" value="1"> Alta flexibilidad para adaptarse a
+                        cambios</label><br>
+                    <label><input type="radio" name="q42" value="2"> Rápida entrega de software funcional</label><br>
+                    <label><input type="radio" name="q42" value="3"> Puede resultar en falta de documentación
+                        adecuada</label><br>
+                    <label><input type="radio" name="q42" value="4"> Requiere equipos altamente capacitados para
+                        gestionarlo</label>
+                </div>
+
+                <div class="question">
+                    <h3>8. ¿En qué modelo se utiliza la fase de "Desarrollo e Implementación" tras el análisis de
+                        riesgos? <!-- Correcta: 5 --></h3>
+                    <label><input type="radio" name="q43" value="1"> Modelo en cascada</label><br>
+                    <label><input type="radio" name="q43" value="2"> Modelo Ágil</label><br>
+                    <label><input type="radio" name="q43" value="3"> Modelo en espiral</label><br>
+                    <label><input type="radio" name="q43" value="4"> Modelo incremental</label>
+                </div>
+
+                <div class="question">
+                    <h3>9. En el modelo de prototipo, ¿cuáles son las fases principales? (Selecciona dos)
+                        <!-- Correcta: 1, 3 --></h3>
+                    <label><input type="checkbox" name="q44" value="1"> Desarrollo del prototipo</label><br>
+                    <label><input type="checkbox" name="q44" value="2"> Planificación detallada del proyecto</label><br>
+                    <label><input type="checkbox" name="q44" value="3"> Evaluación del prototipo por el
+                        cliente</label><br>
+                    <label><input type="checkbox" name="q44" value="4"> Pruebas de integración del sistema</label>
+                </div>
+
+                <div class="question">
+                    <h3>10. ¿Qué ventajas ofrece el modelo ágil en comparación con otros modelos? (Selecciona dos)
+                        <!-- Correcta: 1, 3 --></h3>
+                    <label><input type="checkbox" name="q45" value="1"> Alta flexibilidad y rápida adaptación a
+                        cambios</label><br>
+                    <label><input type="checkbox" name="q45" value="2"> Proceso completamente rígido sin lugar a
+                        cambios</label><br>
+                    <label><input type="checkbox" name="q45" value="3"> Enfoque en la satisfacción del cliente y entrega
+                        continua</label><br>
+                    <label><input type="checkbox" name="q45" value="4"> Requiere menos recursos humanos para la
+                        implementación</label>
+                </div>
+            </form>
+        </div>
+    </details>
+
+
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.9.--> Metodologías de desarrollo de software actuales</h2>
         <p id="texto">
@@ -511,6 +1130,189 @@
             Puede no ser adecuado para proyectos muy grandes o complejos.
         </p>
     </div>
+    <details id="clicFormulario">
+        <summary>Haz clic en mi para poner aprueba tus conocimientos.</summary>
+        <!-- Formulario desplegable (en cada criterio correspondiente) -->
+
+        <div>
+            <form id="formulario">
+                <div class="question">
+                    <h3>1. ¿Qué caracteriza a la metodología Ágil? <!-- Correcta: 3 --></h3>
+                    <label><input type="radio" name="q46" value="1"> Enfoque en el desarrollo de software con procesos
+                        estrictos y rígidos</label><br>
+                    <label><input type="radio" name="q46" value="2"> El énfasis está en la planificación detallada y
+                        secuencial</label><br>
+                    <label><input type="radio" name="q46" value="3"> Flexibilidad y adaptación rápida a los
+                        cambios</label><br>
+                    <label><input type="radio" name="q46" value="4"> Enfoque de trabajo independiente sin colaboración
+                        entre equipos</label>
+                </div>
+
+                <div class="question">
+                    <h3>2. ¿Cuál de las siguientes es una de las metodologías más populares dentro de Agile?
+                        <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q47" value="1"> Scrum</label><br>
+                    <label><input type="radio" name="q47" value="2"> Waterfall</label><br>
+                    <label><input type="radio" name="q47" value="3"> Modelo en cascada</label><br>
+                    <label><input type="radio" name="q47" value="4"> Modelo en espiral</label>
+                </div>
+
+                <div class="question">
+                    <h3>3. ¿Qué característica define principalmente la metodología DevOps? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q48" value="1"> Separación de los equipos de desarrollo y
+                        operaciones</label><br>
+                    <label><input type="radio" name="q48" value="2"> Colaboración e integración entre los equipos de
+                        desarrollo y operaciones</label><br>
+                    <label><input type="radio" name="q48" value="3"> Enfoque únicamente en el desarrollo de código sin
+                        considerar la infraestructura</label><br>
+                    <label><input type="radio" name="q48" value="4"> Foco exclusivo en la automatización de
+                        pruebas</label>
+                </div>
+
+                <div class="question">
+                    <h3>4. ¿Cuál es una de las principales ventajas de la metodología DevOps? <!-- Correcta: 3 --></h3>
+                    <label><input type="radio" name="q49" value="1"> Mayor estabilidad mediante la integración manual de
+                        procesos</label><br>
+                    <label><input type="radio" name="q49" value="2"> Reducción del tiempo de ciclo mediante la
+                        automatización del ciclo de vida</label><br>
+                    <label><input type="radio" name="q49" value="3"> Reducción del tiempo de ciclo entre desarrollo y
+                        entrega</label><br>
+                    <label><input type="radio" name="q49" value="4"> Aumento de la complejidad del proceso de
+                        desarrollo</label>
+                </div>
+
+                <div class="question">
+                    <h3>5. ¿Qué desventaja presenta la metodología DevOps? <!-- Correcta: 4 --></h3>
+                    <label><input type="radio" name="q50" value="1"> Menor colaboración entre los equipos de desarrollo
+                        y operaciones</label><br>
+                    <label><input type="radio" name="q50" value="2"> Reducción de la automatización de
+                        pruebas</label><br>
+                    <label><input type="radio" name="q50" value="3"> Aumento en el número de manualidades dentro de los
+                        procesos</label><br>
+                    <label><input type="radio" name="q50" value="4"> Curva de aprendizaje significativa para la adopción
+                        de nuevas herramientas</label>
+                </div>
+
+                <div class="question">
+                    <h3>6. ¿En qué se enfoca principalmente la metodología Lean? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q51" value="1"> Maximizar la cantidad de trabajo sin enfocarse en
+                        el valor</label><br>
+                    <label><input type="radio" name="q51" value="2"> Maximizar el valor y minimizar el
+                        desperdicio</label><br>
+                    <label><input type="radio" name="q51" value="3"> Foco en la planificación detallada y la reducción
+                        de costos a largo plazo</label><br>
+                    <label><input type="radio" name="q51" value="4"> Proceso completamente centrado en la automatización
+                        del ciclo de vida</label>
+                </div>
+
+                <div class="question">
+                    <h3>7. ¿Qué desventaja presenta la metodología Lean? <!-- Correcta: 3 --></h3>
+                    <label><input type="radio" name="q52" value="1"> Permite la entrega de valor rápidamente al
+                        cliente</label><br>
+                    <label><input type="radio" name="q52" value="2"> Optimización de recursos en proyectos
+                        grandes</label><br>
+                    <label><input type="radio" name="q52" value="3"> Puede no ser adecuada para proyectos muy grandes o
+                        complejos</label><br>
+                    <label><input type="radio" name="q52" value="4"> Fomenta una baja calidad de código debido a la
+                        rapidez de entrega</label>
+                </div>
+
+                <div class="question">
+                    <h3>8. ¿Qué objetivo principal persigue la metodología Scrum dentro de Agile? <!-- Correcta: 1 -->
+                    </h3>
+                    <label><input type="radio" name="q53" value="1"> Organizar el desarrollo en sprints con roles
+                        específicos</label><br>
+                    <label><input type="radio" name="q53" value="2"> Realizar entregas continuas y automáticas del
+                        software</label><br>
+                    <label><input type="radio" name="q53" value="3"> Establecer un enfoque en la programación en
+                        parejas</label><br>
+                    <label><input type="radio" name="q53" value="4"> Centrarse únicamente en la prueba del
+                        software</label>
+                </div>
+
+                <div class="question">
+                    <h3>9. ¿Cuál de las siguientes afirmaciones es cierta acerca de la metodología Kanban?
+                        <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q54" value="1"> Se enfoca en la planificación a largo plazo sin
+                        cambios frecuentes</label><br>
+                    <label><input type="radio" name="q54" value="2"> Focaliza la visualización del flujo de trabajo y
+                        gestión de tareas</label><br>
+                    <label><input type="radio" name="q54" value="3"> La programación en parejas es su enfoque
+                        central</label><br>
+                    <label><input type="radio" name="q54" value="4"> Se basa en un ciclo de entregas continuas del
+                        software</label>
+                </div>
+
+                <div class="question">
+                    <h3>10. ¿Qué característica define principalmente a Extreme Programming (XP)? <!-- Correcta: 1 -->
+                    </h3>
+                    <label><input type="radio" name="q55" value="1"> Enfoque en la calidad del código y la integración
+                        continua</label><br>
+                    <label><input type="radio" name="q55" value="2"> Uso exclusivo de métodos ágiles sin pruebas del
+                        software</label><br>
+                    <label><input type="radio" name="q55" value="3"> Reducción en la calidad de código para favorecer la
+                        rapidez</label><br>
+                    <label><input type="radio" name="q55" value="4"> Foco en la planificación y diseño a largo plazo del
+                        software</label>
+                </div>
+
+                <div class="question">
+                    <h3>11. ¿Qué fase del modelo en cascada implica la identificación y definición de los requisitos del
+                        sistema? <!-- Correcta: 1 --></h3>
+                    <label><input type="radio" name="q56" value="1"> Requisitos</label><br>
+                    <label><input type="radio" name="q56" value="2"> Diseño</label><br>
+                    <label><input type="radio" name="q56" value="3"> Implementación</label><br>
+                    <label><input type="radio" name="q56" value="4"> Despliegue</label>
+                </div>
+
+                <div class="question">
+                    <h3>12. ¿Qué desventaja se asocia con el modelo en cascada? <!-- Correcta: 3 --></h3>
+                    <label><input type="radio" name="q57" value="1"> Flexibilidad para adaptarse a cambios durante el
+                        desarrollo</label><br>
+                    <label><input type="radio" name="q57" value="2"> Requiere menos tiempo de planificación y
+                        diseño</label><br>
+                    <label><input type="radio" name="q57" value="3"> Rigidez y dificultad para realizar cambios durante
+                        el proceso</label><br>
+                    <label><input type="radio" name="q57" value="4"> El enfoque lineal permite una retroalimentación
+                        constante</label>
+                </div>
+
+                <div class="question">
+                    <h3>13. ¿En qué modelo de ciclo de vida el progreso se evalúa a través de iteraciones, permitiendo
+                        ajustes según el feedback del cliente? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q58" value="1"> Modelo en V</label><br>
+                    <label><input type="radio" name="q58" value="2"> Modelo Iterativo</label><br>
+                    <label><input type="radio" name="q58" value="3"> Modelo en cascada</label><br>
+                    <label><input type="radio" name="q58" value="4"> Modelo incremental</label>
+                </div>
+
+                <div class="question">
+                    <h3>14. ¿Qué modelo de ciclo de vida incluye una fase de análisis de riesgos como parte de su
+                        enfoque? <!-- Correcta: 4 --></h3>
+                    <label><input type="radio" name="q59" value="1"> Modelo incremental</label><br>
+                    <label><input type="radio" name="q59" value="2"> Modelo en V</label><br>
+                    <label><input type="radio" name="q59" value="3"> Modelo en cascada</label><br>
+                    <label><input type="radio" name="q59" value="4"> Modelo en espiral</label>
+                </div>
+
+                <div class="question">
+                    <h3>15. ¿Qué ventaja clave ofrece el modelo incremental en comparación con otros modelos de ciclo de
+                        vida? <!-- Correcta: 2 --></h3>
+                    <label><input type="radio" name="q60" value="1"> Fase de planificación detallada en cada
+                        iteración</label><br>
+                    <label><input type="radio" name="q60" value="2"> Flexibilidad para adaptarse a cambios y entregas
+                        rápidas de funcionalidades</label><br>
+                    <label><input type="radio" name="q60" value="3"> Enfoque rígido que favorece la entrega de una única
+                        versión del software</label><br>
+                    <label><input type="radio" name="q60" value="4"> Menor enfoque en las pruebas de integración de
+                        módulos</label>
+                </div>
+            </form>
+
+        </div>
+    </details>
+
+
     <a href="#top" class="botonSubir">⬆</a>
     <div class="footer">&copy;<span> </span><span> Lobster S.L. Todos los derechos reservados.</span></div>
 </body>
