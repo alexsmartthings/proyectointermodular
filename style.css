@@ -469,6 +469,54 @@ hr {
     align-items: left;
 }
 
+.formularioContacto {
+            width: 460px;
+            margin: 80px auto;
+            margin-top: 130px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            background-color: #3f3f3f;
+            box-shadow: #00000033;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .formulario, h1{
+            color: white;
+            text-align: center;
+        }
+
+        input {
+            background-color: #fbfbfb;
+            width: 408px;
+            height: 40px;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            background-color: #fbfbfb;
+            width: 405px;
+            height: 150px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            margin-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            padding-top: 15px;
+        }
+
+
+        label {
+            display: block;
+            float: center;
+        }
+
 
 @media (max-width: 768px) {
     /* Media, para buen vistazo de la barra superior*/
