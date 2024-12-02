@@ -1,8 +1,8 @@
 function comprobarRespuesta() {
   // Respuestas correctas (se asignan según tus criterios)
   const respuestasCorrectas = {
-    q1: '2',  // Pregunta 1, opción 1 correcta
-    q2: '3',  // Pregunta 2, opción 2 correcta
+    q1: '2',  // Pregunta 1, opción 2 correcta
+    q2: '3',  // Pregunta 2, opción 3 correcta
     q3: '3',  // Pregunta 3, opción 3 correcta
     q4: '2',  // Pregunta 4, opción 2 correcta
     q5: '2',
@@ -44,8 +44,8 @@ function comprobarRespuesta() {
     q41: '1',
     q42: '3',
     q43: '3',
-    q44: '1', // multirespuesta
-    q45: '3', // multirespuesta
+    q44: '1',
+    q45: '3',
     q46: '3',
     q47: '1',
     q48: '2',
@@ -60,77 +60,32 @@ function comprobarRespuesta() {
     q57: '3',
     q58: '2',
     q59: '4',
-    q60: '2',
+    q60: '2',  // Pregunta 60, opción 2 correcta
   };
 
-  let respuestasCorrectasContadas = 0;
-  let preguntasIncorrectas = []; // Almacena las preguntas con respuestas incorrectas
-
-  // Iterar sobre cada pregunta (q1, q2, q3, q4)
+  // Iterar sobre cada pregunta (q1, q2, q3, ...)
   for (let pregunta in respuestasCorrectas) {
-    // Obtener las opciones de radio para cada pregunta
+    // Obtener todas las opciones (radio buttons) de la pregunta
     let opciones = document.getElementsByName(pregunta);
-    let seleccionada = null;
 
-    // Buscar la opción seleccionada
+    // Iterar sobre las opciones para encontrar cuál está seleccionada
     for (let i = 0; i < opciones.length; i++) {
+      let label = opciones[i].parentNode; // Obtiene el <label> que contiene el texto
+
+      // Verificar si la opción está seleccionada
       if (opciones[i].checked) {
-        seleccionada = opciones[i].value;
-        break;
-      }
-    }
-
-    // Comprobar si la respuesta seleccionada es la correcta
-    if (seleccionada === respuestasCorrectas[pregunta]) {
-      respuestasCorrectasContadas++;
-    } else {
-      // Si la respuesta es incorrecta, añadir la pregunta al array de preguntasIncorrectas
-      preguntasIncorrectas.push(pregunta);
-      // Cambiar el fondo de la pregunta a rojo
-      let preguntaContenedor = document.getElementById(pregunta);
-      if (preguntaContenedor) {
-        preguntaContenedor.style.backgroundColor = "red"; // Resaltar la pregunta equivocada
+        // Comprobar si la respuesta seleccionada es correcta
+        if (opciones[i].value === respuestasCorrectas[pregunta]) {
+          // Cambiar el color del texto de la respuesta correcta a verde
+          label.style.color = "green";
+        } else {
+          // Cambiar el color del texto de la respuesta incorrecta a rojo
+          label.style.color = "red";
+        }
+      } else {
+        // Restaurar el color por defecto (negro) de las opciones no seleccionadas
+        label.style.color = "white";
       }
     }
   }
-
-  // Mostrar el resultado
-  alert(`Respuestas correctas: ${respuestasCorrectasContadas} de 60`);
-
-  // Convertir las claves de las preguntas incorrectas en nombres más legibles
-  let preguntasIncorrectasNombres = preguntasIncorrectas.map(pregunta => {
-    // Remover el "q" y convertir a número
-    let numeroPregunta = pregunta.replace('q', '');
-    return `Pregunta ${numeroPregunta}`;
-  });
-
-  // Mostrar preguntas incorrectas con nombres legibles
-  alert(`Preguntas incorrectas: ${preguntasIncorrectasNombres.join(', ')}`);
-
-  // Reiniciar opciones seleccionadas
-  for (let pregunta in respuestasCorrectas) {
-    let opciones = document.getElementsByName(pregunta);
-    // Desmarcar todas las opciones de radio para cada pregunta
-    for (let i = 0; i < opciones.length; i++) {
-      opciones[i].checked = false;
-    }
-  }
-}
-
-// Función para mostrar las opciones del menú (sin cambios)
-function mostarOpciones() {
-  // Detecta la clase menuSubmenu que se encuentra en index.html boton numero 5.
-  var opciones = document.getElementsByClassName("submenu");
-  // Muestra los botones
-  if (opciones[0].style.display === "none" || opciones[0].style.display === "") {
-    opciones[0].style.display = "block"; // muestra opciones
-  } else {
-    opciones[0].style.display = "none";
-  }
-}
-
-// Función para reproducir el audio
-function sonido() {
-  var audio = document.getElementById('audio');
-  audio.play();  // Reproducir el audio
 }
