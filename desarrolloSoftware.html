@@ -2,7 +2,10 @@
 <html lang="es">
 
 <head>
+    
     <meta charset="UTF-8">
+    <link rel="icon" href="imagenes-html-jose-david/logo.png" type="image/x-icon">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
@@ -11,9 +14,9 @@
 
 <body>
     <!-- Barra superior con logo y botones -->
-     <header id="barraSuperior">
+    <header id="barraSuperior">
         <div class="logo">
-            <a href="#audio" onclick="sonido()">
+            <a href="#audio" onclick="document.getElementById('audio').play();">
                 <img src="imagenes-html-jose-david/logo.png" alt="Logo" id="imagenLogo">
             </a>
         </div>
@@ -24,7 +27,7 @@
             <a href="index.html">
                 <button id="boton">Inicio</button>
             </a>
-            <a href="desarrolloSoftware.html">
+            <a href="proyecto.html">
                 <button id="boton">Desarrollo de software</button>
             </a>
             <a href="html_alejandro.html">
@@ -38,12 +41,14 @@
             </a>
         </nav>
     </header>
-
+    
+    <!-- Audio que se reproducirá -->
     <audio id="audio" preload="auto">
         <source src="imagenes-html-jose-david/Langosta.mp3" type="audio/mp3">
         Tu navegador no soporta la etiqueta de audio.
     </audio>
     
+
     <a id="superior"></a> <!--Es una etiqueta de anclaje, permite la navegacion fluida -->
 
 
@@ -1323,13 +1328,15 @@
                     <label><input type="radio" name="q60" value="4"> Menor enfoque en las pruebas de integración de
                         módulos</label>
                 </div>
-                
+                <div class="contenedorBoton">
+                    <button type="button" class="botonFormulario" onclick="comprobarRespuesta()">Enviar</button>
+                  </div>
             </form>
+
         </div>
     </details>
-    <div class="contenedorBoton">
-        <button type="button" class="botonFormulario" onclick="comprobarRespuesta()">Enviar</button>
-      </div>
+
+
     <a href="#top" class="botonSubir">⬆</a>
     <div class="footer">&copy;<span> </span><span> Lobster S.L. Todos los derechos reservados.</span></div>
 </body>
