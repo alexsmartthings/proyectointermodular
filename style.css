@@ -274,331 +274,317 @@ h2,h3 {
 
 /* Estilo de los botones */
 #boton {
-    background-color: #c4151500;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 10%;
-    cursor: pointer;
-    border: none;
-    text-align: center;
-    font-weight: 600;
-    font-size: 13px;
-    transition: all 0.5s ease-out;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #c4151500; /*Color de fondo*/
+    color: white; /*color texto*/
+    padding: 8px 16px; /*padding arriba y derecha*/
+    border-radius: 10%; /*Redondea bordes*/
+    cursor: pointer; /*Cambia el cursor*/
+    border: none; /*borde*/
+    text-align: center; /*Alineación texto*/
+    font-weight: 600; /*Longitud de la tipografia*/
+    font-size: 13px; /*Tamaño de la tipografia*/
+    transition: all 0.5s ease-out; /*Transición*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Tipografia*/
 }
 
-/* Efecto hover en los botones */
-#boton:hover {
-    background-color: #ffffff;
-    border-radius: 15px;
-    border: #ffffff;
-    font-weight: 600;
-    color: #000000;
-    font-family: Arial, sans-serif;
-    padding: 8px 16px;
-    transform: scale(1.05);
+
+#boton:hover { /*Ratón encima de ID botones*/
+    background-color: #ffffff; /*Color de fondo*/
+    border-radius: 15px; /*Suavizado del borde*/
+    border: #ffffff; /*Borde*/
+    font-weight: 600; /*Anchura de la tipografia*/
+    color: #000000; /*Color de texto*/
+    font-family: Arial, sans-serif; /*Tipografia*/
+    padding: 8px 16px; /*Desplazamiento arriba y derecha*/
+    transform: scale(1.05); /*Aumenta el tamaño*/
 }
 
 .botonSubir {
-    /* Tipo de posicion */
-    position: fixed;
-    /* Posicion del boton */
-    bottom: 20px;
-    right: 20px;
-    background-color: #3f3f3f;
-    color: white;
-    border-radius: 25%;
-    /* Se elimina el subrayado */
-    text-decoration: none;
-    /* Altura y anchura del boton */
-    width: 50px; 
-    height: 50px;
-    font-size: 20px;
-    text-align: center;
-    /* Altura de la flecha */
-    line-height: 50px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    /* Animacion de tamaño */
-    transition: all 0.3s ease;
-    /* Superponer el boton encima del footer */
-    z-index: 1000;
+    position: fixed; /*Posición fija*/
+    bottom: 20px; /*Posición hacia abajo*/
+    right: 20px; /*Posición a la derecha*/
+    background-color: #3f3f3f; /*Color de fondo*/
+    color: white; /*Color del texto*/
+    border-radius: 25%; /*Redondear bordes*/
+    text-decoration: none; /*Decoración del texto*/
+    width: 50px;  /*Anchura*/
+    height: 50px; /*Altura*/
+    font-size: 20px; /*Tamaño de la fuente*/
+    text-align: center; /*Alineación del texto*/
+    line-height: 50px; /*Altura de la linea*/
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /*Sombra*/
+    transition: all 0.3s ease; /*Transición para el tamaño*/
+    z-index: 1000; /*"ALTURA" del objeto permitiendo que esté por encima*/
   }
   
-  .botonSubir:hover {
-    background-color: #2b2b2b;
-    transform: scale(1.1);
+  .botonSubir:hover { /*Cuando el ratón esté encima del elemento*/
+    background-color: #2b2b2b; /*Color de fondo*/
+    transform: scale(1.1); /*Aumenta de tamaño*/
   }
 
   html {
-     /* Animacion de suave para el movimiento */
-    scroll-behavior: smooth;
-  }
+    scroll-behavior: smooth;  /*Comportamiento para scrollear*/
+  } /*En este caso, suave.*/
 
   #bienvenidaWeb {
-    position: absolute; /* Posiciona el bloque sobre la imagen */
+    position: absolute; /*Posiciona el bloque sobre la imagen*/
     top: 20%; /* Distancia desde la parte superior */
-    margin-left: 30%; /* Margen para centrar */
+    margin-left: 30%; /*Margen izquierdo*/
     background-color: rgba(63, 63, 63, 0.8); /* Fondo semi-transparente */
-    padding: 15px; /* Espaciado interno */
-    color: #e4e4e4; /* Color del texto */
-    border-radius: 8px; /* Bordes redondeados */
-    font-family: sans-serif; /* Tipografía sencilla */
+    padding: 15px; /*Espaciado general*/
+    color: #e4e4e4; /*Color del texto*/
+    border-radius: 8px; /*Redondear bordes*/
+    font-family: sans-serif; /* Tipografía*/
 }
 
-#bienvenidaWeb:first-of-type {
-    /* Se añade un first of type para poner un margen en la parte superior, ya que la posicion:fixed no admite los tipos de margin, debido al flujo */
-    margin-top: 120px; /* Añade un margen por encima del primer bloque de información */
+#bienvenidaWeb:first-of-type { /*Primero de su tipo para que ponga un margen en la parte superior*/ /*sino, no acepta margenes*/
+    margin-top: 120px; /*Añade un margen por encima del primer bloque de información*/
 }
 
 .container {
-    display: flex;
-    gap: 70px;
-    max-width: 1900px;
-    margin: auto;
+    display: flex; /*Flexibilidad al mostrarse el elemento*/
+    gap: 70px; /*Espacio entre elementos*/
+    max-width: 1900px; /*Anchura máxima*/
+    margin: auto; /*Margenes*/
 }
 
 .column {
-    align-items: center;
-    align-content: center;
-    flex: 1;
-    text-align: center;
-    border: 1px rgba(0, 0, 0, 0);
-    padding: 10px;
-    border-radius: 8px;
-    background: linear-gradient(to bottom, rgb(39, 39, 39), #3a3a3a);
-    display: inline-block;
-    /* Asegura que el elemento pueda escalar */
+    align-items: center; /*Alinear items*/
+    align-content: center; /*Alinear contenido*/
+    flex: 1; /*Flexibilidad*/
+    text-align: center; /*Alineación texto*/
+    border: 1px rgba(0, 0, 0, 0); /*Borde*/
+    padding: 10px; /*Espacio alrededor*/
+    border-radius: 8px; /*Suavizado de esquinas*/
+    background: linear-gradient(to bottom, rgb(39, 39, 39), #3a3a3a); /*Degradación*/
+    display: inline-block; /*Como se muestra*/
+
+    /* Animación/Transición donde se agranda */
     transition: transform 0.5s ease;
-    /* Duración de la transición: 0.5s, con un efecto de suavizado */
+    /* Duración de la transición: 0.5s + efecto de suavizado */
 }
 
 .column img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    max-width: 100%; /*Longitud maxima*/
+    height: auto; /*Altura*/
+    border-radius: 8px; /*Redondeado de esquinas*/
 }
 
 .tituloEntrada {
-    font-family: Georgia, serif;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #FFFFFF;
-    text-shadow: 4px 3px 0 #7A7A7A;
+    font-family: Georgia, serif; /*Tipografia*/
+    font-weight: bold; /*Estilo de tipografia*/
+    margin-bottom: 5px; /*Margen inferior*/
+    color: #FFFFFF; /*Color texto*/
+    text-shadow: 4px 3px 0 #7A7A7A; /*Sombra texto*/
 }
 
 .description {
-    font-family: Georgia, serif;
-    color: #FFFFFF;
-    margin-top: 10px;
+    font-family: Georgia, serif; /*Tipografia*/
+    color: #FFFFFF; /*Color texto*/
+    margin-top: 10px; /*Margen superior*/
 }
 
-.column:hover {
-    cursor: pointer;
-    transform: scale(1.05);
+.column:hover { /*Al colocar el ratón encima*/
+    cursor: pointer; /*Cambia cursor*/
+    transform: scale(1.05); /*Aumenta el tamaño*/
 }
 
 main {
-    float: left;
-    width: 60%;
+    float: left; /*Flota + dirección*/
+    width: 60%; /*Longitud - Anchura*/
 }
 
 aside {
-    float: right;
-    width: 30%;
+    float: right; /*Flota + dirección*/
+    width: 30%; /*Longitud - Anchura */
 }
 
 #subtitulo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #b1dbdb;
-    text-align: center;
-    padding-top: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Tipografia*/
+    color: #b1dbdb; /*Color texto*/
+    text-align: center; /*Alineación texto*/
+    padding-top: 2%; /*Padding superior*/
 
 }
 
 #titulop {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #b1dbdb;
-    text-align: center;
-    padding-top: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Tipografia*/
+    color: #b1dbdb; /*Color texto*/
+    text-align: center; /*ALineación texto*/
+    padding-top: 5%; /*Padding superior*/
 }
 
 #bloqueInformacion .text {
-    flex: 1;
+    flex: 1; /*Flexibilidad*/
 }
 
 #bloqueInformacion .text h2 {
-    font-size: 2rem;
-    color: #b1dbdb;
-    margin-bottom: 10px;
+    font-size: 2rem; /*Tamaño de la fuente/Tipografia*/
+    color: #b1dbdb; /*Color del texto*/
+    margin-bottom: 10px; /*Margen inferior*/
 }
 
 #bloqueInformacion .text p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: rgb(228, 228, 228);
-    text-align: justify;
+    font-size: 1rem; /*Tamaño de la fuente/Tipografia*/
+    line-height: 1.6; /*ALtura de la linea*/
+    color: rgb(228, 228, 228); /*Color del texto*/
+    text-align: justify; /*Alineación del texto*/
 }
+/*Recordatorio que # es para las IDS y . para las clases*/
 
-#bloqueInformacion .image {
-    flex: 1;
-    display: flex;
-    justify-content: right;
-    align-items: right;
+#bloqueInformacion .image { /*Id bloqueinformación con clase image*/
+    flex: 1; /*Flexibilidad*/
+    display: flex; /*El como se muestra*/
+    justify-content: right; /*Justificar contenido*/
+    align-items: right; /*ALinear items*/
 }
 
 #bloqueInformacion .image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /*Anchura maxima*/
+    height: auto; /*Altura*/
+    border-radius: 10px; /*Redondear borde*/
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /*Sombra texto*/
 }
 
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #b1dbdb;
-    text-align: center;
-    margin-top: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Tipografia*/
+    color: #b1dbdb; /*Color del texto*/
+    text-align: center; /*Alineación del texto*/
+    margin-top: 3%; /*Margen superior*/
 }
 
 hr {
-    width: 200px;
+    width: 200px; /*Anchura*/
 }
 
 .imagenesizquierda {
-    justify-content: space-evenly;
-    align-items: left;
+    justify-content: space-evenly; /*Distribuir elementos*/
+    align-items: left; /*Alinear items*/
 }
 
 .formularioContacto {
-            width: 460px;
-            margin: 80px auto;
-            margin-top: 130px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            padding-top: 30px;
-            padding-bottom: 10px;
-            background-color: #3f3f3f;
-            box-shadow: #00000033;
-            padding-left: 30px;
-            padding-right: 30px;
+            width: 460px; /*Anchura*/
+            margin: 80px auto; /*Margen general*/
+            margin-top: 130px; /*Margen superior*/
+            margin-bottom: 20px; /*Margen inferior*/
+            border-radius: 10px; /*Redondear bordes / esquinas */
+            padding-top: 30px; /*Padding superior*/
+            padding-bottom: 10px; /*Padding inferior*/
+            background-color: #3f3f3f; /*Color de fondo*/
+            box-shadow: #00000033; /*sombra*/
+            padding-left: 30px; /*Padding lateral izquierdo*/
+            padding-right: 30px; /*Padding lateral derecho*/
         }
 
         .formulario, h1{
-            color: white;
-            text-align: center;
+            color: white; /*Color de texto*/
+            text-align: center; /*Alinear texto*/
         }
 
         .formularioContacto input {
-            background-color: #fbfbfb;
-            width: 408px;
-            height: 40px;
-            border-radius: 5px;
-            margin-top: 10px;
-            padding-left: 10px;
-            margin-bottom: 20px;
+            background-color: #fbfbfb; /*Color de fondo*/
+            width: 408px; /*Anchura*/
+            height: 40px; /*Altura*/
+            border-radius: 5px; /*Redondear bordes*/
+            margin-top: 10px; /*margen superior*/
+            padding-left: 10px; /*padding laterla izquierdo*/
+            margin-bottom: 20px; /*margen inferior*/
     }
 
         textarea {
-            background-color: #fbfbfb;
-            width: 405px;
-            height: 150px;
-            border-radius: 5px;
-            border-style: solid;
-            border-width: 1px;
-            margin-top: 10px;
-            padding-left: 10px;
-            margin-bottom: 20px;
-            padding-top: 15px;
+            background-color: #fbfbfb; /*Color de fondo*/
+            width: 405px; /*Anchura*/
+            height: 150px; /*Altura*/
+            border-radius: 5px; /*Redondear borde*/
+            border-style: solid; /*Estilo del borde*/
+            border-width: 1px; /*Anchura del borde*/
+            margin-top: 10px; /*Margen superior*/
+            padding-left: 10px; /*Padding lateral izquierdo*/
+            margin-bottom: 20px; /*Margen inferior*/
+            padding-top: 15px; /*padding superior*/
         }
 
 
         label {
-            display: block;
-            float: center;
+            display: block; /*Como se muestra*/
+            float: center; /*Elemento flotante*/
         }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*Si la ventana tiene 768px*/
     /* Media, para buen vistazo de la barra superior*/
     #barraSuperior {
-        /* Hace que los elementos de la barra se muevan dependiendo donde le pongas */
-        flex-direction: column;
-        /* Espacio adicional para la barra superior */
-        padding: 15px;
+        /*Hace que los elementos de la barra se muevan dependiendo donde le pongas*/
+        flex-direction: column; /*Dirección de flexibilidad (hacia donde se estira)*/
+        /*Espacio adicional para la barra superior*/
+        padding: 15px; /*padding general*/
         
     }
 
     #navegacion {
-        /* Centra los botones */
-        width: 100%;
-        justify-content: center;
-        /* Da espacio entre el logo y los botones */
-        gap: 10px;
-        margin-top: 10px;
+        /*Centrar los botones*/
+        width: 100%; /*anchura*/
+        justify-content: center; /*Distribuir elementos*/
+
+        /*Da espacio entre el logo y los botones*/
+        gap: 10px; /*Espacio entre elementos*/
+        margin-top: 10px; /*Margen superior*/
     }
 
     #boton {
-        /* Mayor tamaño para los botones */
-        font-size: 14px;
-        padding: 10px 20px;
+        /*Mayor tamaño para los botones*/
+        font-size: 14px; /*Tamaño de la tipografia*/
+        padding: 10px 20px; /*padding | arriba y derecha*/
     }
 
     .botonSubir {
-       background-color: #2b2b2b;
+       background-color: #2b2b2b; /*Color de fondo*/
       }
 
 }
 
 /* Media, para el limite de imagenes en contenedores  */
-@media (max-width: 1160px) {
+@media (max-width: 1160px) { /*Si la pantalla tiene 1160px*/
 
     .imagenesizquierda {
-        flex-direction: column;
-        align-items: center;
-        /* Cambia las imágenes a disposición vertical */
+        flex-direction: column; /*Dirección hacia donde se estira*/
+        align-items: center; /*Alineación de los items*/
+        /*Las imagenes se ven en vertical*/
     }
 
     .imagenesizquierda img {
-        max-width: 100%;
-        /* Restringe las imágenes al ancho del contenedor */
-        height: auto;
-        /* Mantiene la proporción de las imágenes */
-        margin-bottom: 10px;
-        /* Espaciado entre imágenes */
+        max-width: 100%; /*Anchura máxima*/
+        height: auto; /*Altura*/
+        margin-bottom: 10px; /*Margen inferior*/
     }
 
-    /* Oculta la parte de bienvenida */
-    #bienvenidaWeb {
-        display: none;
+    
+    #bienvenidaWeb { 
+        display: none; /*Se ocultará*/
     }
 
-    /* Oculta la imagen principal */
+    
     body > img {
-        display: none;
+        display: none; /*Se oculta*/
     }
 
     #bloqueInformacion {
-        /* Reduce los márgenes laterales */
-        margin: 10px 2%;
+        margin: 10px 2%; /*Margen arriba y derecha*/
     }
 
     #bienvenidaWeb {
-        /* Reduce los márgenes laterales */
-        margin: 10px 2%;
+        margin: 10px 2%; /*Margen arriba y derecha*/
     }
 
     .imagenes {
-        flex-direction: column;
-        /* Cambia las imágenes a disposición vertical */
-        align-items: center;
+        flex-direction: column; /*como se estiran*/
+        align-items: center; /*centrar items*/
+        /*separación entre imagenes*/
     }
 
     .imagenes img {
-        /* Restringe las imágenes al ancho del contenedor */
-        max-width: 100%;
-        /* Mantiene la proporción de las imágenes */
-        height: auto;
-        /* Espaciado entre imágenes */
-        margin-bottom: 10px;
+        max-width: 100%; /*Anchura maxima*/
+        height: auto; /*altura*/
+        margin-bottom: 10px; /*margen inferior*/
     }
 }
