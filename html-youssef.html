@@ -273,28 +273,101 @@
             <img src="images/pc9.png" width="700">
         </div>
         <h2>Atajos de teclado</h2>
-        <p>Aqui tenemos algunos de los atajos que podemos usar en el IDE NetBeans.</p> 
-                    <h2>Atajos Generales</h2>
-                <p> -Abrir archivo: Ctrl + O<br>
-                    -Guardar: Ctrl + S<br>
-                    -Guardar todo: Ctrl + Shift + S<br>
-                    -Cerrar pestaña actual: Ctrl + W<br>
-                    -Cerrar todas las pestañas: Ctrl + Shift + W<br>
-                    -Salir: Alt + F4<br>
-                    -Cambiar entre pestañas: Ctrl + Tab
-                    
+        <p>Aqui tenemos algunos de los atajos que podemos usar en el IDE NetBeans.</p>
+        <h2>Atajos Generales</h2>
+        <p> -Abrir archivo: Ctrl + O<br>
+            -Guardar: Ctrl + S<br>
+            -Guardar todo: Ctrl + Shift + S<br>
+            -Cerrar pestaña actual: Ctrl + W<br>
+            -Cerrar todas las pestañas: Ctrl + Shift + W<br>
+            -Salir: Alt + F4<br>
+            -Cambiar entre pestañas: Ctrl + Tab
+
+
+        <h2>Navegación de Código</h2>
+        <p> -Ir a archivo: Alt + Shift + O<br>
+            -Ir a tipo (clase, interfaz, etc.): Ctrl + O<br>
+            -Ir a línea específica: Ctrl + G<br>
+            -Navegar hacia atrás: Alt + Flecha izquierda<br>
+            -Navegar hacia adelante: Alt + Flecha derecha<br>
+            -Buscar usos (referencias): Alt + F7<br>
+            -Abrir declaración: Ctrl + Click o Ctrl + B<br>
+            -Documentación rápida: Ctrl + Shift + Espacio<br>
+        </p>
+
+        <h2>Personalizar la visualización en netbeans</h2>
+        <p>-Para personalizar la visualización en NetBeans presione en tools:</p>
+        <div class="imagenes">
+            <img src="images/p1.png"width="700">
+        </div>
+        <p>-Buscamos "Appearance", y hacemos clic en él.</p>
+        <div class="imagenes">
+            <img src="images/p2.png"width="700">
+        </div>
+        <p>Aquí hay una definición rápida de cada uno:</p>
+        <p>-Document Tabs (Pestañas de Documentos):
+            Gestiona cómo se muestran y funcionan las pestañas de los archivos abiertos en el editor.<br>
             
-            <h2>Navegación de Código</h2>
-                <p> -Ir a archivo: Alt + Shift + O<br>  
-                    -Ir a tipo (clase, interfaz, etc.): Ctrl + O<br>
-                    -Ir a línea específica: Ctrl + G<br>
-                    -Navegar hacia atrás: Alt + Flecha izquierda<br>
-                    -Navegar hacia adelante: Alt + Flecha derecha<br>
-                    -Buscar usos (referencias): Alt + F7<br>
-                    -Abrir declaración: Ctrl + Click o Ctrl + B<br>
-                    -Documentación rápida: Ctrl + Shift + Espacio<br>
-                    </p>    
-                </div>
+           - Windows (Ventanas):
+            Controla el comportamiento y la disposición de los paneles y ventanas del IDE.<br>
+            
+            -Look and Feel (Apariencia y Comportamiento):
+            Define el estilo visual general del IDE, incluyendo temas (claro/oscuro).<br>
+            
+            -FlatLaf:
+            Un motor moderno de diseño plano para NetBeans, que ofrece un aspecto limpio.</p>
+
+            <h2>Las ventajas e inconvenientes de los diversos:</h2>
+            <p>-Ventajas: Características como herramientas de depuración, autocompletado de código, 
+                resaltado de sintaxis y control de versiones integrado.</p>
+            <p>-Desventajas: Uso de recursos, curva de aprendizaje empinada o funcionalidad limitada para ciertos lenguajes.
+            </p>
+    
+            <h2>Características comunes de los IDEs:</h2>
+<p>
+    - Editor de código: Resaltado de sintaxis, autocompletado y sugerencias.<br>
+    - Depurador: Herramienta para identificar y corregir errores.<br>
+    - Gestión de proyectos: Organización de código y recursos.<br>
+    - Control de versiones: Integración con herramientas como Git.<br>
+    - Compilador/Intérprete: Para compilar o interpretar el código.<br>
+    - Soporte para pruebas: Herramientas para pruebas unitarias.
+</p>
+
+<h2>Características específicas de los IDEs:</h2>
+<p>
+    - Visual Studio: Para .NET, C#, F#, C++, Python y JavaScript. Soporta desarrollo web y servicios en la nube.<br>
+    - NetBeans: Principalmente para Java, con soporte para PHP, C++ y HTML5. Incluye herramientas para Android.<br>
+    - Eclipse: Usado para Java, C++, Python y PHP. Famoso por su integración con Maven y Jenkins.<br>
+    - IntelliJ IDEA: Optimizado para Java y JVM, con herramientas para desarrollo web y bases de datos.
+</p>
+
+<h2>Creacion de los ejecutables</h2> 
+    <p>-Creamos un proyecto con una class, en mi caso un "Hola Mundo".</p>
+    <div class="imagenes">
+        <img src="images/netbeansbuild1.png"width="700">
+    </div>
+    <p>-Pero antes veremos el contenido que tiene nuestra carpeta del proyecto.</p>
+    <div class="imagenes">
+        <img src="images/netbeansbuild3.png"width="700">
+    </div>
+    <p>-Entonces una vez visto clicaremos sobre el martillo, el cual hara el "Build". </p>
+    <div class="imagenes">
+        <img src="images/netbeansbuild2.png"width="300">
+    </div>
+    <p>-Si nos vamos denuevo a la carpeta veremos que ha creado mas carpetas con archivos, y entraremos a la
+        carpeta llamada "dist".
+    </p>
+    <div class="imagenes">
+        <img src="images/netbeansbuild4.png"width="300">
+        <p>-Y  veremos que este a creado un archivo .jar, este es un archivo comprimido que agrupa todas las clases 
+            compiladas, recursos y bibliotecas necesarias para ejecutar la aplicación Java. </p>
+        <div class="imagenes">
+            <img src="images/netbeansbuild5.png"width="300">
+        </div>
+        <p>-Se utiliza para distribuir y ejecutar aplicaciones de manera más eficiente, 
+            permitiendo su ejecución en cualquier plataforma con Java instalado.</p>
+    </div>
+    </div>
     </div>
 
     <div id="bloqueInformacion">
@@ -461,7 +534,8 @@
     <div id="bloqueInformacion">
         <h2>&nbsp;&nbsp;Visual Studio Code</h2>
         <h2>Añadir Extensiones</h2>
-        <p>-Para instalar una extensión en Visual Studio Code, haz clic en el icono de extensiones en la barra lateral izquierda o usa el atajo Ctrl + Shift + X:</p>
+        <p>-Para instalar una extensión en Visual Studio Code, haz clic en el icono de extensiones en la barra lateral
+            izquierda o usa el atajo Ctrl + Shift + X:</p>
         <div class="imagenes">
             <img src="images/vs1.png" width="100">
         </div>
@@ -475,7 +549,8 @@
             <img src="images/vs3.png" width="700">
         </div>
         <p>-Para desinstalar una extensión en Visual Studio Code:<br>
-           Ve nuevamente al icono de extensiones (Ctrl + Shift + X), selecciona la extensión instalada que desees eliminar y haz clic en "Desinstalar".</p>
+            Ve nuevamente al icono de extensiones (Ctrl + Shift + X), selecciona la extensión instalada que desees
+            eliminar y haz clic en "Desinstalar".</p>
         <div class="imagenes">
             <img src="images/vs4.png" width="300">
         </div>
@@ -504,29 +579,105 @@
         </p>
 
         <h2>Cambiar Apariencia</h2>
-        <p>-Para cambiar la apariencia de Visual Studio Code, haz clic en el icono de ajustes en la esquina inferior izquierda, luego selecciona <strong>Temas de Color</strong>:</p>
+        <p>-Para cambiar la apariencia de Visual Studio Code, haz clic en el icono de ajustes en la esquina inferior
+            izquierda, luego selecciona <strong>Temas de Color</strong>:</p>
         <div class="imagenes">
             <img src="images/vscode_apariencia1.png" width="700" alt="Abrir temas de color">
         </div>
-        <p>-Se abrirá una lista de temas instalados. Usa las teclas de flecha para previsualizar cada tema y elige el que prefieras:</p>
+        <p>-Se abrirá una lista de temas instalados. Usa las teclas de flecha para previsualizar cada tema y elige el
+            que prefieras:</p>
         <div class="imagenes">
             <img src="images/vscode_apariencia2.png" width="700" alt="Seleccionar tema">
         </div>
-        <p>-Si quieres instalar más temas, ve a la sección de <strong>Extensiones</strong> (<strong>Ctrl + Shift + X</strong>), busca "Themes" o el tema que desees y haz clic en <strong>Instalar</strong>:</p>
+        <p>-Si quieres instalar más temas, ve a la sección de <strong>Extensiones</strong> (<strong>Ctrl + Shift +
+                X</strong>), busca "Themes" o el tema que desees y haz clic en <strong>Instalar</strong>:</p>
         <div class="imagenes">
             <img src="images/vscode_apariencia3.png" width="700" alt="Buscar nuevos temas">
         </div>
-        <p>-Para cambiar el tamaño de fuente o la interfaz, ve a <strong>Archivo &gt; Preferencias &gt; Configuración</strong>, y busca "Font Size" o "Workbench Appearance":</p>
-        <p>-Con estas configuraciones puedes personalizar completamente el aspecto de Visual Studio Code según tus necesidades.</p>
+        <p>-Para cambiar el tamaño de fuente o la interfaz, ve a <strong>Archivo &gt; Preferencias &gt;
+                Configuración</strong>, y busca "Font Size" o "Workbench Appearance":</p>
+        <p>-Con estas configuraciones puedes personalizar completamente el aspecto de Visual Studio Code según tus
+            necesidades.</p>
         <div class="imagenes">
             <img src="images/vscode_apariencia4.png" width="700" alt="Ajustar tamaño de fuente">
             <img src="images/vscode_apariencia5.png" width="700" alt="Ajustar tamaño de fuente">
         </div>
-        
-        </div>
 
+        <h2>Ventajas e Inconvenientes de los IDE</h2>
+        <p><strong>Ventajas de los IDE:</strong></p>
+        <ul>
+            <li>Completado automático de código, lo que mejora la productividad.</li>
+            <li>Herramientas de depuración integradas, que facilitan la localización de errores.</li>
+            <li>Soporte para múltiples lenguajes y tecnologías en un solo entorno.</li>
+            <li>Extensiones y plugins para personalizar el entorno según las necesidades del usuario.</li>
+        </ul>
+        <p><strong>Inconvenientes de los IDE:</strong></p>
+        <ul>
+            <li>Consumo elevado de recursos del sistema, lo que puede ralentizar el equipo.</li>
+            <li>Curva de aprendizaje inicial para configurar correctamente las herramientas y funcionalidades.</li>
+            <li>Dependencia de la configuración adecuada de extensiones o plugins.</li>
+        </ul>
+
+        <h2>Características Comunes de los IDE</h2>
+        <p>Los IDE (Entornos de Desarrollo Integrados) tienen una serie de características comunes que los hacen
+            herramientas eficaces para el desarrollo de software:</p>
+        <ul>
+            <li><strong>Editor de código:</strong> Un área donde los desarrolladores escriben el código fuente, con
+                resaltado de sintaxis.</li>
+            <li><strong>Depuración:</strong> Herramientas para ejecutar y depurar el código, visualizando errores y
+                ayudando a resolver problemas.</li>
+            <li><strong>Integración con control de versiones:</strong> Permite integrar con herramientas como Git para
+                gestionar el código fuente y sus versiones.</li>
+            <li><strong>Compilación y ejecución:</strong> Los IDE permiten compilar el código y ejecutarlo desde el
+                mismo entorno de desarrollo.</li>
+        </ul>
+
+        <h2>Características Específicas de Visual Studio Code</h2>
+        <p>Visual Studio Code, como IDE, tiene varias características específicas:</p>
+        <ul>
+            <li><strong>Ligereza y velocidad:</strong> A diferencia de otros IDE, VSCode es ligero y rápido, lo que lo
+                hace ideal para proyectos pequeños y medianos.</li>
+            <li><strong>Extensibilidad:</strong> Cuenta con un enorme mercado de extensiones, que permiten agregar
+                funcionalidades como depuración avanzada, integración de lenguajes adicionales, y más.</li>
+            <li><strong>Soporte de lenguajes múltiples:</strong> Aunque es especialmente popular para JavaScript,
+                Python, y otros lenguajes web, VSCode soporta muchos más gracias a sus extensiones.</li>
+            <li><strong>Integración con Git:</strong> Visual Studio Code tiene integración nativa con Git, facilitando
+                la gestión de versiones de código directamente desde el editor.</li>
+        </ul>
+        <br>
+        <h2>Configurar el Sistema de Actualización</h2>
+        <p>-Para verificar si hay actualizaciones disponibles de Visual Studio Code, ve al menú superior y selecciona
+            **Ayuda > Buscar actualizaciones**:</p>
+        <div class="imagenes">
+            <img src="images/vscode_actualizacion1.png" width="700" alt="Buscar actualizaciones">
+        </div>
+        <p>-Si hay una actualización disponible, aparecerá una notificación en la parte inferior de la ventana, pero en este caso no
+            encontro ninguna nueva:</p>
+        <div class="imagenes">
+            <img src="images/vscode_actualizacion2.png" width="500" alt="Actualizar VSCode">
+        </div>
+        <p>-En caso de tener updates después de reiniciar VSCode, se completará la instalación de la nueva versión y el editor estará
+            actualizado.</p>
+
+        <h2>Actualizar Extensiones</h2>
+        <p>-Para actualizar las extensiones en Visual Studio Code, abre la vista de **Extensiones** haciendo clic en el
+            icono de **Extensiones** en la barra lateral izquierda o usando el atajo **Ctrl + Shift + X**:</p>
+        <div class="imagenes">
+            <img src="images/vscode_extensiones1.png" width="300" alt="Vista de extensiones">
+        </div>
+        <p>-Si hay actualizaciones disponibles, verás la opción **"Actualizar todo"** en la parte superior de la lista
+            de extensiones:</p>
+        <div class="imagenes">
+            <img src="images/vscode_extensiones2.png" width="700" alt="Actualizar extensiones">
+        </div>
+        <p>-Todas estan actualizadas en mi caso:</p>
+        <div class="imagenes">
+            <img src="images/vscode_extensiones3.png" width="400" alt="Actualizar extensión individualmente">
+        </div>
+    </div>
     </div>
 
+    </div>
 </body>
 <a href="#top" class="botonSubir">⬆</a>
 <div class="footer">&copy;<span> </span><span> Lobster S.L. Todos los derechos reservados.</span></div>
