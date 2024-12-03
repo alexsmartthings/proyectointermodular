@@ -333,11 +333,11 @@ h2,h3 {
      /* Animacion de suave para el movimiento */
     scroll-behavior: smooth;
   }
-                                        /*DE AQUI PARA ABAJO SE ENCARGA JOSE*/
+
   #bienvenidaWeb {
     position: absolute; /* Posiciona el bloque sobre la imagen */
     top: 20%; /* Distancia desde la parte superior */
-    margin-left: 30%; /* Margen para centrar */  
+    margin-left: 30%; /* Margen para centrar */
     background-color: rgba(63, 63, 63, 0.8); /* Fondo semi-transparente */
     padding: 15px; /* Espaciado interno */
     color: #e4e4e4; /* Color del texto */
