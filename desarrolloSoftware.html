@@ -230,6 +230,25 @@
         </div>
     </div>
 
+    <div id="bloqueInformacion">
+        <h2>Traductor y Tipos</h2>
+    <p><strong>Un traductor</strong> es una herramienta que convierte el código escrito en un lenguaje de alto nivel 
+        (entendido por los programadores) a un lenguaje que la computadora pueda entender y ejecutar, como el lenguaje de máquina o código objeto.</p>
+    <ul>
+        <li><strong>Compilador:</strong> Traduce todo el código fuente a código objeto o código máquina en un solo paso, 
+            generando un archivo intermedio que puede ser enlazado para crear el ejecutable.</li>
+            <br>
+        <li><strong>Intérprete:</strong> Traduce y ejecuta el código fuente línea por línea, sin generar un archivo ejecutable intermedio. 
+            Esto permite ejecutar el código en tiempo real, pero suele ser más lento.</li>
+            <br>
+        <li><strong>Enlazador (Linker):</strong> Toma el código objeto y las bibliotecas necesarias, resolviendo todas las dependencias, 
+            para generar el archivo ejecutable final. No realiza una traducción directa del código fuente, sino que une diferentes módulos para formar el ejecutable.</li>
+    </ul>
+    <div class="imagenes">
+        <img src="imagenes-html-jose-david/compilador.png" alt="Imagen Compilador">
+    </div>
+    </div>
+
     <details id="clicFormulario">
         <summary>Haz clic en mi para poner aprueba tus conocimientos.</summary>
         <!-- Formulario desplegable (en cada criterio correspondiente) -->
@@ -562,6 +581,32 @@
             <img src="imagenes-html-jose-david/maquina_virtual.png" alt="Imagen Maquina Virtual" width="450px">
         </div>
     </div>
+    <div id="bloqueInformacion">
+        <h2>Características de la Generación de Código Intermedio para su Ejecución en Máquinas Virtuales Java (JVM)</h2>
+        <ul>
+            <li><strong>Independencia de Plataforma (Portabilidad):</strong> El código fuente de Java se compila a <strong>bytecode</strong>, 
+                que es independiente de la plataforma. Esto permite que el programa se ejecute en cualquier sistema con una <strong>JVM</strong> compatible, sin necesidad de modificaciones en el código.</li>
+                <br>
+            <li><strong>Seguridad:</strong> La <strong>JVM</strong> verifica el bytecode antes de su ejecución, asegurando que no contenga instrucciones maliciosas. 
+                Además, aísla la ejecución del código del sistema operativo, protegiendo al sistema host de posibles daños.</li>
+                <br>
+            <li><strong>Eficiencia en el Uso de Recursos:</strong> La <strong>JVM</strong> gestiona de manera eficiente la memoria y el procesador, 
+                utilizando técnicas como la <strong>recolección de basura</strong> y la <strong>compilación Just-In-Time (JIT)</strong>, que mejora el 
+                rendimiento al convertir bytecode en código nativo en tiempo de ejecución.</li>
+                <br>
+            <li><strong>Optimización y Mejora del Rendimiento:</strong> Durante la ejecución, la <strong>JVM</strong> puede optimizar dinámicamente el bytecode, 
+                enfocándose en las partes del código que se ejecutan con más frecuencia, mejorando así el rendimiento general de la aplicación.</li>
+                <br>
+            <li><strong>Portabilidad de los Compiladores:</strong> El compilador de Java (<code>javac</code>) traduce el código fuente a <strong>bytecode</strong> estándar, 
+                que puede ser ejecutado en cualquier plataforma con una JVM, asegurando la compatibilidad universal del código Java.</li>
+                <br>
+            <li><strong>Aislamiento y Ejecución en Entornos Controlados:</strong> El bytecode ejecutado en la <strong>JVM</strong> está <strong>aislado</strong> del sistema 
+                subyacente, lo que evita que el código afecte al sistema operativo o a otros programas, proporcionando un entorno seguro de ejecución.</li>
+        </ul>
+        <div class="imagenes">
+            <img src="imagenes-html-jose-david/JVM.jpg" alt="Imagen Maquina Virtual Java" width="450px">
+        </div>
+    </div>
 
     <details id="clicFormulario">
         <summary>Haz clic en mi para poner aprueba tus conocimientos.</summary>
@@ -658,7 +703,23 @@
             mantenimiento de software donde se pueden detectar problemas y mejoras mediante el uso de diversas pruebas.
         </p>
     </div>
-
+    <div id="bloqueInformacion">
+        <h2>Perfiles que Intervienen en el Desarrollo de Software y sus Responsabilidades</h2>
+        <ol>
+            <li><strong>Analista de Requisitos</strong>: Recopilar y documentar los requisitos del cliente.</li><br>
+            <li><strong>Arquitecto de Software</strong>: Diseñar la arquitectura y seleccionar las tecnologías del sistema.</li><br>
+            <li><strong>Desarrollador de Software</strong>: Escribir el código y desarrollar funcionalidades.</li><br>
+            <li><strong>Diseñador UI/UX</strong>: Diseñar la interfaz de usuario y la experiencia del usuario.</li><br>
+            <li><strong>Ingeniero de Pruebas (QA)</strong>: Probar el software y asegurar su calidad.</li><br>
+            <li><strong>DevOps</strong>: Gestionar la infraestructura y automatizar despliegues.</li><br>
+            <li><strong>Gestor de Proyecto (Project Manager)</strong>: Gestionar el proyecto, cronograma y recursos.</li><br>
+            <li><strong>Administrador de Base de Datos (DBA)</strong>: Administrar y optimizar las bases de datos.</li><br>
+            <li><strong>Soporte Técnico/Mantenimiento</strong>: Dar soporte y mantener el software después del lanzamiento.</li>
+        </ol>
+        <div class="imagenes">
+            <img src="imagenes-html-jose-david/perfilessoftware.jpg" alt="Imagen Perfiles Software" width="450px">
+        </div>
+    </div>
     <div id="bloqueInformacion">
         <h2 id="titulo"><!--2.1.2.7.--> Fases del desarrollo de una aplicación informática y el cometido de estas</h2>
         <p id="texto">
@@ -1149,6 +1210,32 @@
         <p id="texto">
             Puede no ser adecuado para proyectos muy grandes o complejos.
         </p>
+        <br>
+        <h3 id="titulo">4. Metodología RUP (Rational Unified Process)</h3>
+        <p>El Rational Unified Process (RUP) es una metodología iterativa e incremental que guía a los equipos a través de todo el ciclo de vida del software. 
+            Se enfoca en asegurar la calidad del sistema, gestionar riesgos y fomentar la colaboración entre los equipos para cumplir con los requisitos del cliente.</p>
+        <ul>
+            <li><strong>Inicio</strong>: Definir el alcance y los requisitos iniciales.</li>
+            <li><strong>Elaboracion</strong>: Refinar la arquitectura y gestionar riesgos.</li>
+            <li><strong>Construccion</strong>: Desarrollar el sistema.</li>
+            <li><strong>Transicion</strong>: Desplegar el sistema y realizar pruebas finales.</li>
+        </ul>
+        <div class="imagenes">
+            <img src="imagenes-html-jose-david/metodologiarup.jpg" alt="Imagen Metodología RUP" width="450px">
+        </div>
+        <p><strong>Ventajas:</strong> Flexibilidad para adaptarse a cambios, Mejora la calidad del software mediante pruebas y claridad en las fases de gestion de riesgos.</p>
+        <ul>
+            <li>Flexibilidad para adaptarse a cambios.</li>
+            <li>Mejora la calidad del software mediante pruebas continuas.</li>
+            <li>Claridad en las fases y gestión de riesgos.</li>
+        </ul>
+        
+        <p><strong>Desventajas:</strong>Complejidad para proyectos pequeños, Requiere más recursos y tiempo debido a su estructura detallada y Curva de aprendizaje para los equipos.</p>
+        <ul>
+            <li>Complejidad para proyectos pequeños.</li>
+            <li>Requiere más recursos y tiempo debido a su estructura detallada.</li>
+            <li>Curva de aprendizaje para los equipos.</li>
+        </ul>
     </div>
     <details id="clicFormulario">
         <summary>Haz clic en mi para poner aprueba tus conocimientos.</summary>
