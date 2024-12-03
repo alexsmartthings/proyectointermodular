@@ -489,14 +489,14 @@ hr {
         }
 
         .formularioContacto input {
-                background-color: #fbfbfb;
-                width: 408px;
-                height: 40px;
-                border-radius: 5px;
-                margin-top: 10px;
-                padding-left: 10px;
-                margin-bottom: 20px;
-        }
+            background-color: #fbfbfb;
+            width: 408px;
+            height: 40px;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+    }
 
         textarea {
             background-color: #fbfbfb;
@@ -527,81 +527,6 @@ hr {
         padding: 15px;
         
     }
-
-    #navegacion {
-        /* Centra los botones */
-        width: 100%;
-        justify-content: center;
-        /* Da espacio entre el logo y los botones */
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    #boton {
-        /* Mayor tamaño para los botones */
-        font-size: 14px;
-        padding: 10px 20px;
-    }
-
-    .botonSubir {
-       background-color: #2b2b2b;
-      }
-
-}
-
-/* Media, para el limite de imagenes en contenedores  */
-@media (max-width: 1160px) {
-
-    .imagenesizquierda {
-        flex-direction: column;
-        align-items: center;
-        /* Cambia las imágenes a disposición vertical */
-    }
-
-    .imagenesizquierda img {
-        max-width: 100%;
-        /* Restringe las imágenes al ancho del contenedor */
-        height: auto;
-        /* Mantiene la proporción de las imágenes */
-        margin-bottom: 10px;
-        /* Espaciado entre imágenes */
-    }
-
-    /* Oculta la parte de bienvenida */
-    #bienvenidaWeb {
-        display: none;
-    }
-
-    /* Oculta la imagen principal */
-    body > img {
-        display: none;
-    }
-
-    #bloqueInformacion {
-        /* Reduce los márgenes laterales */
-        margin: 10px 2%;
-    }
-
-    #bienvenidaWeb {
-        /* Reduce los márgenes laterales */
-        margin: 10px 2%;
-    }
-
-    .imagenes {
-        flex-direction: column;
-        /* Cambia las imágenes a disposición vertical */
-        align-items: center;
-    }
-
-    .imagenes img {
-        /* Restringe las imágenes al ancho del contenedor */
-        max-width: 100%;
-        /* Mantiene la proporción de las imágenes */
-        height: auto;
-        /* Espaciado entre imágenes */
-        margin-bottom: 10px;
-    }
-}
 
     #navegacion {
         /* Centra los botones */
